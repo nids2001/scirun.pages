@@ -26,6 +26,7 @@ tags: build
   - Apple clang 5.1 or newer
   - Qt 4.8
     + Download [Qt 4.8 DMG](http://releases.qt-project.org/qt4/source/qt-mac-opensource-4.8.4.dmg).
+    + The above dmg will not work if using OS X 10.11. In this case Qt 4.8 can be acquired through macports using the command 'sudo port install qt4-mac' - more on macports here: https://www.macports.org/install.php
 
 #### Windows
   - Tested on Windows 7-10
