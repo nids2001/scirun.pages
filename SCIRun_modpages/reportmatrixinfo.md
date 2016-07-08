@@ -9,7 +9,7 @@ tags: module
 
 ## Description
 
-###Summary
+### Summary
 
 This module reports the attributes of matrices.
 
