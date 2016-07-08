@@ -21,23 +21,23 @@ This module will replace existing values within a matrix with new values defined
 
 Input port 1 = 
 <pre>
-[1 9 -13; 20 5 -6]
+       [1 9 -13; 20 5 -6]
 </pre>
 
 Input port 2 = 
 <pre>
-[a b]
+       [a b]
 </pre>
 
 Input port 3 = 
 <pre>
-[1 1]
+       [1 1]
 </pre>
 
 
 Output = 
 <pre>
-[1 9 -13; 20 a b]
+       [1 9 -13; 20 a b]
 </pre>
 
 
@@ -45,23 +45,23 @@ Output =
 
 Input port 1 = 
 <pre>
-[1 9 -13; 20 5 -6]
+       [1 9 -13; 20 5 -6]
 </pre>
 
 Input port 2 = 
 <pre>
-[a; b]
+       [a; b]
 </pre>
 
 Input port 3 = 
 <pre>
-[0 1]
+       [0 1]
 </pre>
 
 
 Output = 
 <pre>
-[1 a -13; 20 b -6]
+       [1 a -13; 20 b -6]
 </pre>
 
 
