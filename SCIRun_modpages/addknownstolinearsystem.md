@@ -27,7 +27,5 @@ This module returns 2 outputs, denoted by A2 and b2.
   2. b2 is an Nx1 vector. 
   
 Their solution: 
-<pre><code>
-inv(A2)*b2
-</code></pre>
+<pre><code>inv(A2)*b2</code></pre>
 has the same value as x at those non-NaN positions.
