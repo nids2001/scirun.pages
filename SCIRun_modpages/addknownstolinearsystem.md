@@ -28,10 +28,10 @@ This module returns 2 outputs, denoted by A2 and b2.
   
 Their solution: 
 
-<pre>
+<pre><code>
 
 inv(A2)*b2
 
-</pre>
+</code></pre>
 
 has the same value as x at those non-NaN positions.
