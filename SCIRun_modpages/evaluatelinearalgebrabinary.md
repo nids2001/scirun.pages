@@ -38,10 +38,13 @@ One of a number of binary matrix operations can be selected from the GUI and is 
 
   * -: Subtract one number from another: 
 <pre> 
-4-3 = 1 
+          4-3 = 1 
 </pre>
 
-  * Multiply two numbers.: <pre> 4*3 = 12 </pre>
+  * Multiply two numbers.: 
+<pre> 
+4*3 = 12 
+</pre>
 
   * Divide one number from another: <pre>12/3 = 4</pre>
 
