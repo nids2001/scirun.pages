@@ -26,5 +26,8 @@ This module returns 2 outputs, denoted by A2 and b2.
   1. A2 is an NxN matrix 
   2. b2 is an Nx1 vector. 
   
-Their solution: <pre>inv(A2)*b2</pre>
+Their solution: 
+<pre>
+inv(A2)*b2
+</pre>
 has the same value as x at those non-NaN positions.
