@@ -100,4 +100,3 @@ One of a number of binary matrix operations can be selected from the GUI and is 
 <pre>
       random()
 </pre>
-
