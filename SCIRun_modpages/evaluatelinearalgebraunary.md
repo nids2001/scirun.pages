@@ -45,7 +45,7 @@ There are a number of mathematical functions available for use:
       4-3 = 1 
 ```
 
-  * Multiply two numbers.: 
+  * Multiply two numbers: 
 
 ```
       4*3 = 12 
