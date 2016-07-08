@@ -57,51 +57,41 @@ The module has one output port that has the newly defined values.
 
 Suppose one wants to set the data values to a certain value:
 
-<pre>
-
+```
 RESULT = 2;
-
-</pre>
+```
 
 This will set every data value inside the field equal to the value 2. 
 
 Similarly one can set the data value to a value specified inside the first matrix on the input ports:
 
-<pre>
-
+```
 RESULT = A;
-
-</pre>
+```
 
 If the matrix contains only one value each data point is set to that value, if it contains the same number of values as datalocations, it will map each value in the matrix to one value in the field.
 
 One can as well query the positions of the data point, for example:
 
-<pre>
-
+```
 RESULT = X+Y;
-
-</pre>
+```
 
 This will store X+Y in each data location.
 
 This same module can be used as well to generate vector or tensor data, e.g:
 
-<pre>
-
+```
 RESULT = Vector(X,Y,cos(A));
-
-</pre>
+```
 
 This will take the X, Y, position and the cos applied to the values in the matrix A to create a new vector.
 
 One can reuse the value that are there as well, e.g.:
 
-<pre>
-
+```
 RESULT = DATA + A + B*C;
-
-</pre>
+```
 
 #### Output Data Type
 
