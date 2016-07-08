@@ -31,9 +31,9 @@ One of a number of binary matrix operations can be selected from the GUI and is 
 
 **Operators:**
 
-  * +: Add two numbers: <pre>4+3 = 7</pre>
+  * +: Add two numbers: <pre> 4+3 = 7 </pre>
 
-  * -: Subtract one number from another: <pre>4-3 = 1</pre>
+  * -: Subtract one number from another: <pre> 4-3 = 1 </pre>
 
   * Multiply two numbers.: <pre>4*3 = 12</pre>
 
