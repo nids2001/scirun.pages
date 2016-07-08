@@ -32,31 +32,72 @@ One of a number of unary matrix operations can be selected from the GUI and is t
 There are a number of mathematical functions available for use:
 
   * +: Add two numbers: 
-  <pre>4+3 = 7</pre>
+<pre>
+      4+3 = 7
+</pre>
 
-  * -: Subtract one number from another: <pre>4-3 = 1</pre>
+  * -: Subtract one number from another: 
+<pre> 
+      4-3 = 1 
+</pre>
 
-  * Multiply two numbers: <pre>4*3 = 12</pre>
-  
-  * /: Divide one number from another: <pre>12/3 = 4</pre>
+  * Multiply two numbers.: 
+<pre> 
+      4*3 = 12 
+</pre>
 
-  * sin: Sine of a number in **radians**: <pre>sin(x)</pre>
+  * Divide one number from another: 
+<pre>
+      12/3 = 4
+</pre>
 
-  * cos: Cosine of a number in **radians**: <pre>cos(x)</pre>
+  * sin: Sine of a number in **radians**: 
+<pre>
+      sin(x)
+</pre>
 
-  * sqrt: Square root of a number: <pre>sqrt(4) = 2
+  * cos: Cosine of a number in **radians**: 
+<pre>
+      cos(x)
+</pre>
 
-  * sqr: Square of a number: <pre>sqr(2) = 4,</pre>
+  * sqrt: Square root of a number: 
+<pre>
+      sqrt(4) = 2
+</pre>
 
-  * ln: Natural logarithm of a number: <pre>ln(x)</pre>
+  * sqr: Square of a number: 
+<pre>
+      sqr(2) = 4
+</pre>
 
-  * exp: e raised to the nth power: <pre>exp(ln(x)) = x</pre>
+  * ln: Natural logarithm of a number: 
+<pre>
+      ln(x)
+</pre>
 
-  * log: Log base 10 of a number: <pre>log(100) = 2</pre>
+  * exp: e raised to the nth power. 
+<pre>
+      exp(ln(x)) = x
+</pre>
 
-  * abs: Absolute value of a number: <pre>abs(-3) = 3</pre>
+  * log: Log base 10 of a number: 
+<pre>
+      log(100) = 2
+</pre>
 
-  * pow: One number raised to the power of another: <pre>pow(3, 2) = 9</pre>
+  * abs: Absolute value of a number: 
+<pre>
+      abs(-3) = 3
+</pre>
 
-  * random: Return a uniform random number between 0 and 1: <pre>random()</pre>
+  * pow: One number raised to the power of another: 
+<pre>
+      pow(3, 2) = 9
+</pre>
+
+  * random: Return a uniform random number between 0 and 1: 
+<pre>
+      random()
+</pre>
 
