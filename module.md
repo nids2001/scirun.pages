@@ -11,12 +11,12 @@ tags: module
 {% for page in site.pages %}{% if page.category == "moduledocs" %} {{ page.module.category }} {% endif %}{% endfor %}
 {% endcapture %}
 
-{% assign categories = tmp | split: '  ' %}
+{% assign categories = tmp | split: ' ' %}
 {% assign tmp = categories[0] %}
 
 {% for cat in categories %}
   {% unless tmp contains cat %}
-    {% capture tmp  %} {{ tmp }} {{ cat }} {% endcapture %}
+    {% capture tmp %}{{ tmp }} {{ cat }}{% endcapture %}
   {% endunless %}
 {% endfor %}
 
@@ -24,16 +24,17 @@ tags: module
 
 {% capture modulepages %}{% for cat in modulecategories %}?{{ cat }}{% for page in site.pages %}{% if page.module.category == cat %}${{ page.title }}#{{ site.github.url }}{{ page.url }}{% endif %}{% endfor %}{% endfor %}{% endcapture %}
 
-{% assign sortedpages = modulepages | split: '?' | sort %}
+{% assign sortedpages = modulepages | strip | strip_newlines | split: '?' | sort %}
 
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
   {% if pageitems[0] %}
-## {{ pageitems[0] | strip_newlines }}
+## {{ pageitems[0] }}
     {% for item in pageitems %}
+      {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
-**[{{ linkitem[0] }}]({{ site.github.url }}{{ linkitem[1] }})**
+**[{{ linkitem[0] }}]({{ linkitem[1] }})**
     {% endfor %}
   {% endif %}
 {% endfor %}
