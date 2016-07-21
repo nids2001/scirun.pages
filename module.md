@@ -22,7 +22,7 @@ tags: module
 
 {% assign modulecategories = tmp | split: ' ' %}
 
-{% capture modulepages %}{% for cat in modulecategories %}?{{ cat }}{% for page in site.pages %}{% if page.module.category == cat %}${{ page.title }}#{{ site.github.url }}{{ page.url }}{% endif %}{% endfor %}{% endfor %}{% endcapture %}
+{% capture modulepages %}{% for cat in modulecategories %}?{{ cat }}{% for page in site.pages %}{% if page.module.category == cat %}${{ page.title }}#{{ page.url | prepend: site.github.url }}{% endif %}{% endfor %}{% endfor %}{% endcapture %}
 
 {% assign sortedpages = modulepages | strip | strip_newlines | split: '?' | sort %}
 
