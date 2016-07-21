@@ -104,4 +104,4 @@ RESULT = DATA + A + B*C;
 As the function is parsed using the compiler, the output type cannot be guessed by the module, hence it needs to be set by the user to the correct data type.
 
 ---
-[SCIRun Modules]({{site.baseurl}}/module.html)
+[SCIRun Modules]({{site.url}}/module.html)
