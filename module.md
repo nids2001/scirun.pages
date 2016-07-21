@@ -34,7 +34,7 @@ tags: module
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
-**[{{ linkitem[0] }}]({{ linkitem[1] }})**
+**[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
     {% endfor %}
   {% endif %}
 {% endfor %}
