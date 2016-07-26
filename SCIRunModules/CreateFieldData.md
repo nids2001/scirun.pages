@@ -1,11 +1,17 @@
 ---
-title: CreatFieldData
+title: CreateFieldData
 category: moduledocs
+module:
+  category: ChangeFieldData
+  package: SCIRun
 tags: module
-
 ---
 
-# CreateFieldData
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -21,29 +27,25 @@ The user defined function can depend on a number of variables that are defined f
 
 #### Input Variables
 
-  1. X,Y,Z: Cartesian coordinates of the node or element (center of the element)
+  1. ```X,Y,Z```: Cartesian coordinates of the node or element (center of the element)
 
-  2. POS: Vector with cartesian coordinates of the node or element
+  2. ```POS```: Vector with cartesian coordinates of the node or element
 
-  3. A,B,C,...: Input from additional matrix ports. The input matrix can have either 1 row or the same number of rows as there are values in the field. In case the matrix has one value this value is the same for each data location, in case it has multiple values the module iterates of the values in the same way it iterates over the data values of the field. The matrix input can have either 1 column, 3 columns, 6 or 9 columns. In case the matrix has 1 column values are assumed to be scalar values, in case the matrix has 3 columns it is assumed to contain vector values and in case it has either 6 or 9 columns it is assumed to be a tensor value (A 6 valued tensor is defined as xx, xy, xz, yy, yz, and zz).
+  3. ```A,B,C,...```: Input from additional matrix ports. The input matrix can have either 1 row or the same number of rows as there are values in the field. In case the matrix has one value this value is the same for each data location, in case it has multiple values the module iterates of the values in the same way it iterates over the data values of the field. The matrix input can have either 1 column, 3 columns, 6 or 9 columns. In case the matrix has 1 column values are assumed to be scalar values, in case the matrix has 3 columns it is assumed to contain vector values and in case it has either 6 or 9 columns it is assumed to be a tensor value (A 6 valued tensor is defined as xx, xy, xz, yy, yz, and zz).
 
-  4. INDEX: The index number of the element or node.
+  4. ```INDEX```: The index number of the element or node.
 
-  5. SIZE: The number of elements or nodes in the field. (Depending on the input field type)
+  5. ```SIZE```: The number of elements or nodes in the field. (Depending on the input field type)
 
-  6. ELEMENT: Special access variable to access properties of the element. Currently only length, area, and volume are available to be called on this entity. In case one is iterating over the nodes, the node point is assumed to be the element, in case one is iterating of the elements, this variable is referring to the full element.
+  6. ```ELEMENT```: Special access variable to access properties of the element. Currently only length, area, and volume are available to be called on this entity. In case one is iterating over the nodes, the node point is assumed to be the element, in case one is iterating of the elements, this variable is referring to the full element.
 
 #### Output Variable
 
-The output needs to be stored in the variable **RESULT**.
+The output needs to be stored in the variable ```RESULT```.
 
 #### Available Functions
 
-A list of available functions is available in the GUI of the module. Press on the button available functions to obtain a full overview of the current available functions to do Scalar/Vector/Tensor algebra and to view the functions that can be applied to the **ELEMENT** variable.
-
-#### Implementation
-
-The user defined function is currently being translated in a chunck of code that is compiled using the dynamic compiler, however the current plan is to replace the dynamic compiler with a simple parser. In the latter case not every C++ functionality will be available, and hence it is recommended to stay within the functions defined in the help of the module.
+A list of available functions is available in the GUI of the module. Press on the button available functions to obtain a full overview of the current available functions to do Scalar/Vector/Tensor algebra and to view the functions that can be applied to the ```ELEMENT``` variable.
 
 #### Input Ports
 
@@ -56,3 +58,6 @@ The module has one output port that has the newly defined values.
 #### Output Data Type
 
 As the function is parsed using the compiler, the output type cannot be guessed by the module, hence it needs to be set by the user to the correct data type.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}

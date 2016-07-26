@@ -1,8 +1,10 @@
 ---
-title: EvaluateLinearAlgebraBinary
-category: moduledocs
-tags: module
-
+title:EvaluateLinearAlgebraBinary
+category:moduledocs
+module:
+  category:Math
+  package:SCIRun
+tags:module
 ---
 
 # EvaluateLinearAlgebraBinary
@@ -31,86 +33,89 @@ One of a number of binary matrix operations can be selected from the GUI and is 
 
 **Operators:**
 
-  * +: Add two numbers: 
+  * +:Add two numbers:
 
 ```
       4+3 = 7
 ```
 
-  * -: Subtract one number from another: 
+  * -:Subtract one number from another:
 
 ```
-      4-3 = 1 
+      4-3 = 1
 ```
 
-  * Multiply two numbers: 
+  * Multiply two numbers:
 
 ```
-      4*3 = 12 
+      4*3 = 12
 ```
 
-  * Divide one number from another: 
+  * Divide one number from another:
 
 ```
       12/3 = 4
 ```
 
-  * sin: Sine of a number in **radians**: 
+  * sin:Sine of a number in **radians**:
 
 ```
       sin(x)
 ```
 
-  * cos: Cosine of a number in **radians**: 
+  * cos:Cosine of a number in **radians**:
 
 ```
       cos(x)
 ```
 
-  * sqrt: Square root of a number: 
+  * sqrt:Square root of a number:
 
 ```
       sqrt(4) = 2
 ```
 
-  * sqr: Square of a number: 
+  * sqr:Square of a number:
 
 ```
       sqr(2) = 4
 ```
 
-  * ln: Natural logarithm of a number: 
+  * ln:Natural logarithm of a number:
 
 ```
       ln(x)
 ```
 
-  * exp: e raised to the nth power: 
+  * exp:e raised to the nth power:
 
 ```
       exp(ln(x)) = x
 ```
 
-  * log: Log base 10 of a number: 
+  * log:Log base 10 of a number:
 
 ```
       log(100) = 2
 ```
 
-  * abs: Absolute value of a number: 
+  * abs:Absolute value of a number:
 
 ```
       abs(-3) = 3
 ```
 
-  * pow: One number raised to the power of another: 
+  * pow:One number raised to the power of another:
 
 ```
       pow(3, 2) = 9
 ```
 
-  * random: Return a uniform random number between 0 and 1: 
+  * random:Return a uniform random number between 0 and 1:
 
 ```
       random()
 ```
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}

@@ -25,27 +25,27 @@ This module allows the computation of a new scalar, vector or tensor value for e
 
 #### Input Variables
 
-  1. **DATA**: This is the current value stored in the Field (either on the element or the node location).
+  1. ```DATA```: This is the current value stored in the Field (either on the element or the node location).
 
-  2. **X,Y,Z**: Cartesian coordinates of the node or element (center of the element)
+  2. ```X,Y,Z```: Cartesian coordinates of the node or element (center of the element)
 
-  3. **POS**: Vector with Cartesian coordinates of the node or element
+  3. ```POS```: Vector with Cartesian coordinates of the node or element
 
-  4. **A,B,C,...**: Input from additional Matrix ports. The input Matrix can have either 1 row or the same number of rows as there are values in the Field. In case the Matrix has one value this value is the same for each data location, in case it has multiple values the module iterates of the values in the same way it iterates over the data values of the Field. The Matrix input can have either 1 column, 3 columns, 6 or 9 columns. In case the Matrix has 1 column values are assumed to be scalar values, in case the Matrix has 3 columns it is assumed to contain vector values and in case it has either 6 or 9 columns it is assumed to be a tensor value. A 6 valued tensor is defined as xx, xy, xz, yy, yz, and zz.
+  4. ```A,B,C,...```: Input from additional Matrix ports. The input Matrix can have either 1 row or the same number of rows as there are values in the Field. In case the Matrix has one value this value is the same for each data location, in case it has multiple values the module iterates of the values in the same way it iterates over the data values of the Field. The Matrix input can have either 1 column, 3 columns, 6 or 9 columns. In case the Matrix has 1 column values are assumed to be scalar values, in case the Matrix has 3 columns it is assumed to contain vector values and in case it has either 6 or 9 columns it is assumed to be a tensor value. A 6 valued tensor is defined as xx, xy, xz, yy, yz, and zz.
 
-  5. **INDEX**: The index number of the element or node.
+  5. ```INDEX```: The index number of the element or node.
 
-  6. **SIZE**: The number of elements or nodes in the Field (depends on the input Field mesh type).
+  6. ```SIZE```: The number of elements or nodes in the Field (depends on the input Field mesh type).
 
-  7. **ELEMENT**: Special access variable to access properties of the element. Currently only length, area, and volume are available to be called on this entity. In case one is iterating over the nodes, the node point is assumed to be the element, in case one is iterating of the elements, this variable is referring to the full element.
+  7. ```ELEMENT```: Special access variable to access properties of the element. Currently only length, area, and volume are available to be called on this entity. In case one is iterating over the nodes, the node point is assumed to be the element, in case one is iterating of the elements, this variable is referring to the full element.
 
 #### Output Variable
 
-The output needs to be stored in the variable **RESULT**.
+The output needs to be stored in the variable ```RESULT```.
 
 #### Available Functions
 
-A list of available functions is available in the GUI of the module. The ***Parser Help*** button brings up a list of available functions to do scalar/vector/tensor algebra and to view the functions that can be applied to the **ELEMENT** variable.
+A list of available functions is available in the GUI of the module. The ***Parser Help*** button brings up a list of available functions to do scalar/vector/tensor algebra and to view the functions that can be applied to the ```ELEMENT``` variable.
 
 #### Input Ports
 

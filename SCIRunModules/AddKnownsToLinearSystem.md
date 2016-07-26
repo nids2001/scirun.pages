@@ -23,14 +23,14 @@ This module deals with solving a linear system ```A*u=b``` when some values of t
 
 This module takes 3 inputs:
 
-1. **LHS Matrix** is an NxN matrix. A must be a SparseRowMatrix.
-2. **RHS Vector** is the right hand side vector, an Nx1 vector.
-3. **X Vector** is an Nx1 vector specifying the known variables in the linear system A. If the k*th* variable is known, ```x(k)``` is its value, otherwise ```x(k)``` should be set NaN.
+1. **LHS Matrix** is an NxN Matrix (must be a SparseRowMatrix).
+2. **RHS Vector** is the right hand side vector, an Nx1 Matrix.
+3. **X Vector** is an Nx1 Matrix specifying the known variables in the linear system LHS. If the k*th* variable is known, ```x(k)``` is its value, otherwise ```x(k)``` should be set NaN.
 
 This module returns 2 outputs:
 
-1. **OutPutLHSMatrix** is an NxN matrix.
-2. **OutPutRHSVector** is an Nx1 vector.
+1. **OutPutLHSMatrix** is an NxN Matrix.
+2. **OutPutRHSVector** is an Nx1 Matrix.
 
 The solution:
 
