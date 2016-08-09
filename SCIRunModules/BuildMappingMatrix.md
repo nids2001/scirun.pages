@@ -1,11 +1,17 @@
 ---
 title: BuildMappingMatrix
 category: moduledocs
+module:
+  category: MiscField
+  package: SCIRun
 tags: module
-
 ---
 
-# BuildMappingMatrix
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -21,3 +27,5 @@ The source field for BuildMappingMatrix and ApplyMappingMatrix must contain the 
 
 [MapFieldDataFromSourceToDestination](mapfielddatafromsourcetodestination) can be used instead of BuildMappingMatrix and ApplyMappingMatrix if the mapping is not to be reused, as it does the same interpolation without building the intermediate mapping matrix. This should be used if the source field changes much more often than the destination field.
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
