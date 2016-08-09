@@ -1,6 +1,9 @@
 ---
 title: ComputeSVD
 category: moduledocs
+module:
+  category: Math
+  package: SCIRun
 tags: module
 
 ---
