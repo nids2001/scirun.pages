@@ -1,6 +1,9 @@
 ---
 title: GetFieldsFromBundle
 category: moduledocs
+module:
+  category: Bundle
+  package: SCIRun
 tags: module
 
 ---
