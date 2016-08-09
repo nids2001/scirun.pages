@@ -1,6 +1,9 @@
 ---
 title: ConvertMatrixToScalar
 category: moduledocs
+module:
+  category: Converters
+  package: SCIRun
 tags: module
 
 ---
