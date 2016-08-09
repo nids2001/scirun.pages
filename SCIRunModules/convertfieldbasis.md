@@ -1,6 +1,9 @@
 ---
 title: ConvertFieldBasis
 category: moduledocs
+module:
+  category: ChangeFieldData
+  package: SCIRun
 tags: module
 
 ---
