@@ -1,8 +1,10 @@
 ---
 title: CalculateSignedDistanceToField
 category: moduledocs
+module:
+  category: ChangeFieldData
+  package: SCIRun
 tags: module
-
 ---
 
 # CalculateSignedDistanceToField
