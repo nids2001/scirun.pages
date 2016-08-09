@@ -1,6 +1,9 @@
 ---
 title: CreateString
 category: moduledocs
+module:
+  category: String
+  package: SCIRun
 tags: module
 
 ---
