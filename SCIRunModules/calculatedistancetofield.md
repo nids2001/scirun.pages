@@ -1,7 +1,10 @@
 ---
 title: CalculateDistanceToField
 category: moduledocs
-tags: modules
+module:
+  category: ChangeFieldData
+  package: SCIRun
+tags: module
 
 ---
 
