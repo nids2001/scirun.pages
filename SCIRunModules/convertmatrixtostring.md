@@ -1,6 +1,9 @@
 ---
 title: ConvertMatrixToString
 category: moduledocs
+module:
+  category: Converters
+  package: SCIRun
 tags: module
 
 ---
