@@ -1,11 +1,14 @@
 ---
-title: CompleteGeometricTransform
+title: CreateGeometricTransform
 category: moduledocs
+module:
+  category: Math
+  package: SCIRun
 tags: module
 
 ---
 
-# CompleteGeometricTransform
+# CreateGeometricTransform
 
 ## Description
 
