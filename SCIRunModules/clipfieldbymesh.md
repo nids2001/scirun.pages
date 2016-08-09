@@ -1,6 +1,9 @@
 ---
 title: ClipFieldByMesh
 category: moduledocs
+module:
+  category: NewField
+  package: SCIRun
 tags: module
 
 ---
