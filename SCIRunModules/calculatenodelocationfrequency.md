@@ -1,8 +1,10 @@
 ---
 title: CalculateNodeLocationFrequency
 category: moduledocs
+module:
+  category: NewField
+  package: SCIRun
 tags: module
-
 ---
 
 # CalculateNodeLocationFrequency
