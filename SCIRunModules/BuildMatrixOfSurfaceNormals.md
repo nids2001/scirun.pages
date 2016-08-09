@@ -1,8 +1,10 @@
 ---
 title: BuildMatrixOfSurfaceNormals
 category: moduledocs
+module:
+  category: MiscField
+  package: SCIRun
 tags: module
-
 ---
 
 # BuildMatrixOfSurfaceNormals
