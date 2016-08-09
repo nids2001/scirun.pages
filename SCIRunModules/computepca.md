@@ -1,6 +1,9 @@
 ---
 title: ComputePCA
 category: moduledocs
+module:
+  category: Math
+  package: SCIRun
 tags: module
 
 ---
