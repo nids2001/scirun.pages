@@ -1,6 +1,9 @@
 ---
 title: BuildFEMatrix
 category: moduledocs
+module:
+  category: FiniteElements
+  package: SCIRun
 tags: module
 
 ---
