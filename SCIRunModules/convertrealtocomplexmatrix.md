@@ -1,6 +1,9 @@
 ---
 title: ConvertRealToComplexMatrix
 category: moduledocs
+module:
+  category: Converters
+  package: SCIRun
 tags: module
 
 ---
