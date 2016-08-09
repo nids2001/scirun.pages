@@ -1,8 +1,10 @@
 ---
 title: BuildNoiseColumnMatrix
 category: moduledocs
+module:
+  category: Math
+  package: SCIRun
 tags: module
-
 ---
 
 # BuildNoiseColumnMatrix
