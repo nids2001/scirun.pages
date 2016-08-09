@@ -1,8 +1,10 @@
 ---
 title: BuildFEVolRHS
 category: moduledocs
+module:
+  category: FiniteElements
+  package: SCIRun
 tags: module
-
 ---
 
 # BuildFEVolRhs
