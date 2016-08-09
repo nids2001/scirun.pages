@@ -1,6 +1,9 @@
 ---
 title: ClipFieldByFunction
 category: moduledocs
+module:
+  category: NewField
+  package: SCIRun
 tags: module
 
 ---
