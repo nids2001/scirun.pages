@@ -1,6 +1,9 @@
 ---
 title: CreateStandardColorMaps
 category: moduledocs
+module:
+  category: Visualization
+  package: SCIRun
 tags: module
 
 ---
