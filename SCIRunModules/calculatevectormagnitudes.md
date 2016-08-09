@@ -1,6 +1,9 @@
 ---
 title: CalculateVectorMagnitudes
 category: moduledocs
+module:
+  category: ChangeFieldData
+  package: SCIRun
 tags: module
 
 ---
