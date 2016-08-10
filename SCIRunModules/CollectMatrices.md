@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# CollectMatrices
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -29,3 +33,6 @@ This module has two input ports:
 When the user wants to restart the network, he or she needs to clean this module as it would continue to collect matrices. To clear the matrices in the buffer of this module, hit the **Clear Output** button in the GUI, which will reset this module. The UI has options to allow the user to select:
 
 Use the GUI to specify the operation which has to be performed each cycle of a network execution: the first column in the GUI specifies whether the module works on rows or columns, the second specifies whether one wants to add or replace the last column or row. The last column specifies whether a column/row is replaced at the start of the matrix (row 0 or column 0) or at the end of the matrix.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
