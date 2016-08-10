@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# JoinFields
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -33,3 +37,6 @@ Options available through the UI include:
   5. Merge mesh only, do not assign values
 
 The user may also set a tolerance defining the distance between nodes and/or elements to be merged.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
