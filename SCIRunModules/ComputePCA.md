@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ComputePCA
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -19,3 +23,6 @@ A Description of this module is not available at this time. For assistance pleas
 scirun-users@sci.utah.edu 
 
 ### Detailed Description
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
