@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# SelectSubMatrix
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -36,3 +40,6 @@ Rows can be re-ordered by supplying the 'Matrix RowIndices' with a matrix that d
 
   * *Cherry-picking matrix values:*
 By supplying matrices to both 'Matrix ColumnIndices' and 'Matrix RowIndices' values for the output matrix will be defined by the associated row and column values.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
