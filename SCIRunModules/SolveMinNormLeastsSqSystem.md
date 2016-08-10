@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# SolveMinNormLeastSqSystem
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -31,3 +35,6 @@ The outputs are a vector (w0,w1,w2) as a row-matrix and the ColumnMatrix (called
 ```
        [ w0v0 + w1v1 + w2v2 ]
 ```
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
