@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ConvertRealToComplexMatrix
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -21,3 +25,6 @@ This module takes the real and imaginary components, in separate matrices, and c
 A detailed description of this module is not available at this time. For assistance please contact:
 
 scirun-users@sci.utah.edu 
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
