@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ReportMatrixInfo
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -33,3 +37,6 @@ Matrix Attributes displayed:
   * Columns - The number of columns in the input matrix.
 
   * Elements - The size of the matrix. This is Rows x Columns for non sparse matrices. For sparse matrices this is the number of nonzero elements in the array.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
