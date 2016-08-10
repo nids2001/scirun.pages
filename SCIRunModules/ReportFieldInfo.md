@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ReportFieldInfo
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -40,3 +44,5 @@ ReportFieldInfo is purely an informational Module. It performs no modification o
 
   * **Data at** - The location of the data values associated with the input field.
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
