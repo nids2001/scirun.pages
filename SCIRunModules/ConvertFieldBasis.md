@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ConvertFieldBasis
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -29,3 +33,6 @@ There is currently support for three basis functions within SCIRun:
   2. **Constant** basis, when data is associated with the elements of a field. This data is not interpolated but is constant within each element and non-continuous at element boundaries.
   
   3. **Linear**, the data is associated with the nodes of a field. Any interpolation will be done linearly within elements (but not across element boundaries).
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
