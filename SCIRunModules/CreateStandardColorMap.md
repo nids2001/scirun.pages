@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# CreateStandardColorMap
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -22,3 +26,6 @@ This module is used to create some "standard" non-editable colormaps in Dataflow
 
 Most of the important work for this module is performed in the CreateStandardColorMaps.tcl file. There you can easily add new colormaps by making the obvious changes to the buildColorMaps function and the UI function (where the make_labeled_radio buttons are created). The C++ code merely queries the tcl code and fills the Colormap.
 
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
