@@ -7,7 +7,11 @@ module:
 tags: module
 ---
 
-# CalculateSignedDistanceToField
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -18,3 +22,6 @@ Creates a field with distances to a closed volume; inside the closed volume the 
 ### Detailed Description
 
 This function needs an object field that is a volume or a closed surface. When inside the object the distance field is positive, when outside it is negative. The module will fail for not close surfaces as one cannot define inside and outside. Similarly this function will not work for objects that are lines or points. Use the [CalculateDistanceToField](calculatedistancetofield) module for these objects.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
