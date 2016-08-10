@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# SplitFieldByDomain
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -25,3 +29,6 @@ Domain size refers to the overall surface area (if domains are surfaces) or volu
 The ascending sort refers to the label mask that defines each domain in the original field. 
 
 The resulting output will be ordered relative to the values used to define the input field's domains.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
