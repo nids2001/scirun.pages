@@ -8,9 +8,11 @@ tags: module
 
 ---
 
+# {{ page.title }}
 
+## Category
 
-# ConvertScalarToMatrix
+**{{ page.module.category }}**
 
 ## Description
 
@@ -19,3 +21,6 @@ tags: module
 This module takes a scalar data value and converts it to a 1x1 matrix. 
 
 ### Detailed Description
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
