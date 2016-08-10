@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# InterfaceWithTetgen
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -35,3 +39,5 @@ There are four inputs:
 
 The module outputs a **tetrahedral mesh**.
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
