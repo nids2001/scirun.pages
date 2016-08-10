@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# InterfaceWithPython
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -19,3 +23,6 @@ This module allows you to take an input (String, Matrix, or Field) and perform P
 ### Detailed Description
 
 A detailed description of this module is not available at this time. For assistance please contact scirun-users@sci.utah.edu. 
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
