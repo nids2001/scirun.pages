@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# PythonObjectForwarder
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -17,3 +21,6 @@ tags: module
 For advanced use. Most features integrated into interface with Python. 
 
 ### Detailed Description
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
