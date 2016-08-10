@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ViewScene
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -67,3 +71,6 @@ The ViewScene module also supports a series of hotkeys:
   * **U:** Switch backculling ON/OFF.
 
   * **W:** Switch wireframe ON/OFF.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
