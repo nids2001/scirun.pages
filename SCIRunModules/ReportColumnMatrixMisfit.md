@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ReportColumnMatrixMisfit
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -17,3 +21,6 @@ tags: module
 Compute and visualize error between two vectors.
 
 ### Detailed Description
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
