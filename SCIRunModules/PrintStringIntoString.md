@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# PrintStringIntoString
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -22,3 +26,5 @@ This module performs a sprintf operation with strings, whereever a '%s' in the f
 
 **Note:** This module leaves any numeric formatting untouched. Hence statements like '%d' or '%f' remain in the string. To insert numbers, use the [PrintMatrixIntoString](printmatrixintostring) module.
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
