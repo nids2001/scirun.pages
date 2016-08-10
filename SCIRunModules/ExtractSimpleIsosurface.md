@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ExtractSimpleIsosurface
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -51,3 +55,6 @@ There are four output ports:
   2. The second output port is the geometry (useful for large data sets if the extracted surface will only be viewed)
   3. The third output port contains a mapping matrix to the nodes used to build the isosurface
   4. The fourth output port contains a mapping matrix to the cells used to build the isosurface.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
