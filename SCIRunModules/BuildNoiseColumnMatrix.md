@@ -7,7 +7,11 @@ module:
 tags: module
 ---
 
-# BuildNoiseColumnMatrix
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -16,3 +20,6 @@ tags: module
 This module performs the unary matrix operation transpose.
 
 ### Detailed Description
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
