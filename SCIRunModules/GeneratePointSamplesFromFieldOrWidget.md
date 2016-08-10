@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# GeneratePointSamplesFromFieldOrWidget
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -24,3 +28,6 @@ GeneratePointSamplesFromFieldOrWidget generates samples from any type of input f
 The random sampling can be weighted by importance (determined by the data value of the sample) or left unweighted. The random sampling can also be limited to the selection of node points, rather than points from the interior of the fields elements, by clamping the samples to nodes.
 
 The **uniform** distributions are a uniformly random function over the spacial extents of the field (i.e. the elements are weighted by their volume or area), whereas the **scattered** distributions are a uniformly random function over the elements only (i.e. all elements have the same weight). The **importance weighted** distributions multiply the existing weight of a sample by the interpolated data value associated with it, while the **not weighted** distributions leave the existing weight of a sample unchanged.
+
+% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
