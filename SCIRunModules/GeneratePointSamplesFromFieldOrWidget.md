@@ -29,5 +29,5 @@ The random sampling can be weighted by importance (determined by the data value 
 
 The **uniform** distributions are a uniformly random function over the spacial extents of the field (i.e. the elements are weighted by their volume or area), whereas the **scattered** distributions are a uniformly random function over the elements only (i.e. all elements have the same weight). The **importance weighted** distributions multiply the existing weight of a sample by the interpolated data value associated with it, while the **not weighted** distributions leave the existing weight of a sample unchanged.
 
-% capture url %}{% include url.md %}{% endcapture %}
+{% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}
