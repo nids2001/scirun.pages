@@ -1,5 +1,5 @@
 ---
-title: CreateStandardColorMaps
+title: CreateStandardColorMap
 category: moduledocs
 module:
   category: Visualization
@@ -8,7 +8,7 @@ tags: module
 
 ---
 
-# CreateStandardColorMaps
+# CreateStandardColorMap
 
 ## Description
 
