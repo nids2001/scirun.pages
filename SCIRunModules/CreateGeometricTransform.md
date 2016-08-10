@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# CreateGeometricTransform
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -74,3 +78,6 @@ _Gray Widget Border:_
   * Scaling (if the widget has not been rotated while Ignore Changes was applied) 
 
   * Shearing (if the user has rotated the widget with the Ignore Changes applied).
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
