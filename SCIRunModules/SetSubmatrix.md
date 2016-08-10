@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# SetSubmatrix
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -75,3 +79,6 @@ Output =
 
 
 Note: The size of the input matrix cannot be altered by the size and starting points of the replacement and position matrices. In other words, if the resulting matrix would have larger dimensions than the original input matrix, the module with throw and error.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
