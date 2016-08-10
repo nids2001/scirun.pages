@@ -1,6 +1,9 @@
 ---
 title: SolveMinNormLeastSqSystem
 category: moduledocs
+module:
+  category: Math
+  package: SCIRun
 tags: module
 
 ---
