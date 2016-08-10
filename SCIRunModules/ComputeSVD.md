@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ComputeSVD
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -22,3 +26,6 @@ This module takes a matrix as input, converts it to a dense matrix, computes its
 
 This module requires a version of SCIRun built with LAPACK support.
 
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
