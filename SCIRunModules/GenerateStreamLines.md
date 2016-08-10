@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# GenerateStreamLines
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -33,3 +37,6 @@ The GenerateStreamLines GUI includes text fields for **Error Tolerance**, **Step
 The user can specify whether streamlines are computed in negative and/or, positive directions by changing the Direction radio buttons. The **Color Style** options are based on either the seed number, integration step, distance from the seed, or the total distance, which will affect how values are attached to the output field. By selecting seed number, the output field will range from zero to the number of seed points so that every stream line has exactly one value. The integration step option changes the value of output field such that they start at zero where the seed point is at and go up by one for each integration step away in either direction. The distance from seed is similar to the integration step but based on the cord length distance from the seed. Whereas the total length is based on the total cord length from the seed point.
 
 The **Filter Colinear Points** check box is a postprocess on the streams. It passes over the streams and removes all points that are too close together, as well as points that are colinear. It is useful for rendering the streamlines as it greatly simplifies them while retaining their visual appearance.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
