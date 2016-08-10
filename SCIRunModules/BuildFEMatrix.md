@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# BuildFEMatrix
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -27,3 +31,7 @@ When using the index/table approach, a **conductivity_table** property must be s
 BioPSE::Algorithm::BuildFEMatrix::build_FEMatrix performs the actual computation of the matrix. Other modules or any other code may use the algorithm for other kinds of problems involving discretization of the Poisson equation by linear finite elements.
 
 The discretization of the Poisson equation on the supplied mesh is performed by linear finite elements using Galerkin approach.
+
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
