@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# FairMesh
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -27,3 +31,6 @@ User Interface:
   * Spatial cut off frequency: Similar to low pass filter setting (default: 0.1)
   * Relaxation Parameter: negative scale factor -- the shrinking term (default: 0.6307)
   * Note: an unshrinking term is produced by: Spatial cutoff = 1/Relaxation parameter + 1/Dilation parameter
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
