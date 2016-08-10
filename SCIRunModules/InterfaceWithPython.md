@@ -1,6 +1,9 @@
 ---
 title: InterfaceWithPython
 category: moduledocs
+module:
+  category: Python
+  package: SCIRun
 tags: module
 
 ---
