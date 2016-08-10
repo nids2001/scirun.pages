@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# CreateLatVol
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -25,3 +29,5 @@ The **Pad Percentage** parameter is an optional parameter that describes how muc
 
 No interpolation is done onto the new field. It is recommended that the [MapFieldDataOntoElems](mapfielddataontoelems) or [MapFieldDataOntoNodes](mapfielddataontonodes) module be used if those values are needed.
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
