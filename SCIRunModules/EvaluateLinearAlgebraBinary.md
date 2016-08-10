@@ -7,7 +7,11 @@ module:
 tags:module
 ---
 
-# EvaluateLinearAlgebraBinary
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
