@@ -1,6 +1,9 @@
 ---
 title: ReportMatrixInfo
 category: moduledocs
+module:
+  category: Math
+  package: SCIRun
 tags: module
 
 ---
