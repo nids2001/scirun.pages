@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# SplitFieldByConnectedRegion
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -23,3 +27,6 @@ This module divides a single input field into as many as 8 output regions. Separ
 A common use for this module, then, is to separate distinct field surfaces, to split away small mesh islands that are not connected to the main mesh, or to break up a fractionated mesh into its individual regions. 
 
 Domains can be sorted in two ways: **Sort Domains by Size** or **Sort Ascending**. Domain size refers to the overall surface area (if domains are surfaces) or volume (if domains are 3-dimensional). The ascending sort refers to the value assigned to each domain in the original field.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
