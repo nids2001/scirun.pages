@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# RegisterWithCorrespondances
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -23,3 +27,6 @@ This module allows you to morph using a thin plate spline algorithm one point se
   * Correspondences1: This reads the node locations from a field of the correspondence points in the new coordinate system
 
   * Correspondences2: This reads the node locations from a field in the same coordinate system as the InputField
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
