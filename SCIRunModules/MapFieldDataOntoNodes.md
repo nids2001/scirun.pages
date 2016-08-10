@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# MapFieldDataOntoNodes
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -23,3 +27,6 @@ This modules can interpolate a scalar field, or calculate and interpolate the gr
 The first input is the **source** field. The second input allows you to specify the **weights** of the interpolation. 
 
 The output is the **target** field containing the interpolated data on the elements.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
