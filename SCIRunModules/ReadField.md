@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ReadField
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -25,3 +29,6 @@ A typical way to import data into SCIRun is to read in geometry, and then also f
 If the user attempts to read in a file other than a SCIRun supported file type, or uses an incorrect file format, an error message will be logged on the SCIRun module. Clicking the **Set** button will load the file. Clicking the **Execute** button will send the loaded field downstream if other modules are connected to the ReadField module's output port.
 
 The **Time Series** tab allows the user to load files numbered sequentially with a common basename with an optional delay. The playback controls allow the user to play through the files, or step forward and backwards.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
