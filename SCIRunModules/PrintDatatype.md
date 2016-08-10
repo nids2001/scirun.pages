@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# PrintDatatype
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -20,3 +24,5 @@ A detailed description of this module is not available at this time. For assista
 
 scirun-users@sci.utah.edu. 
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
