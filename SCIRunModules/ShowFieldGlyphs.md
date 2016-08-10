@@ -1,6 +1,9 @@
 ---
 title: ShowFieldGlyphs
 category: moduledocs
+module:
+  category: Visualization
+  package: SCIRun
 tags: module
 
 ---
