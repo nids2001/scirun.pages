@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ReportFieldGeometryMeasures
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -38,3 +42,5 @@ Then the user selects what measures are sampled at each location in the bottom h
 
   * **Size** - The Euclidean Volume of the measure element. Ex: length for edges or 0.0 for points.
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
