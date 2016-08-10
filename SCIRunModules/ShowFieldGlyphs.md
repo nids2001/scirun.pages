@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ShowFieldGlyphs
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -25,3 +29,6 @@ The field in the first input port holds the data that is to be visualized. By de
 ```
 
 It is possible to use a secondary or tertiary data to control the glyph parameters. For instance, when rendering vectors as a cone the orientation and length of the cone are determined by the primary field whereas the secondary field can be used to determine the radius and/or color of the cone.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
