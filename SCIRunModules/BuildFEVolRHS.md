@@ -7,9 +7,11 @@ module:
 tags: module
 ---
 
-# BuildFEVolRhs
+# {{ page.title }}
 
-## Description
+## Category
+
+**{{ page.module.category }}**
 
 ### Summary
 
@@ -22,3 +24,6 @@ Then, it builds the volume portion of the RHS of FE calculations where the RHS o
 The input is a FE mesh with field vectors distributed on the elements (constant basis). 
 
 The output is the Grad dot F.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
