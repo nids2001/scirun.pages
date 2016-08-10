@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ReportComplexMatrixInfo
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -16,3 +20,6 @@ tags: module
 This module enables report field info on complex data such that complex analytics can be performed. 
 
 ### Detailed Description
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
