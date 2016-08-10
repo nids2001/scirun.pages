@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ReadBundle
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -24,3 +28,5 @@ This module has one input port through which the user can define the name of the
 
 This module has two output ports: the first port contains the **bundle** that was read and the second port contains a copy of the **filename**. Hence, if one wants to annotate the results, this filename can be displayed using the ShowString module.
 
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
