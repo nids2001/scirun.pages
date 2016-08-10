@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# MapDataFieldFromNodeToElem
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -25,3 +29,6 @@ Supported methods are:
   * MAX - Compute the maximum value of adjoining nodes
   * SUM - Compute the sum of the adjoining nodes
   * INTERPOLATE - Compute a weighted average of the adjoining nodes
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
