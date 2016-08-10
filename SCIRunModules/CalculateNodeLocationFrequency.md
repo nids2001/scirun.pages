@@ -7,7 +7,11 @@ module:
 tags: module
 ---
 
-# CalculateNodeLocationFrequency
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -16,3 +20,7 @@ tags: module
 Only Point Clouds are supported at this time. 
 
 ### Detailed Description
+
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
