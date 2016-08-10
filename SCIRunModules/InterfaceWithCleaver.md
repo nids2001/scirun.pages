@@ -8,7 +8,12 @@ tags: module
 
 ---
 
-# InterfaceWithCleaver
+
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -17,3 +22,6 @@ tags: module
 Takes a field entry and converts it into a Cleaver2 mesh using the parameters listed in the module UI.
 
 ### Detailed Description
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
