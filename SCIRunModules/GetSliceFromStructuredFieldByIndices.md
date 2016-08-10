@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# GetSliceFromStructuredFieldByIndices
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -31,3 +35,6 @@ The user must supply two input values either via the module GUI, or from an opti
   * Column 2 is the data dimensions
   
 A 3x3 matrix containing selected axis, slice index and data dimensions following the above pattern is also output.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
