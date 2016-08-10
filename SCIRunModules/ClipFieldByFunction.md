@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ClipFieldByFunction
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -27,3 +31,6 @@ The expression should be a SCIRun parser expression. The module UI has a help bu
 The ClipFieldByFunction module takes an **input** field, and optionally a function string and/or one or more additional matrices that may be used in the function.
 
 The ClipFieldByFunction module has two **output** ports: the clipped field and a mapping matrix.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
