@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# ClipVolumeByIsovalue
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -24,3 +28,6 @@ The ClipVolumeByIsovalue module is used to clip a TetVol, HexVol or TriSurf fiel
 In order to compute where the cuts are to be made, the input field must contain scalar values at the nodes. If the input field contains element centered data, use modules in the ChangeFieldData category ([MapFieldDataFromSourceToDestination](mapfielddatafromsourcetodestination), [MapFieldDataOntoNodes](mapfielddataontonodes), [MapFieldDataFromElemToNode](mapfielddatafromelemtonode), etc.) to interpolate data from elements to nodes.
 
 Only TetVol, HexVol and TriSurf fields (unstructured, irregular mesh types) are supported by this general clipping. Other fields should be converted into these types if they are to be clipped.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
