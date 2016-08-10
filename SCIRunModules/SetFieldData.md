@@ -8,7 +8,11 @@ tags: module
 
 ---
 
-# SetFieldData
+# {{ page.title }}
+
+## Category
+
+**{{ page.module.category }}**
 
 ## Description
 
@@ -24,3 +28,6 @@ The first input takes a field and it expects a mesh or a point set.
 The second input takes an array of data or matrix.
 
 The third input takes NRRD data: this can be used instead in place of the matrix.
+
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}
