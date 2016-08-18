@@ -37,7 +37,7 @@ tags: module
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
       {% capture my-include %}{% include linkitem[1] %}{% endcapture %}
-      {{ my-include | markdownify }}
+      **[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
     {% endfor %}
   {% endif %}
 {% endfor %}
