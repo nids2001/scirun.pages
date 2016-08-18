@@ -16,3 +16,6 @@ SCIRun 5 is a complete rewrite of the GUI front end and graphical components of 
  - [Build](build.html)
  - [Module Reference](module.html)
  - [Python API 0.2](python.html)
+
+ Doc v1.0
+ 
