@@ -37,6 +37,7 @@ tags: module
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
 **[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
+{{ linkitem | inspect }}
     {% endfor %}
   {% endif %}
 {% endfor %}
