@@ -3,7 +3,7 @@ destination:  ./_site
 
 # Site title and subtitle. This is used in _includes/header.html
 title: 'SCIRun 5'
-subtitle: 'Painless documentation for your projects'
+subtitle: 'Modeling - Simulation - Visualization'
 
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: ''
@@ -22,9 +22,11 @@ codeurl: 'https://github.com/SCIInstitute/SCIRun'
 
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['doc', 'Documentation'],
-    ['tut', 'Tutorial'],
+    ['start', 'Getting Started'],
+    ['guide', 'User Guide'],
     ['ref', 'Reference'],
+    ['tut', 'Tutorials'],
+    ['help', 'Help'],
     ['dev', 'Developers'],
     ['post', 'Posts']
 ]
