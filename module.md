@@ -36,7 +36,6 @@ tags: module
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
-      {% capture my-include %}{% include linkitem[1] %}{% endcapture %}
       **[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
     {% endfor %}
   {% endif %}
