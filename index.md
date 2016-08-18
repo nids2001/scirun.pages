@@ -6,7 +6,7 @@ title: "SCIRun 5 Documentation"
 ### SCIRun 5.0
 
 
-SCIRun (www.scirun.org) is a problem solving environment developed by the NIH Center for Integrative Biomedical Computing at the University of Utah Scientific Computing and Imaging (SCI) Institute.
+[SCIRun](www.scirun.org) is a problem solving environment developed by the NIH Center for Integrative Biomedical Computing at the University of Utah Scientific Computing and Imaging (SCI) Institute.
 
 SCIRun 5 is a complete rewrite of the GUI front end and graphical components of SCIRun 4, including a more stable and efficient middle layer, with support for Python scripting.
 
