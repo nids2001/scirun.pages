@@ -37,7 +37,7 @@ tags: module
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
       {% capture my-include %}{% include linkitem[1] %}{% endcapture %}
-      **{{ my-include | markdownify }}**
+      {{ my-include | markdownify }}
     {% endfor %}
   {% endif %}
 {% endfor %}
