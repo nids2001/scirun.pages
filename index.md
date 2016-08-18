@@ -3,8 +3,6 @@ layout: default
 title: "SCIRun 5 Documentation"
 ---
 
-<link rel="stylesheet" href="css/modest.css">
-
 ![SCIRun Logo](http://www.sci.utah.edu/images/software/SCIRun/scirun.png)
 
 ### SCIRun 5.0

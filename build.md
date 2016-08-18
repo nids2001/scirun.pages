@@ -4,6 +4,8 @@ category: info
 tags: build
 ---
 
+<link rel="stylesheet" href="css/modest.css">
+
 - [Build Instructions](#build-instructions)
 	- [Platform Notes](#platform-notes)
 		- [Build requirements](#build-requirements)

@@ -4,6 +4,8 @@ category: info
 tags: module
 ---
 
+<link rel="stylesheet" href="css/modest.css">
+
 # SCIRun Modules
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
