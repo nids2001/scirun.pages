@@ -4,7 +4,7 @@ category: info
 tags: module
 ---
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/modest.css">
 
 # SCIRun Modules
 
