@@ -36,7 +36,8 @@ tags: module
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
-**{% markdown linkitem[1] %}**
+      {% capture my-include %}{% include linkitem[1] %}{% endcapture %}
+      **{{ my-include | markdownify }}**
     {% endfor %}
   {% endif %}
 {% endfor %}
