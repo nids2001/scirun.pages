@@ -3,8 +3,9 @@ layout: default
 title: "SCIRun 5 Documentation"
 ---
 
-### SCIRun 5.0
+![SCIRun Logo](http://www.sci.utah.edu/images/software/SCIRun/scirun.png)
 
+### SCIRun 5.0
 
 [SCIRun](www.scirun.org) is a problem solving environment developed by the NIH Center for Integrative Biomedical Computing at the University of Utah Scientific Computing and Imaging (SCI) Institute.
 
