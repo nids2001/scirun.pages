@@ -1,18 +1,17 @@
 ---
 layout: default
-title: "Jekyll Docs Template"
+title: "SCIRun 5 Documentation"
 ---
 
-### Get Started
+### SCIRun 5.0
 
-Start by [creating a new post](http://jekyllrb.com/docs/posts/) one of the categories listed in `_config.yml`. It will appear in the navigation on the left once recompiled. Or use the supplied script to make creating pages easier:
 
-```bash
-ruby bin/jekyll-page "Some Page Title" ref
-```
+SCIRun (www.scirun.org) is a problem solving environment developed by the NIH Center for Integrative Biomedical Computing at the University of Utah Scientific Computing and Imaging (SCI) Institute.
 
-#### Don't Forget
+SCIRun 5 is a complete rewrite of the GUI front end and graphical components of SCIRun 4, including a more stable and efficient middle layer, with support for Python scripting.
 
-- Add your own content to this page (i.e. `index.md`) and change the `title`
-- Change `title` and `subtitle` defined in `config.yml` for your site
-- Set the `baseurl` in `_config.yml` for your repo if deploying to GitHub pages
+*Warning! SCIRun 5 is beta software, you may use for real science but beware of instability.*
+
+ - [Build](build.html)
+ - SCIRun Module Documentation
+ - Python API 0.2
