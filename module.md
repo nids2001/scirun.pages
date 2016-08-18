@@ -38,8 +38,7 @@ tags: module
       {% assign linkitem = item | split: '#' %}
 **[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
 {{ linkitem | inspect }}
-{% capture my-include %}{% include linkitem[0].md %}{% endcapture %}
-{{ my-include | inspect }}
+{% include linkitem[1] %}
     {% endfor %}
   {% endif %}
 {% endfor %}
