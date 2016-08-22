@@ -18,6 +18,12 @@ tags: module
 //-->
 </script>
 
+<style>
+div.hidden {
+    display: none;
+}
+</style>
+
 # SCIRun Modules
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
@@ -61,13 +67,10 @@ tags: module
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
-**{{ linkitem[0] }}**
-      <br><a href="#" onclick="toggle_visibility('{{ linkitem[0] }}');"> {{ linkitem[0] }} </a>
+**{{ linkitem[0] }}** <a onclick="toggle_visibility('{{ linkitem[0] }}');"> &gt; </a>
       {% capture mdpath %}{{linkitem[0]}}.md{% endcapture %}
       {% capture my-include %}{% include_relative {{mdpath}} %}{% endcapture %}
-
-      {{ my-include }}
-
+<div class="hidden" markdown="1" name="{{linkitem[0]}}">{{ my-include }} </div>
     {% endfor %}
   {% endif %}
 {% endfor %}
