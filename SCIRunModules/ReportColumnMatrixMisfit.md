@@ -1,5 +1,5 @@
 ---
-title: CompleteGeometricTransform
+title: ReportColumnMatrixMisfit
 category: moduledocs
 module:
   category: Math

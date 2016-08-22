@@ -1,10 +1,10 @@
 ---
-title:EvaluateLinearAlgebraUnary
-category:moduledocs
+title: EvaluateLinearAlgebraUnary
+category: moduledocs
 module:
-  category:Math
-  package:SCIRun
-tags:module
+  category: Math
+  package: SCIRun
+tags: module
 ---
 
 # {{ page.title }}
