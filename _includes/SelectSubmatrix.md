@@ -1,5 +1,5 @@
 ---
-title: SelectSubMatrix
+title: SelectSubmatrix
 category: moduledocs
 module:
   category: Math
