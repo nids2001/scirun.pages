@@ -38,7 +38,6 @@ tags: module
       {% assign linkitem = item | split: '#' %}
 **[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
 {{ linkitem | inspect }}
-{% include linkitem[1] }} %}
     {% endfor %}
   {% endif %}
 {% endfor %}
