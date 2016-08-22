@@ -63,10 +63,6 @@ tags: module
       {% assign linkitem = item | split: '#' %}
 **{{ linkitem[0] }}**
       <br><a href="#" onclick="toggle_visibility('{{ linkitem[0] }}');"> {{ linkitem[0] }} </a>
-      {% capture mdpath %}SCIRunModules/{{linkitem[0]}}.md{% endcapture %}
-      {% capture my-include %}{% include_relative {{mdpath}} %}{% endcapture %}
-
-      {{ my-include }}
 
     {% endfor %}
   {% endif %}
