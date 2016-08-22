@@ -70,6 +70,7 @@ div.hidden {
 **{{ linkitem[0] }}** <a onclick="toggle_visibility('{{ linkitem[0] }}');"> &gt; </a>
       {% capture mdpath %}{{linkitem[0]}}.md{% endcapture %}
       {% capture my-include %}{% include_relative {{mdpath}} %}{% endcapture %}
+      {% assign importantPart1 = my-include | split: 'Summary' %}
 <div class="hidden" markdown="1" name="{{linkitem[0]}}">{{ my-include }} </div>
     {% endfor %}
   {% endif %}
