@@ -1,5 +1,5 @@
 ---
-title: PrintDataType
+title: PrintDatatype
 category: moduledocs
 module:
   category: String
@@ -22,7 +22,7 @@ tags: module
 
 A detailed description of this module is not available at this time. For assistance please contact:
 
-scirun-users@sci.utah.edu. 
+scirun-users@sci.utah.edu.
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}
