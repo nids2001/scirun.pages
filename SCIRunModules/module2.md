@@ -24,7 +24,7 @@ div.hidden {
 }
 </style>
 
-# SCIRun Modules
+## SCIRun Modules
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
 {% capture tmp %}
@@ -62,7 +62,7 @@ div.hidden {
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
   {% if pageitems[0] %}
-## {{ pageitems[0] }}
+### {{ pageitems[0] }}
     {% for item in pageitems %}
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
