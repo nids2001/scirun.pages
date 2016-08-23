@@ -67,11 +67,13 @@ div.hidden {
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
-**{{ linkitem[0] }}** <a onclick="toggle_visibility('{{ linkitem[0] }}');"> &gt; </a>
+      {% assign contentId = linkitem[0] | prepend: 'id_' %}
+
+<a name="{{linkitem[0]}}"></a><a onclick="toggle_visibility('{{ contentId }}');"> {{ linkitem[0] }} </a>
       {% capture mdpath %}{{linkitem[0]}}.md{% endcapture %}
       {% capture my-include %}{% include_relative {{mdpath}} %}{% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
-<div class="hidden" markdown="1" name="{{linkitem[0]}}">{{ importantPart1[1] }} </div>
+<div class="hidden" markdown="1" name="{{contentId}}">{{ importantPart1[1] }} </div>
     {% endfor %}
   {% endif %}
 {% endfor %}
