@@ -71,7 +71,7 @@ div.hidden {
       {% capture mdpath %}{{linkitem[0]}}.md{% endcapture %}
       {% capture my-include %}{% include_relative {{mdpath}} %}{% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
-<div class="hidden" markdown="1" name="{{linkitem[0]}}">{{ my-include }} </div>
+<div class="hidden" markdown="1" name="{{linkitem[0]}}">{{ importantPart1[1] }} </div>
     {% endfor %}
   {% endif %}
 {% endfor %}
