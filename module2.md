@@ -70,8 +70,8 @@ div.hidden {
       {% assign contentId = linkitem[0] | prepend: 'id_' %}
 
 <a name="{{linkitem[0]}}"></a><a onclick="toggle_visibility('{{ contentId }}');"> {{ linkitem[0] }} </a>
-      {% capture mdpath %}{{linkitem[0]}}.md{% endcapture %}
-      {% capture my-include %}{% include_relative {{mdpath}} %}{% endcapture %}
+      {% capture mdpath %}modules/{{linkitem[0]}}.md{% endcapture %}
+      {% capture my-include %}{% include {{mdpath}} %}{% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
 <div class="hidden" markdown="1" name="{{contentId}}">{{ importantPart1[1] }} </div>
     {% endfor %}
