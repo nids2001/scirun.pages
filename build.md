@@ -6,17 +6,6 @@ tags: build
 
 <link rel="stylesheet" href="css/modest.css">
 
-- [Build Instructions](#build-instructions)
-	- [Platform Notes](#platform-notes)
-		- [Build requirements](#build-requirements)
-          - [OS X](#os-x)
-          - [Windows](#windows)
-          - [Linux](#linux)
-          - [All Platforms](#all-platforms)
-		- [CMake Build Generators](#cmake-build-generators)
-    - [Compiling SCIRun](#compiling-scirun)
-    - [Tagging Releases](#tagging-releases)
-
 ## Platform Notes
 
 **At least C++11 64-bit compiler support is required.**
