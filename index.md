@@ -14,7 +14,7 @@ SCIRun 5 is a complete rewrite of the GUI front end and graphical components of 
 *Warning! SCIRun 5 is beta software, you may use for real science but beware of instability.*
 
  - [Build](build.html)
- - [Module Reference](module2.html)
+ - [Module Reference](modules.html)
  - [Python API 0.2](python.html)
 
  Doc v1.0c
