@@ -47,8 +47,6 @@ future: true
 # Exclude non-site files
 exclude: ['bin', 'README.md']
 
-include: ['_includes/modules']
-
 # Use the kramdown Markdown renderer
 markdown: kramdown
 redcarpet:
