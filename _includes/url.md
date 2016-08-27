@@ -4,4 +4,4 @@
 {% for item in canon offset:2 %}
   {% assign relative-baseurl = relative-baseurl | append:"../" %}
 {% endfor %}
-[Top](#)
+[Top](#top)
