@@ -24,8 +24,9 @@ div.hidden {
 }
 </style>
 
+<a id="top"></a>
+
 ## SCIRun Modules
-[](#top)
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
 {% capture tmp %}
