@@ -25,7 +25,7 @@ This module builds a mapping matrix which contains information about how to inte
 
 The source field for BuildMappingMatrix and ApplyMappingMatrix must contain the same geometry and data locations, however they do not have to contain the same data values or value types. For instance, both a TetVolField of doubles with data at the nodes and a TetVolField of Vectors with data also at the nodes can be used as input fields for BuildMappingMatrix.
 
-[MapFieldDataFromSourceToDestination](mapfielddatafromsourcetodestination) can be used instead of BuildMappingMatrix and ApplyMappingMatrix if the mapping is not to be reused, as it does the same interpolation without building the intermediate mapping matrix. This should be used if the source field changes much more often than the destination field.
+[MapFieldDataFromSourceToDestination](#MapFieldDataFromSourceToDestination) can be used instead of BuildMappingMatrix and ApplyMappingMatrix if the mapping is not to be reused, as it does the same interpolation without building the intermediate mapping matrix. This should be used if the source field changes much more often than the destination field.
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}
