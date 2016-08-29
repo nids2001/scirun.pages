@@ -2,5 +2,5 @@
 ---
 [Top](#top)
 {% else %}
-{{ page.url | inspect }}
+[Home](../modules.html)
 {% endif %}
