@@ -1,7 +1,6 @@
+{% if page.url contains '/modules.html' %}
 ---
-{% assign relative-baseurl = "" %}
-{% assign canon = page.url | append: "page.html" | split: "/" %}
-{% for item in canon offset:2 %}
-  {% assign relative-baseurl = relative-baseurl | append:"../" %}
-{% endfor %}
 [Top](#top)
+{% else %}
+{{ page.url | inspect }}
+{% endif %}

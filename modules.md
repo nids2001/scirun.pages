@@ -73,9 +73,10 @@ div.hidden {
 
 <a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a>
       {% capture mdpath %}modules/{{linkitem[0]}}.md{% endcapture %}
-      {% capture my-include %}{% include {{mdpath}} %}{% endcapture %}
+      {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
-<div class="hidden" markdown="1" name="{{contentId}}">{{ importantPart1[1] }} </div>
+      {% assign importantPart2 = importantPart1[1] %}
+<div class="hidden" markdown="1" name="{{contentId}}">{{ importantPart2  }} </div>
     {% endfor %}
   {% endif %}
 {% endfor %}
