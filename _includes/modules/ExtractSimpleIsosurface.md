@@ -37,7 +37,7 @@ The List tab allows the user to type in an arbitrary spaced delimited list of is
 
 #### Matrix
 
-Isovalues can be passed into the field in the **Optional Isovalues** port, which expects a Nx1 matrix. The Matrix tab must be selected and the module executed to populate the list of isovalues from the **Optional Isovalues** input matrix. A surface will be created for each value in that matrix. The *ExtractIsosurface-probe.srn* example network demonstrates this using the [GenerateSinglePointProbeFromField](generatesinglepointprobefromfield) and [SwapFieldDataWithMatrixEntries](swapfielddatawithmatrixentries) modules to interactively select the isosurface with a probe using this port.
+Isovalues can be passed into the field in the **Optional Isovalues** port, which expects a Nx1 matrix. The Matrix tab must be selected and the module executed to populate the list of isovalues from the **Optional Isovalues** input matrix. A surface will be created for each value in that matrix. The *ExtractIsosurface-probe.srn* example network demonstrates this using the [GenerateSinglePointProbeFromField](#GenerateSinglePointProbeFromField) and [SwapFieldDataWithMatrixEntries](#SwapFieldDataWithMatrixEntries) modules to interactively select the isosurface with a probe using this port.
 
 
 The **Build Output Field** option determines whether or not a surface field is created. The **Build Output Geometry** option determines whether or not geometry data is created. Transparency can be enabled for geometry output by selecting the **Enable Transparency** option. If there is no **ColorMap** present then the default color is used for the output geometry.
