@@ -1,1 +1,1 @@
-_includes/modules/SolveLinearSystem.md
+../_includes/modules/SolveLinearSystem.md
