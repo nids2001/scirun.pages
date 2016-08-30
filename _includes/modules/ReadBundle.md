@@ -20,7 +20,7 @@ tags: module
 
 This module reads a **bundle** from file.
 
-### Detailed Description
+**Detailed Description**
 
 This module reads a **bundle** from file. A bundle file has a .bdl extension and can be written with the WriteBundle module. In a .bdl file every component is stored. Hence it can be used to group a lot of different SCIRun objects together and store it in one file.
 

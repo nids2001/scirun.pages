@@ -20,7 +20,7 @@ tags: module
 
 This module visualizes vector fields by generating curves that interpolate the vector of vectors in a Field.
 
-### Detailed Description
+**Detailed Description**
 
 The **Vector Field** input port is the vector field on which the path intergration of the seed points will be performed. This may be a vector field with any volume geometry type. Surfaces and lower order fields do not currently work due to numerical error. 
 

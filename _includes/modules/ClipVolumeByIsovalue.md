@@ -21,7 +21,7 @@ tags: module
 
 This module clips a scalar field to a specified isovalue.
 
-### Detailed Description
+**Detailed Description**
 
 The ClipVolumeByIsovalue module is used to clip a TetVol, HexVol or TriSurf field along a particular isovalue. The isovalue is specified by the entry in the GUI. The new field can contain either the values less than or greater than the isovalue, as selected by the user.
 

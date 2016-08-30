@@ -20,7 +20,7 @@ tags: module
 
 This module will extract the inner and outer boundaries from a mesh. 
 
-### Detailed Description
+**Detailed Description**
 
 An **inner boundary** is defined as the boundary between different regions with a different value on the elements. 
 

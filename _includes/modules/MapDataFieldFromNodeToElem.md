@@ -20,7 +20,7 @@ tags: module
 
 This module computes the value of the elements based on the data from the adjoining elements. This module supports various operations to map node data to element data.
 
-### Detailed Description
+**Detailed Description**
 
 Supported methods are: 
 

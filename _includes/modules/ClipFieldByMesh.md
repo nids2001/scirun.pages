@@ -20,7 +20,7 @@ tags: module
 
 This module clips a mesh to another mesh.
 
-### Detailed Description
+**Detailed Description**
 
 Clip the first input to the second mesh. Both meshes need to be volumetric meshes such as tetrahedral rather than surface meshes.
 

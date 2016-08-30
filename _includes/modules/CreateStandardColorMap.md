@@ -20,7 +20,7 @@ tags: module
 
 This module generates fixed Colormaps for visualization tools.
 
-### Detailed Description
+**Detailed Description**
 
 This module is used to create some "standard" non-editable colormaps in Dataflow/Uintah. Non-editable simply means that the colors cannot be interactively manipulated. The module does, allow for the the resolution of the colormaps to be changed. This class sets up the data structures for Colormaps and creates a module from which the user can choose from several popular colormaps. By clicking in the Color band the user manipulate the **transparency** of the color. This is useful, for example, when volume rendering, though many visualization tools ignore the transparency data.
 

@@ -19,7 +19,7 @@ tags: module
 
 This module performs one of a number of selectable matrix operations using the two input matrices.
 
-### Detailed Description
+**Detailed Description**
 
 One of a number of binary matrix operations can be selected from the GUI and is then applied to the two input matrices to produce a new matrix that is then sent to the output port. The operations are X, +, Normalize, Select Rows, Select Columns, or Function.
 

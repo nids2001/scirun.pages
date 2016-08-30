@@ -19,7 +19,7 @@ tags: module
 ### Summary
 This module enables report field info on complex data such that complex analytics can be performed. 
 
-### Detailed Description
+**Detailed Description**
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

@@ -20,7 +20,7 @@ tags: module
 
 Build a densematrix, where each row is a particular measure of the input Field (e.g. the x-values, or the element size).
 
-### Detailed Description
+**Detailed Description**
 
 ReportFieldGeometryMeasures outputs a NxM matrix filled with values associated with the input mesh measures at selected mesh locations.
 

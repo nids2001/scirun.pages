@@ -19,7 +19,7 @@ tags: module
 ### Summary
 This moudle extracts an isopotential surface from a scalar field.
 
-### Detailed Description
+**Detailed Description**
 
 The ExtractIsosurface module is used to extract one or more isopotential surfaces from a scalar field using the Marching Cubes algorithm. The isopotential surfaces are surfaces for which the scalar value would interpolate to a constant isovalue. The module can output a SCIRun field and geometry (for faster module execution, if only one is needed, deselect the output type that is not needed). The isovalues can be specified in several ways.
 

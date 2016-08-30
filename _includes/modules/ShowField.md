@@ -20,7 +20,7 @@ tags: module
 
 This module visualizes the geometry that makes up a **Mesh** inside a Field. When possible and selected, the field takes its color from the data values that permeate the field.
 
-### Detailed Description
+**Detailed Description**
 
 The field in the first input port holds the mesh that is to be visualized. By default is will be displayed using the the default colow, which is editable from the UI. If there is a color map attached to the second input port, and there is valid data in field, then the data can be used as an index into the color map, and the mesh is rendered with appropriate colors. In addition, if there is valid data is field the data itself can be converted into a color. Scalar data creates a gray scale mapping, vector data (normalized) creates RGB colors, and the principle Eigen Vector (normalized) of tensor data also creates RBG colors.
 

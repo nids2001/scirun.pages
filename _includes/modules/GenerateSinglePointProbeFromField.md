@@ -20,7 +20,7 @@ tags: module
 
 This module generates SinglePointProbeFromField values in a field.
 
-### Detailed Description
+**Detailed Description**
 
 A GUI Point widget is created and can be moved around in the scene. Use the **shift key/left mouse button** combination to move the widget.
 

@@ -10,7 +10,7 @@ tags: module
 
 This module retrieves a **field** object from a bundle.
 
-### Detailed Description
+**Detailed Description**
 
 This module retrieves a **field** object from a bundle by specifying the name under which the object is stored in the bundle. The module has three output ports that each can be programmed to retrieve a specific field object.
 

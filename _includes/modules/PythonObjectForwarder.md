@@ -20,7 +20,7 @@ tags: module
 
 For advanced use. Most features integrated into interface with Python. 
 
-### Detailed Description
+**Detailed Description**
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

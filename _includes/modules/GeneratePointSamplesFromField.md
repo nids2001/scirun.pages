@@ -20,7 +20,7 @@ tags: module
 
 This modules allows you to set seed points in a given field and interactively change their location.
 
-### Detailed Description
+**Detailed Description**
 
 The **input** is a field containing a mesh.
 

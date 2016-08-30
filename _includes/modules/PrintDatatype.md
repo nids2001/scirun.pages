@@ -18,7 +18,7 @@ tags: module
 
 ### Summary
 
-### Detailed Description
+**Detailed Description**
 
 A detailed description of this module is not available at this time. For assistance please contact:
 

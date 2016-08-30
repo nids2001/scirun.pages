@@ -20,7 +20,7 @@ tags: module
 
 This module builds a 4x4 geometric transformation matrix capable of translation, scaling, rotation, sheering and permutation.
 
-### Detailed Description
+**Detailed Description**
 
 #### Default
 

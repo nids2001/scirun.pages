@@ -22,7 +22,7 @@ A description of this module is not available at this time. For assistance pleas
 
 scirun-users@sci.utah.edu. 
 
-### Detailed Description
+**Detailed Description**
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

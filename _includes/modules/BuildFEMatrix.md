@@ -20,7 +20,7 @@ tags: module
 
 This module sets up a mesh with conductivity tensors for bioelectric field problems.
 
-### Detailed Description
+**Detailed Description**
 
 The module provides basic means for construction of the FE matrix with linear elements for bioelectric field problems (discretization of Poisson equation for volume conductor problem). 
 

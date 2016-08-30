@@ -20,7 +20,7 @@ tags: module
 
 This module allows the user to load any of the SCIRun supported **Field** file types and then sets that field in the module's output port.
 
-### Detailed Description
+**Detailed Description**
 
 Upon opening, the ReadField GUI defaults to reading a single file in the directory where the user's SCIRun executable resides, but also allows the user to navigate to the directory that the user sets for their SCIRUN_DATA environment variable through the Directory widget. The default file type is "*.fld". Other supported file types are listed in the Files of type widget; these are generally NRRD, Matlab and mesh types. Files generally contain point cloud, surface or volume geometry such as point cloud points, triangle surface points and elements, tetrahedral mesh points and elements etc.
 

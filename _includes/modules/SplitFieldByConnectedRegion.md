@@ -20,7 +20,7 @@ tags: module
 
 This module splits a domain into separate fields as defined by the input field's connectivity.
 
-### Detailed Description
+**Detailed Description**
 
 This module divides a single input field into as many as 8 output regions. Separate regions may also be collected and bundled. Connected regions are not defined by label masks. They are defined, rather, by node and/or element connectivity. For example, a continuous, tetrahedral mesh may use label masks to define domains, but this module will produce only one output field given that all tets within the mesh are connected. 
 

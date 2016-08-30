@@ -20,7 +20,7 @@ tags: module
 
 This module reduces the dimension of a topologically regular field by 1 dimension.
 
-### Detailed Description
+**Detailed Description**
 
 The GetSliceFromStructuredFieldByIndices **input** port is a field that has regular topology. The field will be reduced by 1 dimension and piped to the output port.
 

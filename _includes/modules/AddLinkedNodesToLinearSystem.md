@@ -21,7 +21,7 @@ tags: module
 
 AddLinkedNodesToLinearSystem will link nodes in a finite element mesh and solve them as a single value.
 
-### Detailed Description
+**Detailed Description**
 
 AddLinkedNodesToLinearSystem works with {% include moduleLink.md moduleName='AddKnownsToLinearSystem' %} and {% include moduleLink.md moduleName='SolveLinearSystem' %} to force nodes in a finite element mesh to solve to the same value. This module is useful in solving for regions with homogeneous field properties, such as with a perfect conductor in an electric field. The algorithm to do this involves combining rows in the stiffness matrix corresponding to the nodes to solve together. The module also creates a mapping Matrix that will map the results of the solved linear system to the original mesh.
 

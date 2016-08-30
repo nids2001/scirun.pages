@@ -20,7 +20,7 @@ tags: module
 
 This module computes the minimal norm, least squared solution to a Nx3 linear system.
 
-### Detailed Description
+**Detailed Description**
 
 Given four input ColumnMatrices (v0,v1,v2,b), it finds the three coefficients (w0,w1,w2) that minimize:
 

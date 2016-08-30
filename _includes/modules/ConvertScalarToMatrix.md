@@ -20,7 +20,7 @@ tags: module
 
 This module takes a scalar data value and converts it to a 1x1 matrix. 
 
-### Detailed Description
+**Detailed Description**
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

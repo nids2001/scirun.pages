@@ -19,7 +19,7 @@ tags: module
 
 This module deals with solving a linear system ```A*u=b``` when some values of the vector u is already known. The module will modify the linear system according to the known values.
 
-### Detailed Description
+**Detailed Description**
 
 This module takes 3 inputs:
 

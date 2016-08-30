@@ -20,7 +20,7 @@ tags: module
 
 Given a field of vectors, this module will calculate the magnitude of each vector.
 
-### Detailed Description
+**Detailed Description**
 
 **Input:** This requires a field with vectors at node or element locations.
 

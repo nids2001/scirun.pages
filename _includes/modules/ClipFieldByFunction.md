@@ -20,7 +20,7 @@ tags: module
 
 This module selects a subset of a field.
 
-### Detailed Description
+**Detailed Description**
 
 The ClipFieldByFunction module clips out a subset of a field by preserving all of the elements in the input field for which the user specified expression evaluates to true at the specified test location. As a side effect of this algorithm is that any degenerate non-element items in the input field are discarded by the clip.
 

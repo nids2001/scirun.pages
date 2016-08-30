@@ -19,7 +19,7 @@ tags: module
 
 Performs one of a number of selectable unary matrix operations to the input matrix.
 
-### Detailed Description
+**Detailed Description**
 
 One of a number of unary matrix operations can be selected from the GUI and is then applied either to the whole matrix or to each element in the matrix, depending upon which operation is selected. The operations are Round, Ceil, Floor, Normalize, Transpose, Sort, Subtract Mean, or Function.
 

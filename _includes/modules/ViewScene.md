@@ -20,7 +20,7 @@ tags: module
 
 This module displays interactive graphical output to the computer screen. Use the ViewScene to see a geometry, or spatial data. The ViewScene provides access to many simulation parameters and controls, thus, indirectly initiates new iterations of the simulation steps important to computational steering.
 
-### Detailed Description
+**Detailed Description**
 
 **Autoview** restores the display back to a default condition. This is very useful when objects disappear from the view window due to a combination of settings. 
 

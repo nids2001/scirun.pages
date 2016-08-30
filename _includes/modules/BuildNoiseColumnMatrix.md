@@ -19,7 +19,7 @@ tags: module
 
 This module performs the unary matrix operation transpose.
 
-### Detailed Description
+**Detailed Description**
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

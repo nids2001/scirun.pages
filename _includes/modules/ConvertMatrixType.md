@@ -20,7 +20,7 @@ tags: module
 
 This module casts a matrix.
 
-### Detailed Description
+**Detailed Description**
 
 Displays type of the input matrix.
 

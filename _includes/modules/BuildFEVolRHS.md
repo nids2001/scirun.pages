@@ -19,7 +19,7 @@ This module calculates the divergence of a vector field over the volume. It is d
 
 Then, it builds the volume portion of the RHS of FE calculations where the RHS of the function is GRAD dot F.
 
-### Detailed Description
+**Detailed Description**
 
 The input is a FE mesh with field vectors distributed on the elements (constant basis). 
 

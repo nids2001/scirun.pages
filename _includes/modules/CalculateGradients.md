@@ -20,7 +20,7 @@ tags: module
 
 This module computes the derivative of a scalar field and output it as a vector field.
 
-### Detailed Description
+**Detailed Description**
 
 The CalculateGradients module computes the derivative of a scalar field and converts it to a vector field. The gradient is the derivative of three dimensions; the first component in the X direction, the second component in the Y direction, and the third component in the Z direction grid, computing the general direction of "flow" at a specific point on the geometry.
 

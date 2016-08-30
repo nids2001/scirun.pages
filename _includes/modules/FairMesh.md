@@ -20,7 +20,7 @@ tags: module
 
 This module smooths surface meshes without shrinking them.
 
-### Detailed Description
+**Detailed Description**
 
 Based on the surface smoothing algorithm published by Taubin in 1995 (A Signal Processing Appoach to Fair Surface Design).
 

@@ -20,7 +20,7 @@ tags: module
 
 This module chooses a submatrix based on user input. The matrix may be chosen by column and/or row ranges through the user interface or by array or matrix inputs defining desired row or column indices.
 
-### Detailed Description
+**Detailed Description**
 
 There are two methods to chose a submatrix:
 

@@ -20,7 +20,7 @@ tags: module
 
 Compute and visualize error between two vectors.
 
-### Detailed Description
+**Detailed Description**
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

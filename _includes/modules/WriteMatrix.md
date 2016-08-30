@@ -20,7 +20,7 @@ tags: module
 
 This module saves a persistent representation of a matrix to disk.
 
-### Detailed Description
+**Detailed Description**
 
 Upon opening, the GUI defaults to the directory that the user sets for their SCIRUN_DATA environment variable. 
 

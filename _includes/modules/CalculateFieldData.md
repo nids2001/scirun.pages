@@ -19,7 +19,7 @@ tags: module
 
 This module calculates a new value for each value in the Field data based on a user defined function. This function is based on a series of variables that is available for each data location. Once the function is defined, the module will walk through each data value and apply the function.
 
-### Detailed Description
+**Detailed Description**
 
 This module allows the computation of a new scalar, vector or tensor value for each data location in the Field. The user defined function can depend on a number of variables that are defined for each location:
 

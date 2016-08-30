@@ -20,7 +20,7 @@ tags: module
 
 This module generates samples from any type of input field and outputs the samples as a **PointCloudField** field.
 
-### Detailed Description
+**Detailed Description**
 
 GeneratePointSamplesFromFieldOrWidget generates samples from any type of input field and outputs the samples as a PointCloudField field. The samples can be generated randomly or user selected via a 3D widget. Use the **shift key/left mouse button** combination to manipulate the size (resize cylinders), orientation (spheres on the widgets are rotation points) and position of the widgets. Use the same key/mouse combination to move the slider on the rake widget. Use the **shift key/right mouse button** combination to bring up a dialog box to change widget scale.
 

@@ -21,7 +21,7 @@ tags: module
 
 This module makes a **LatVolField** that fits the source field.
 
-### Detailed Description
+**Detailed Description**
 
 Make a LatVolField that fits the source field. The value type of the LatVolField is the same as that of the input field. If there is no input field specified, then create a unit volume of doubles. The size parameters refer to the number of nodes in the volume, not the number of cells. Thus a 2x2x2 node lattice will only contain one cell.
 

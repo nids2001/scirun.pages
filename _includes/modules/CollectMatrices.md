@@ -20,7 +20,7 @@ tags: module
 
 This module appends/replaces a column or a row in/to a matrix while looping through a network.
 
-### Detailed Description
+**Detailed Description**
 
 This module appends, replaces, or prepends a column or row of a matrix. This module does one of these operations each time the module is executed. Hence, the appending or replacing operation is in time.
 

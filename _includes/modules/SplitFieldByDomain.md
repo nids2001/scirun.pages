@@ -20,7 +20,7 @@ tags: module
 
 This module splits a domain with predefined domains (i.e. label masks) into separate fields.
 
-### Detailed Description
+**Detailed Description**
 
 This module accepts a single input field with predefined domains and splits each domain into separate fields. New fields are output as individual fields, or as a bundle of distinct fields. Up to 8 distinct possible output fields are available per module. If additional splits are needed, the module can be repeated as often as necessary on the final output field port. Domains can be sorted in two ways: **Sort Domains by Size** or **Sort Ascending**. 
 

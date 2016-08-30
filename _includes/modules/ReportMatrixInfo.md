@@ -20,7 +20,7 @@ tags: module
 
 This module reports the attributes of matrices.
 
-### Detailed Description
+**Detailed Description**
 
 ReportMatrixInfo is purely an informational Module. It performs no modification on input data. Upon execution it displays attributes about the input matrix in the UI.
 

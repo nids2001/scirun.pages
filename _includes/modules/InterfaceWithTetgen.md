@@ -20,7 +20,7 @@ tags: module
 
 This module is a port to open and run Tetgen, a delauney tetrahedralization software package, within SCIRun.
 
-### Detailed Description
+**Detailed Description**
 
 InterfaceWithTetgen is a module that will make a tetrahedral mesh from a trisurf mesh or a point cloud. This is the easiest way to turn a surface mesh into a volume in SCIRun. Using delauney tetrahedralization, tetgen will find the tetrahedral mesh that will connect the input points with the highest quality elements, i.e., the element face area are as equal as possible. For more information about tetgen an its capabilities, please refer to the [Tetgen website](http://wias-berlin.de/software/tetgen/).
 

@@ -19,7 +19,7 @@ tags: module
 
 Only Point Clouds are supported at this time. 
 
-### Detailed Description
+**Detailed Description**
 
 
 {% capture url %}{% include url.md %}{% endcapture %}
