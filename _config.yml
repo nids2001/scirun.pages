@@ -25,7 +25,7 @@ sections: [
     ['start', 'Getting Started'],
     ['guide', 'User Guide'],
     ['ref', 'Reference'],
-    ['tut', 'Tutorials'],
+    ['tutorials', 'Tutorials'],
     ['help', 'Help'],
     ['dev', 'Developers'],
     ['post', 'Posts']
