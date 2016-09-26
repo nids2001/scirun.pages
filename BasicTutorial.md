@@ -4,6 +4,8 @@ category: info
 tags: tutorial
 ---
 
+<link rel="stylesheet" href="css/modest.css">
+
 1  SCIRun Overview
 ==================
 
