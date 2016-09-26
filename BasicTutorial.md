@@ -1,3 +1,9 @@
+---
+title: Basic Tutorial
+category: info
+tags: tutorial
+---
+
 1  SCIRun Overview
 ==================
 
@@ -6,7 +12,7 @@ This tutorial demonstrates how to build a simple SCIRun dataflow network.
 1.1  Software requirements
 --------------------------
 
-### 1.1.1  SCIRun 
+### 1.1.1  SCIRun
 
 All available downloads for SCIRun version and the SCIRunData archive are available from [SCI software portal](http://www.scirun.org). Make sure to update to the most up-to-date release available, which will include the latest bug fixes.
 
@@ -64,7 +70,7 @@ Figure 2.7 Manipulate the color scaling using both the CreateStandardColorMaps a
 Return to the default color scale. Use the sliders in the GetSlicesFromStructuredFieldByIndices UI to change slice position within the geometry. Compare with figure 2.6.
 
 <img src="BasicTutorial_figures/sliceselect.png" title="Different cross sections can be visualized within the geometry using GetSlicesFromStructuredFieldbyIndices. " style="width:90.0%" />
-Figure 2.8 Different cross sections can be visualized within the geometry using GetSlicesFromStructuredFieldbyIndices. 
+Figure 2.8 Different cross sections can be visualized within the geometry using GetSlicesFromStructuredFieldbyIndices.
 
 2.2  Show Bounding Box
 ----------------------
