@@ -7,14 +7,14 @@ tags: tutorial
 <link rel="stylesheet" href="css/modest.css">
 
 ## 1  SCIRun Overview
-
+## sample
 This tutorial demonstrates how to build a simple SCIRun dataflow network.
 
-## 1.1  Software requirements
+### 1.1  Software requirements
 
 #### 1.1.1  SCIRun
 
-All available downloads for SCIRun version and the SCIRunData archive are available from [SCI software portal](http://www.https://github.com/SCIInstitute/SCIRun). Make sure to update to the most up-to-date release available, which will include the latest bug fixes.
+All available downloads for SCIRun version and the SCIRunData archive are available from [SCI software portal](https://github.com/SCIInstitute/SCIRun). Make sure to update to the most up-to-date release available, which will include the latest bug fixes.
 
 Currently, the easiest way to get started with SCIRun version is to download and install a binary version for Mac OS X. Sources are also available for Linux, however this option is recommended only for advanced Linux users.
 
@@ -22,7 +22,7 @@ Unpack the SCIRunData archive in a convenient location. Recall from the User Gui
 
 ## 2  Simple Dataflow Network
 
-## 2.1  Slice Field
+### 2.1  Slice Field
 
 The purpose of this section is to read, manipulate, and visualize a structured mesh dataset originating from SCIRunData.
 
@@ -219,4 +219,4 @@ At this point, it will be necessary to map the fields by interpolating the the b
   <figcaption>Figure 3.16 Add a colormap and enable transparency.</figcaption>
 </figure>
 
-Finally, it is not strictly necessary to explicitly convert the original mesh to an unstructured mesh using ConvertMeshToUnstructuredMesh because ClipFieldByFunction can implicitly convert structured mesh types to unstructured mesh types before clipping the field. As a final exercise, delete ConvertMeshToUnstructuredMesh from the network and try to obtain the same result.
+Finally, it is not strictly necessary to explicitly convert the original mesh to an unstructured mesh using ConvertMeshToUnstructuredMesh because ClipFieldByFunction can implicitly convert structured mesh types to unstructured mesh types before clipping the field. As a final exercise, delete ConvertMeshToUnstructuredMesh from the network and try to obtain the same result.[test](#sample)
