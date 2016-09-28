@@ -8,8 +8,6 @@ tags: tutorial
 
 ## 1  SCIRun Overview
 
-## sample
-
 This tutorial demonstrates how to build a simple SCIRun dataflow network.
 
 ### 1.1  Software requirements
@@ -137,10 +135,11 @@ Create and manipulate a structured mesh type in this exercise. Start by creating
 
 ### 3.2  Isosurface
 
-Generate the isosurface by instantiating and connecting an ExtractSimpleIsosurface module to CalculateFieldData (Figure 3.3). Adjust the isovalue within the ExtractSimpleIsosurface UI so that the isosurface can be visualized (Figure 3.4). Add a color map and visualize the isosurface as in [section 2.3](#23-isosurface) (Figure 3.5). Show the mesh bounding box as in [section 2.2](#22-show-bounding-box) (Figure 3.6).
+Generate the isosurface by instantiating and connecting an ExtractSimpleIsosurface module to CalculateFieldData (Figure 3.3). Adjust the isovalue within the ExtractSimpleIsosurface UI so that the isosurface can be visualized (Figure 3.4). Add a color map and visualize the isosurface as in [section 2.3](#isosurface) (Figure 3.5). Show the mesh bounding box as in [section 2.2](#show-bounding-box) (Figure 3.6).
 
 <figure>
-  <img src="BasicTutorial_figures/extractiso2.png" title="Extract an isosurface from the field data."/>
+  <img src="BasicTutorial_figures/extractiso2.png" title="Extract an 
+  from the field data."/>
   <figcaption>Figure 3.3 Extract an isosurface from the field data.</figcaption>
 </figure>
 
@@ -161,7 +160,7 @@ Generate the isosurface by instantiating and connecting an ExtractSimpleIsosurfa
 
 ### 3.3  Slice Field
 
-Extend the functionality of this network by slicing the field using GetSliceFromStructuredFieldByIndices as in [section 2.1.2](#212-slice-field).
+Extend the functionality of this network by slicing the field using GetSliceFromStructuredFieldByIndices as in [section 2.1.2](#slice-field).
 
 <figure>
   <img src="BasicTutorial_figures/getslice2.png" title="Insert GetSliceFromStructuredFieldByIndices into the network."/>
@@ -221,4 +220,4 @@ At this point, it will be necessary to map the fields by interpolating the the b
   <figcaption>Figure 3.16 Add a colormap and enable transparency.</figcaption>
 </figure>
 
-Finally, it is not strictly necessary to explicitly convert the original mesh to an unstructured mesh using ConvertMeshToUnstructuredMesh because ClipFieldByFunction can implicitly convert structured mesh types to unstructured mesh types before clipping the field. As a final exercise, delete ConvertMeshToUnstructuredMesh from the network and try to obtain the same result.[test](#sample)
+Finally, it is not strictly necessary to explicitly convert the original mesh to an unstructured mesh using ConvertMeshToUnstructuredMesh because ClipFieldByFunction can implicitly convert structured mesh types to unstructured mesh types before clipping the field. As a final exercise, delete ConvertMeshToUnstructuredMesh from the network and try to obtain the same result.[test]
