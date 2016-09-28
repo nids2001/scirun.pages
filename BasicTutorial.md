@@ -35,9 +35,10 @@ The purpose of this section is to read, manipulate, and visualize a structured m
 ### 2.1.1  Read Data File
 
 Create a **ReadField** module by using the **Module Selector** on the left hand side of the screen. Navigate to **DataIO** subsection using the scroll bar in the Module Selector and instantiate a ReadField (Figure 2.1). Recall from the **User Guide** that a module can also be selected by giving a text input into the filter in the Module Selector (Figure 2.2).
-
-<img src="BasicTutorial_figures/readfield.png" title="Locate ReadField module using scroll bar in the Module Selector." style="width:80.0%" />
-Figure 2.1 Locate ReadField module using scroll bar in the Module Selector.
+<figure>
+<img src="BasicTutorial_figures/readfield.png" title="Locate ReadField module using scroll bar in the Module Selector.">
+<figcaption>Figure 2.1 Locate ReadField module using scroll bar in the Module Selector.</figcaption>
+</figure>
 
 <img src="BasicTutorial_figures/readfield_text.png" title="Locate ReadField module using text input into filter." style="width:80.0%" />
 Figure 2.2 Locate ReadField module using text input into filter.
