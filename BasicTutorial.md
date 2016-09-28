@@ -77,7 +77,7 @@ Apply a colored scale to the data values on the geometry using **CreateStandardC
   <figcaption>Figure 2.7 Manipulate the color scaling using both the CreateStandardColorMaps and RescaleColorMaps modules.</figcaption>
 </figure>
 
-Return to the default color scale. Use the sliders in the GetSlicesFromStructuredFieldByIndices UI to change slice position within the geometry. Compare with figure 2.6.
+Return to the default color scale. Use the sliders in the GetSlicesFromStructuredFieldByIndices UI to change slice position within the geometry. Compare with <a href="rescale">Figure 2.6.</a>
 
 <figure id="getsclice">
   <img src="BasicTutorial_figures/sliceselect.png" title="Different cross sections can be visualized within the geometry using GetSlicesFromStructuredFieldbyIndices. "/>
@@ -160,7 +160,7 @@ Generate the isosurface by instantiating and connecting an ExtractSimpleIsosurfa
 
 ### 3.3  Slice Field
 
-Extend the functionality of this network by slicing the field using GetSliceFromStructuredFieldByIndices as in [section 2.1.2](#slice-field).
+Extend the functionality of this network by slicing the field using GetSliceFromStructuredFieldByIndices as in [section 2.1.2](#slice-field-2).
 
 <figure id="slicemod2">
   <img src="BasicTutorial_figures/getslice2.png" title="Insert GetSliceFromStructuredFieldByIndices into the network."/>
