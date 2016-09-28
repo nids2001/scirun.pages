@@ -2,6 +2,7 @@
 title: Basic Tutorial
 category: info
 tags: tutorial
+layout: default
 ---
 
 <link rel="stylesheet" href="css/modest.css">
