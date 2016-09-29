@@ -7,21 +7,35 @@ tags: tutorial
 <link rel="stylesheet" href="css/modest.css">
 
 ### Contents
-[1 SCIRun Overview](#1--scirun-overview)
-  [1.1 Software requirements](#11--software-requirements)
-[2 Simple Dataflow Network](#2--simple-dataflow-network)
-  [2.1 Slice-field](#21--slice-field)
-    [2.1.1 Read Data File](#211--read-data-file)
-    [2.1.2 Slice Field](#212--slice-field)
-    [2.1.3 Visualize Field](#213--visualize-field)
-  [2.2 Show Bounding Box](#22--show-bounding-box)
-  [2.3 Isosurface](#23--isosurface)
-[3 Create, Manipulate and Visualize Field](#3--create-manipulate-and-visualize-field)
-  [3.1 Create Field](#31--create-field)
-  [3.2 Isosurface](#32--isosurface)
-  [3.3 Slice Field](#33--slice-field)
-  [3.4 Clip Field](#34--clip-field)
-    [3.4.1 Extract Boundary](#35--extract-boundary)
+[1 SCIRun Overview](#scirun-overview)
+
+  [1.1 Software requirements](#software-requirements)
+
+[2 Simple Dataflow Network](#simple-dataflow-network)
+
+  [2.1 Slice-field](#slice-field)
+
+    [2.1.1 Read Data File](#read-data-file)
+
+    [2.1.2 Slice Field](#slice-field-1)
+
+    [2.1.3 Visualize Field](#visualize-field)
+
+  [2.2 Show Bounding Box](#show-bounding-box)
+
+  [2.3 Isosurface](#isosurface)
+
+[3 Create, Manipulate and Visualize Field](#create-manipulate-and-visualize-field)
+
+  [3.1 Create Field](#create-field)
+
+  [3.2 Isosurface](#isosurface-1)
+
+  [3.3 Slice Field](#slice-field-2)
+
+  [3.4 Clip Field](#clip-field)
+
+    [3.4.1 Extract Boundary](#extract-boundary)
 
 ## 1  SCIRun Overview
 
@@ -177,7 +191,7 @@ Generate the isosurface by instantiating and connecting an ExtractSimpleIsosurfa
 
 ### 3.3  Slice Field
 
-Extend the functionality of this network by slicing the field using GetSliceFromStructuredFieldByIndices as in [section 2.1.2](#212--slice-field).
+Extend the functionality of this network by slicing the field using GetSliceFromStructuredFieldByIndices as in [section 2.1.2](#slice-field-1).
 
 <figure id="slicemod2">
   <img src="BasicTutorial_figures/getslice2.png" title="Insert GetSliceFromStructuredFieldByIndices into the network."/>
