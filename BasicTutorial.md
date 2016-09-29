@@ -10,7 +10,7 @@ tags: tutorial
 [1 SCIRun Overview](#scirun-overview)  
 ⋅⋅[1.1 Software requirements](#software-requirements)   
 [2 Simple Dataflow Network](#simple-dataflow-network)  
-⋅⋅[2.1 Slice-field](#slice-field)  
+⋅⋅[2.1 Slice Field](#slice-field)  
 ⋅⋅⋅⋅[2.1.1 Read Data File](#read-data-file)  
 ⋅⋅⋅⋅[2.1.2 Slice Field](#slice-field-1)  
 ⋅⋅⋅⋅[2.1.3 Visualize Field](#visualize-field)  
@@ -38,6 +38,7 @@ Currently, the easiest way to get started with SCIRun version is to download and
 Unpack the SCIRunData archive in a convenient location. Recall from the User Guide that the path to data can be set using the environment variable or by setting in the *.scirunrc* file.
 
 ## 2  Simple Dataflow Network
+**Scope: [Read Data File](#read-data-file) - [Slice](slice-field-1) - [Visualize](#visualize-field) - [Bounding Box](#show-bounding-box) - [Isosurface](#isosurface)**
 
 ### 2.1  Slice Field
 
@@ -94,7 +95,7 @@ Apply a colored scale to the data values on the geometry using **CreateStandardC
   <figcaption>Figure 2.7 Manipulate the color scaling using both the CreateStandardColorMaps and RescaleColorMaps modules.</figcaption>
 </figure>
 
-Return to the default color scale. Use the sliders in the GetSlicesFromStructuredFieldByIndices UI to change slice position within the geometry. Compare with <a href="rescale">Figure 2.6.</a>
+Return to the default color scale. Use the sliders in the GetSlicesFromStructuredFieldByIndices UI to change slice position within the geometry. Compare with <a href="#rescale">Figure 2.6.</a>
 
 <figure id="getsclice">
   <img src="BasicTutorial_figures/sliceselect.png" title="Different cross sections can be visualized within the geometry using GetSlicesFromStructuredFieldbyIndices. "/>
@@ -135,6 +136,7 @@ Construct an isosurface from the field by instantiating and connecting a **Extra
 </figure>
 
 ## 3  Create, Manipulate and Visualize Field
+**Scope: [Generate Lattice Volume](#create-field) [Isosurface](#isosurface-1) Visualize Geometry**
 
 ### 3.1  Create Field
 
