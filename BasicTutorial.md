@@ -196,7 +196,7 @@ Extend the functionality of this network by slicing the field using GetSliceFrom
 
 ### 3.4  Clip Field
 
-Clip out a subset of the original field by converting the lattice volume to an unstructured mesh using **ConvertMeshToUnstructuredMesh** (<a href="#clipfieldfunc">Figure 3.10</a>) and adding **ClipFieldByFunction** (<a href="#convertmesh">Figure 3.11</a>) to the network. Set the clipping location setting in ClipFieldByFunction to *all nodes*. Use the expression *D**A**T**A*1 &gt; 1&&*X* &lt; 0 to clip the field (<a href="#clipfield">Figure 3.12</a>).
+Clip out a subset of the original field by converting the lattice volume to an unstructured mesh using **ConvertMeshToUnstructuredMesh** (<a href="#clipfieldfunc">Figure 3.10</a>) and adding **ClipFieldByFunction** (<a href="#convertmesh">Figure 3.11</a>) to the network. Set the clipping location setting in ClipFieldByFunction to *all nodes*. Use the expression *DATA1 &gt; 1&&X &lt; 0* to clip the field (<a href="#clipfield">Figure 3.12</a>).
 
 <figure id="clipfieldfunc">
   <img src="BasicTutorial_figures/convertmesh.png" title="Convert the original field to an unstructured mesh."/>
