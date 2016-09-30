@@ -140,7 +140,9 @@ Construct an isosurface from the field by instantiating and connecting a **Extra
 
 ### 3.1  Create Field
 
-Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression *RESULT = sqrt(X \* X + Y \* Y + Z \* Z)* to compute data for each node within the CreateFieldData UI.
+Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression 
+
+_RESULT = sqrt(X \* X + Y \* Y + Z \* Z)_ to compute data for each node within the CreateFieldData UI.
 
 <figure id="createnewfield">
   <img src="BasicTutorial_figures/create.png" title="Create lattice volume field using CreateLatVol module."/>
@@ -198,7 +200,7 @@ Extend the functionality of this network by slicing the field using GetSliceFrom
 
 ### 3.4  Clip Field
 
-Clip out a subset of the original field by converting the lattice volume to an unstructured mesh using **ConvertMeshToUnstructuredMesh** (<a href="#clipfieldfunc">Figure 3.10</a>) and adding **ClipFieldByFunction** (<a href="#convertmesh">Figure 3.11</a>) to the network. Set the clipping location setting in ClipFieldByFunction to *all nodes*. Use the expression *DATA1 &gt; 1&&X &lt; 0* to clip the field (<a href="#clipfield">Figure 3.12</a>).
+Clip out a subset of the original field by converting the lattice volume to an unstructured mesh using **ConvertMeshToUnstructuredMesh** (<a href="#clipfieldfunc">Figure 3.10</a>) and adding **ClipFieldByFunction** (<a href="#convertmesh">Figure 3.11</a>) to the network. Set the clipping location setting in ClipFieldByFunction to *all nodes*. Use the expression _DATA1 &gt; 1&&X &lt; 0_ to clip the field (<a href="#clipfield">Figure 3.12</a>).
 
 <figure id="clipfieldfunc">
   <img src="BasicTutorial_figures/convertmesh.png" title="Convert the original field to an unstructured mesh."/>
