@@ -38,7 +38,7 @@ Currently, the easiest way to get started with SCIRun version is to download and
 Unpack the SCIRunData archive in a convenient location. Recall from the User Guide that the path to data can be set using the environment variable or by setting in the *.scirunrc* file.
 
 ## 2  Simple Dataflow Network
-**Scope: [Read Data File](#read-data-file) - [Slice](slice-field-1) - [Visualize](#visualize-field) - [Bounding Box](#show-bounding-box) - [Isosurface](#isosurface)**
+**Scope: [Read Data File](#read-data-file) - [Slice](#slice-field-1) - [Visualize](#visualize-field) - [Bounding Box](#show-bounding-box) - [Isosurface](#isosurface)**
 
 ### 2.1  Slice Field
 
@@ -140,7 +140,7 @@ Construct an isosurface from the field by instantiating and connecting a **Extra
 
 ### 3.1  Create Field
 
-Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression *R**E**S**U**L**T* = *s**q**r**t*(*X* \* *X* + *Y* \* *Y* + *Z* \* *Z*) to compute data for each node within the CreateFieldData UI.
+Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression *RESULT = sqrt(X \* X + Y \* Y + Z \* Z)* to compute data for each node within the CreateFieldData UI.
 
 <figure id="createnewfield">
   <img src="BasicTutorial_figures/create.png" title="Create lattice volume field using CreateLatVol module."/>
