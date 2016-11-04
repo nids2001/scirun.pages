@@ -1,8 +1,4 @@
----
-layout: default
-category: info
-title: Title
----
+--- layout: default category: info title: ThisisaTest ---
 
 {{page.title}}
 ==============
@@ -22,7 +18,11 @@ This is an arbitrary image.
 </figcaption>
 </figure>
 Add inline $J = -\\int(\\sigma(\\nabla\\phi + \\frac{dA}{dt}))$
-*J* = −∫(*σ*(∇*ϕ*)) *i**n**t**x*<sup>6</sup>*d**x*
+
+*J* = −∫(*σ*(∇*ϕ*))
+
+∫*x*<sup>6</sup>*d**x*
+
 $J = -\\int(\\sigma(\\nabla\\phi + \\frac{dA}{dt}))$
 <a name="equation"></a>
 
