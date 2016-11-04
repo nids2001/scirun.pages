@@ -1,4 +1,8 @@
---- layout: default category: info title: ThisisaTest ---
+---  
+layout: default  
+category: info  
+title: ThisisaTest  
+---
 
 {{page.title}}
 ==============
