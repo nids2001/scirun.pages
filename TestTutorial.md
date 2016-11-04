@@ -1,3 +1,9 @@
+---
+layout: default
+category: info
+title: Title
+---
+
 {{page.title}}
 ==============
 
@@ -15,8 +21,10 @@ Graphics
 This is an arbitrary image.
 </figcaption>
 </figure>
-$$J = -\\int(\\sigma(\\nabla\\phi + \\frac{dA}{dt}))$$
- <a name="equation"></a>
+Add inline $J = -\\int(\\sigma(\\nabla\\phi + \\frac{dA}{dt}))$
+*J* = −∫(*σ*(∇*ϕ*)) *i**n**t**x*<sup>6</sup>*d**x*
+$J = -\\int(\\sigma(\\nabla\\phi + \\frac{dA}{dt}))$
+<a name="equation"></a>
 
 And now I need many lines to see if the anchors actually work
 
