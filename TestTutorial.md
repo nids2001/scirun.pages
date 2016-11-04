@@ -15,7 +15,8 @@ Graphics
 This is an arbitrary image.
 </figcaption>
 </figure>
-( J = -((+ )) )<a name="equation"></a>
+$$J = -\\int(\\sigma(\\nabla\\phi + \\frac{dA}{dt}))$$
+ <a name="equation"></a>
 
 And now I need many lines to see if the anchors actually work
 
