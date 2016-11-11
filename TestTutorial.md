@@ -28,6 +28,8 @@ Graphics
 
 $$\frac{\partial\Phi}{\partial n}\bar_\Omega = 0$$
 
+$$y(p,t) = \int_{x} \mathbf{A}_{p,x}u(t-\tau(x))\,dx$$
+
 $$\Theta$$
 
 And now I need many lines to see if the anchors actually work
