@@ -3,11 +3,6 @@ layout: default
 category: info  
 title: ThisisaTest  
 ---
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
 <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 {{page.title}}
@@ -29,7 +24,7 @@ Graphics
 </figure>
 <a name="equation"></a>
 
-$\frac{\partial\Phi}{\partial n}\bar_\Omega = 0
+$\frac{\partial\Phi}{\partial n}\bar_\Omega = 0$
 
 
 And now I need many lines to see if the anchors actually work
