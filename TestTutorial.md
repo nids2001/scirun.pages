@@ -3,6 +3,12 @@ layout: default
 category: info  
 title: ThisisaTest  
 ---
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 {{page.title}}
 ==============
@@ -10,7 +16,7 @@ title: ThisisaTest
 This demo hopes to include all possible functions necessary for the
 documentation of SCIRun. Including but not limited to referencing
 [figures](#readfield), [equations](#equation), [sections](#graphics),
-and inline *θ*
+and inline \(\theta\)
 
 Graphics
 --------
@@ -23,10 +29,8 @@ Graphics
 </figure>
 <a name="equation"></a>
 
-*J* = −∫(*σ*(∇*ϕ*))
+$\frac{\partial\Phi}{\partial n}\bar_\Omega = 0
 
-∫*x*<sup>6</sup>*d**x*
-∇ ̄Ω
 
 And now I need many lines to see if the anchors actually work
 
