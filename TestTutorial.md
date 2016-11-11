@@ -3,7 +3,9 @@ layout: default
 category: info  
 title: ThisisaTest  
 ---
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
 
 {{page.title}}
 ==============
@@ -24,8 +26,9 @@ Graphics
 </figure>
 <a name="equation"></a>
 
-$\frac{\partial\Phi}{\partial n}\bar_\Omega = 0$
+$$\frac{\partial\Phi}{\partial n}\bar_\Omega = 0$$
 
+$$\Theta$$
 
 And now I need many lines to see if the anchors actually work
 
