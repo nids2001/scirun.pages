@@ -19,7 +19,7 @@ Graphics
 --------
 
 <figure id="readfield">
-<img src="BasicTutorial_figures/Equation2.6.png" title="not relavent">
+<img src="BasicTutorial_figures/readfield.png" title="not relavent">
 <figcaption>
 (2.6)
 </figcaption>
@@ -64,7 +64,7 @@ $$(\mathbf{A}^T\mathbf{A}+\lambda
 $$
 
 And now I need many lines to see if the anchors actually work
-This guy had a citation idea.[^fn1]
+This guy had a citation idea.[1](#1)
 
 And now I need many lines to see if the anchors actually work
 
@@ -125,6 +125,8 @@ This demo hopes to include all possible functions necessary for the
 documentation of SCIRun. Including but not limited to referencing
 [figures](#readfield), [equations](#equation), [sections](#graphics),
 and inline
-[^fn1]: So Chris Krycho, "Not Exactly a Millennium," chriskrycho.com, July 22,
+
+##References <a name="1"></a>
+\[1\]: So Chris Krycho, "Not Exactly a Millennium," chriskrycho.com, July 22,
     2015, http://www.chriskrycho.com/2015/not-exactly-a-millennium.html
     (accessed July 25, 2015), ¶6.
