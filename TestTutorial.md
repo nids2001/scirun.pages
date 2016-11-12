@@ -1,7 +1,7 @@
 ---  
 layout: default  
 category: info  
-title: ThisisaTest  
+title: This is a Test  
 ---
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
@@ -13,7 +13,7 @@ title: ThisisaTest
 This demo hopes to include all possible functions necessary for the
 documentation of SCIRun. Including but not limited to referencing
 [figures](#readfield), [equations](#equation), [sections](#graphics),
-and inline \(\theta\)
+and inline \[\theta\]
 
 Graphics
 --------
