@@ -13,7 +13,7 @@ title: This is a Test
 This demo hopes to include all possible functions necessary for the
 documentation of SCIRun. Including but not limited to referencing
 [figures](#readfield), [equations](#equation), [sections](#graphics),
-and inline \[\theta\]
+and inline $$\theta$$
 
 Graphics
 --------
