@@ -18,7 +18,7 @@ and inline \(\theta\)
 Graphics
 --------
 
-<figure id="eqn26">
+<figure id="readfield">
 <img src="BasicTutorial_figures/Equation2.6.png" title="not relavent">
 <figcaption>
 (2.6)
@@ -26,11 +26,42 @@ Graphics
 </figure>
 <a name="equation"></a>
 
-$$\frac{\partial\Phi}{\partial n}\bar_\Omega = 0$$
+$$\frac{\partial \Phi}{\partial n} \bar_\Omega = 0$$
+
+<a name="equation"></a>
 
 $$y(p,t) = \int_{x} \mathbf{A}_{p,x}u(t-\tau(x))\,dx$$
 
 $$\Theta$$
+
+$$\mathbf{A}^T\mathbf{A}+\lambda
+\mathbf{L}^T\mathbf{W}_{\beta}(\mathbf{x})\mathbf{L}) \mathbf{x} =
+\mathbf{A}^T\mathbf{y}$$
+
+$$\mathbf{W}_{\beta}(u) = \frac{1}{2} \mbox{diag} \left[ 1 / \sqrt{|[\mathbf{L}\mathbf{x}]_i|^2 + \beta^2}\right]$$
+
+$$\begin{split}
+                \min_{x(t), t=1\dots T} &\|y(t) - Ax(t)\|_2^2 + \lambda*\|Rx(t)\|_2^2 \\
+                &s.t.\\
+                &\hspace{2cm}x(1) >= minB\\
+        &\hspace{2cm}x(t+1) >= x(t), \hspace{.2cm}t=1\dots T-1\\
+        &\hspace{2cm}x(T) <= maxB
+\end{split}
+$$
+
+$$\nabla \cdot (\BM{\sigma} \nabla \Phi) = 0,$$
+
+$$ \bar{\Phi}(x,y,z) = \sum_i \Phi_i
+N_i(x,y,z), $$
+
+$$\sum_i \Phi_i \int_{\Omega - \bar{\Omega} -
+\bar{\Omega}_k} \mathbf{\sigma} \nabla N_i \nabla N_j \, d\mathbf{V} = 0. $$
+
+$$\mathbf{W}_{\beta}(u) = \frac{1}{2} \mbox{diag} \left[ 1 / \sqrt{|[\mathbf{L}\mathbf{x}]_i|^2 + \beta^2}\right]$$
+$$(\mathbf{A}^T\mathbf{A}+\lambda
+\mathbf{L}^T\mathbf{W}_{\beta}(\mathbf{x})\mathbf{L}) \mathbf{x} =
+\mathbf{A}^T\mathbf{y}
+$$
 
 And now I need many lines to see if the anchors actually work
 
