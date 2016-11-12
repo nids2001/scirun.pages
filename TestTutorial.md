@@ -26,7 +26,7 @@ Graphics
 </figure>
 <a name="equation"></a>
 
-$$\frac{\partial \Phi}{\partial n} \bar_\Omega = 0$$
+$$\frac{\partial \Phi}{\partial n}\bar\Omega = 0$$
 
 <a name="equation"></a>
 
@@ -49,7 +49,7 @@ $$\begin{split}
 \end{split}
 $$
 
-$$\nabla \cdot (\BM{\sigma} \nabla \Phi) = 0,$$
+$$\nabla \cdot (\mathbf{\sigma} \nabla \Phi) = 0,$$
 
 $$ \bar{\Phi}(x,y,z) = \sum_i \Phi_i
 N_i(x,y,z), $$
@@ -64,6 +64,7 @@ $$(\mathbf{A}^T\mathbf{A}+\lambda
 $$
 
 And now I need many lines to see if the anchors actually work
+This guy had a citation idea.[^fn1]
 
 And now I need many lines to see if the anchors actually work
 
@@ -124,3 +125,6 @@ This demo hopes to include all possible functions necessary for the
 documentation of SCIRun. Including but not limited to referencing
 [figures](#readfield), [equations](#equation), [sections](#graphics),
 and inline
+[^fn1]: So Chris Krycho, "Not Exactly a Millennium," chriskrycho.com, July 22,
+    2015, http://www.chriskrycho.com/2015/not-exactly-a-millennium.html
+    (accessed July 25, 2015), ¶6.
