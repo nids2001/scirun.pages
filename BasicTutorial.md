@@ -4,6 +4,9 @@ category: info
 tags: tutorial
 ---
 
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
 <link rel="stylesheet" href="css/modest.css">
 
 ### Contents
@@ -38,7 +41,7 @@ Currently, the easiest way to get started with SCIRun version is to download and
 Unpack the SCIRunData archive in a convenient location. Recall from the User Guide that the path to data can be set using the environment variable or by setting in the *.scirunrc* file.
 
 ## 2  Simple Dataflow Network
-**Scope: [Read Data File](#read-data-file) - [Slice](#slice-field-1) - [Visualize](#visualize-field) - [Bounding Box](#show-bounding-box) - [Isosurface](#isosurface)**
+**Scope: [Read Data File](#read-data-file) - [Slice](slice-field-1) - [Visualize](#visualize-field) - [Bounding Box](#show-bounding-box) - [Isosurface](#isosurface)**
 
 ### 2.1  Slice Field
 
@@ -140,9 +143,11 @@ Construct an isosurface from the field by instantiating and connecting a **Extra
 
 ### 3.1  Create Field
 
-Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression 
-
-_RESULT = sqrt(X \* X + Y \* Y + Z \* Z)_ to compute data for each node within the CreateFieldData UI.
+<<<<<<< HEAD
+Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression $$RESULT = sqrt(X * X + Y * Y + Z * Z)$$ to compute data for each node within the CreateFieldData UI.
+=======
+Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression *R**E**S**U**L**T* = *s**q**r**t*(*X* \* *X* + *Y* \* *Y* + *Z* \* *Z*) to compute data for each node within the CreateFieldData UI.
+>>>>>>> parent of 331bc8a... should fix equations
 
 <figure id="createnewfield">
   <img src="BasicTutorial_figures/create.png" title="Create lattice volume field using CreateLatVol module."/>
