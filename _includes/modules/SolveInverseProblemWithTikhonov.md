@@ -1,9 +1,9 @@
 ---
 title: SolveInverseProblemWithTikhonov
-category: moduledocs  
+category: moduledocs
 module:
   category: Inverse
-  package: SCIRun  
+  package: SCIRun
 tags: module
 
 ---
