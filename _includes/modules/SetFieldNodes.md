@@ -2,7 +2,7 @@
 title: SetFieldNodes
 category: moduledocs
 module:
-  category: NewField
+  category: ChangeMesh  
   package: SCIRun
 tags: module
 
