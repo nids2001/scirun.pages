@@ -40,10 +40,10 @@ The GUI for this module is used to define the solution method for the module and
 
 The Methods tab allows the user to select one of four solution algorithms for numerically solving sparse systems of linear equations:
 
-# Conjugate gradient
-# Biconjugate gradient
-# Jacobi
-# MINRES
+1. Conjugate gradient
+2. Biconjugate gradient
+3. Jacobi
+4. MINRES
 
 Each solution method comes with the option of choosing a preconditioner for the numerical solution algorithm, which is set with the Preconditioners tab:
 

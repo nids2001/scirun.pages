@@ -2,10 +2,10 @@
 title: SetFieldNodes
 category: moduledocs
 module:
-  category: ChangeMesh  
+  category: ChangeMesh
   package: SCIRun
 tags: module
-authours:Jeroen Stinstra
+authors: Jeroen Stinstra
 ---
 
 # {{ page.title }}
