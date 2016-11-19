@@ -143,11 +143,7 @@ Construct an isosurface from the field by instantiating and connecting a **Extra
 
 ### 3.1  Create Field
 
-<<<<<<< HEAD
 Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression $$RESULT = sqrt(X * X + Y * Y + Z * Z)$$ to compute data for each node within the CreateFieldData UI.
-=======
-Create and manipulate a structured mesh type in this exercise. Start by creating a lattice volume using **CreateLatVol** module. Assign data at nodes using **CalculateFieldData** module. Connect CalculateFieldData to CreateLatVol. Input the expression *R**E**S**U**L**T* = *s**q**r**t*(*X* \* *X* + *Y* \* *Y* + *Z* \* *Z*) to compute data for each node within the CreateFieldData UI.
->>>>>>> parent of 331bc8a... should fix equations
 
 <figure id="createnewfield">
   <img src="BasicTutorial_figures/create.png" title="Create lattice volume field using CreateLatVol module."/>
