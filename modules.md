@@ -4,6 +4,10 @@ category: info
 tags: module
 ---
 
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
 <link rel="stylesheet" href="css/modest.css">
 
 <script type="text/javascript">
