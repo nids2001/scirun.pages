@@ -32,11 +32,11 @@ The second output port returns the number of iterations required to reach conver
 
 The GUI for this module is used to define the solution method for the module and monitor the convergence towards the solution.
 
-[[File:Sls.png]]
+![alt text]({{ site.github.url}}/images/module_images/Sls.png)
 
 #### Methods Tab 
 
-[[File:Methods.png]]
+![alt text]({{ site.github.url}}/images/module_images/Methods.png)
 
 The Methods tab allows the user to select one of four solution algorithms for numerically solving sparse systems of linear equations:
 
@@ -47,7 +47,7 @@ The Methods tab allows the user to select one of four solution algorithms for nu
 
 Each solution method comes with the option of choosing a preconditioner for the numerical solution algorithm, which is set with the Preconditioners tab:
 
-[[File:Precond.png]]
+![alt text]({{ site.github.url}}/images/module_images/Precond.png)
 
 At present, only the Jacobi preconditioner is available. 
 However, there is the option of using no preconditioning.
@@ -57,7 +57,7 @@ However, there is the option of using no preconditioning.
 The next section of the GUI sets up the convergence criteria for the numerical
 solution.
 
-[[File:Setup.png]]
+![alt text]({{ site.github.url}}/images/module_images/Setup.png)
 
 To achieve convergence of the numerical solution, the norm of the residual must be less than the target error as given in the slider.
 The next slider sets the maximum number of iterations that are allowed to achieve solution.
@@ -75,7 +75,7 @@ Alternatively, to stop a diverging, or at least non-converging, simulation the T
 
 The bottom section of the GUI shows how the solution is progressing.
 
-[[File:Solution.png]]
+![alt text]({{ site.github.url}}/images/module_images/Solution.png)
 
 There is an iteration counter to show how many iterations have been completed, the value of the original error (this will be 1.0 unless the  **Use the previous solution as initial guess** option has been used) and thevalue of the current error.
 These quantities are summarised graphically in the convergence plot.
