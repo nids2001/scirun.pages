@@ -48,7 +48,7 @@ If no input is given, the identity matrix will be used.
 
 IMPORTANT: Both, residual constraint as well as the solution constraint matrix can be used in single matrix form (such as $$L$$ and $$R$$) in the minimization problem or as a squared matrix version (such as $$L^T L$$ and $$R^T R$$) respectively. This option must be properly selected by the user in the UI:
 
-![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_lcurve_reg_subcases.png)
+[[Image:Tikhonov_gui_lcurve_reg_subcases.png]]
 
 #### Output
 
@@ -57,7 +57,7 @@ IMPORTANT: Both, residual constraint as well as the solution constraint matrix c
 2. Regularization parameter, $$ \lambda $$: used regularization parameter.
 
 3. Regularized inverse matrix, $$G$$: linear inverse operator that gives a solution estimate equation $$\hat{x} = G y$$. It actual value depends on the selected formulation (underdetermined or overdetermined) and requires the inversion of a matrix. It is only calculated if this port is connected to another module's input port.
-The user can select between the formulations using the module GUI (see section [Computation](#computation)).
+The user can select between the formulations using the module GUI (see section [[Computation](#computation)).
 
 * underdetermined:
 
@@ -67,7 +67,7 @@ $$G=RR^TA^T (ARR^TA^T + \lambda LL^T)^{-1}$$
 
 $$G=(A^TL^TLA + \lambda R^TR)^{-1}A^TL^TL$$
 
-#### Computation <a name="computation"></a>
+#### Computation
 
 The algorithm has two different ways of computing the solution: the underdetermined and the overdetermined formulations.
 To choose which one will be solved the module has three options:
@@ -78,7 +78,7 @@ To choose which one will be solved the module has three options:
 
 These options are presented in the GUI as follows:
 
-![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_lcurve_reg_cases.png)
+[[Image:Tikhonov_gui_lcurve_reg_cases.png]]
 
 Both cases use Gaussian elimination to calculate the unknown $$\hat{x}$$, but they differ in the equations to solve for:
 
@@ -98,19 +98,19 @@ The available options are:
 
 * Fix $$ \lambda $$ manually.
 
-![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_enter_val.png)
+[[Image:Tikhonov_gui_enter_val.png|680px]]
 
-* Automatic selection of $$ \lambda $$: the corner of the L-curve is determined by maximal curvature. A number of regularization parameter points (different $$ \lambda $$ values) can be specified in the L-curve plot which are than equally distributed over the range ("Lambda Range", see below) of $$ \lambda$$'s to be used in the L-curve computation. 
+* Automatic selection of $$ \lambda $$: the corner of the L-curve is determined by maximal curvature. A number of regularization parameter points (different $$ \lambda $$ values) can be specified in the L-curve plot which are than equally distributed over the range ("Lambda Range", see below) of $$ \lambda's $$ to be used in the L-curve computation. 
 
-![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_lcurve_plot.png)
+[[Image:Tikhonov_gui_lcurve_plot.png|680px]]
 
 * Fix $$ \lambda $$ manually based on the range of regularization parameters ($$ \lambda $$) specified by the "Lambda Range" input.
 
-![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_slider.png)
+[[Image:Tikhonov_gui_slider.png]]
 
 For the options that use the L-curve, the user can define the range and step size in the UI:
 
-![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_lcurve_range.png)
+[[Image:Tikhonov_gui_lcurve_range.png‎]]
 
 
 {% capture url %}{% include url.md %}{% endcapture %}
