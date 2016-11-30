@@ -2,7 +2,7 @@
 title: GetSliceFromStructuredFieldbByIndices
 category: moduledocs
 module:
-  category: NewField
+  category: New Field
   package: SCIRun
 tags: module
 

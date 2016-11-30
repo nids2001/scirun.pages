@@ -2,7 +2,7 @@
 title: InsertFieldsIntoBundle
 category: moduledocs
 module:
-  category: Bundle
+  category: Math
   package: SCIRun
 tags: module
 
