@@ -1,5 +1,5 @@
 ---
-title: GetSliceFromStructuredFieldbByIndices
+title: GetSliceFromStructuredFieldByIndices
 category: moduledocs
 module:
   category: NewField
