@@ -1,7 +1,10 @@
 ---
 title: InsertStringsIntoBundle
 category: moduledocs
-tags: modules
+module:
+  category: Bundle
+  package: SCIRun
+tags: module
 
 ---
 
