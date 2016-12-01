@@ -41,7 +41,7 @@ Currently, the easiest way to get started with SCIRun version is to download and
 Unpack the SCIRunData archive in a convenient location. Recall from the User Guide that the path to data can be set using the environment variable or by setting in the *.scirunrc* file.
 
 ## 2  Simple Dataflow Network
-**Scope: [Read Data File](#read-data-file) - [Slice](slice-field-1) - [Visualize](#visualize-field) - [Bounding Box](#show-bounding-box) - [Isosurface](#isosurface)**
+**Scope: [Read Data File](#read-data-file) - [Slice](#slice-field-1) - [Visualize](#visualize-field) - [Bounding Box](#show-bounding-box) - [Isosurface](#isosurface)**
 
 ### 2.1  Slice Field
 
