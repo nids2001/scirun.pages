@@ -75,8 +75,6 @@ Alternatively, to stop a diverging, or at least non-converging, simulation the T
 
 The bottom section of the GUI shows how the solution is progressing.
 
-![alt text]({{ site.github.url}}/images/module_images/Solution.png)
-
 There is an iteration counter to show how many iterations have been completed, the value of the original error (this will be 1.0 unless the  **Use the previous solution as initial guess** option has been used) and thevalue of the current error.
 These quantities are summarised graphically in the convergence plot.
 

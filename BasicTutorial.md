@@ -9,8 +9,6 @@ tags: tutorial
 </script>
 <link rel="stylesheet" href="css/modest.css">
 
-{% capture contents%}{%include counter.md%}{%endcapture%}{{contents}}
-
 ### Contents
 [1 SCIRun Overview](#scirun-overview)  
 ⋅⋅[1.1 Software requirements](#software-requirements)   

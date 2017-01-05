@@ -102,8 +102,6 @@ The available options are:
 
 * Automatic selection of $$ \lambda $$: the corner of the L-curve is determined by maximal curvature. A number of regularization parameter points (different $$ \lambda $$ values) can be specified in the L-curve plot which are than equally distributed over the range ("Lambda Range", see below) of $$ \lambda $$'s to be used in the L-curve computation. 
 
-![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_lcurve_plot.png)
-
 * Fix $$ \lambda $$ manually based on the range of regularization parameters ($$ \lambda $$) specified by the "Lambda Range" input.
 
 ![alt text]({{ site.github.url}}/images/module_images/Tikhonov_gui_slider.png)
