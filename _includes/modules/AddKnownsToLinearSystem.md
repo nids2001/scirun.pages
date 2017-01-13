@@ -5,7 +5,7 @@ module:
   category: Math
   package: SCIRun
 tags: module
-layout: default
+layout: null
 ---
 
 # {{ page.title }}
