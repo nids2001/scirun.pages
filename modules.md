@@ -2,6 +2,7 @@
 title: SCIRun Module Documentation
 category: info
 tags: module
+layout: null
 ---
 
 <script type="text/javascript" async
