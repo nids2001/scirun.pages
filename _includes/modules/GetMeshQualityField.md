@@ -31,7 +31,7 @@ Jacobian/Scaled Jacobian -- Jacobian and Scaled Jacobian are based on accepted m
 ```
 
 The minimal determinant of these matrices for each node of an element is known as the 'Jacobian' of the element. (Callahan et al. 2009)
-For more information refer to [http://cubit.sandia.gov/verdict.html](http://cubit.sandia.gov/verdict.html).
+For more information refer to [https://cubit.sandia.gov/public/verdict.html](https://cubit.sandia.gov/public/verdict.html).
 
 Volume -- Returns the volume of each element.
 
