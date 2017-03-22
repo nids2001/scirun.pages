@@ -69,7 +69,7 @@ div.hidden {
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
   {% if pageitems[0] %}
-### {{ pageitems[0] }}
+### <a id="{{ pageitems[0] | strip }}"></a>{{ pageitems[0] }}
     {% for item in pageitems %}
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
