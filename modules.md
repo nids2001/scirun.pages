@@ -2,7 +2,12 @@
 title: SCIRun Module Documentation
 category: info
 tags: module
+layout: null
 ---
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
 
 <link rel="stylesheet" href="css/modest.css">
 
@@ -64,7 +69,7 @@ div.hidden {
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
   {% if pageitems[0] %}
-### {{ pageitems[0] }}
+### <a id="{{ pageitems[0] | strip }}"></a>{{ pageitems[0] }}
     {% for item in pageitems %}
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}

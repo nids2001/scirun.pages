@@ -1,8 +1,8 @@
 ---
-title: GetSliceFromStructuredFieldbByIndices
+title: GetSliceFromStructuredFieldByIndices
 category: moduledocs
 module:
-  category: New Field
+  category: NewField
   package: SCIRun
 tags: module
 
