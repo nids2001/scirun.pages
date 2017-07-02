@@ -25,13 +25,13 @@ Compare one or two matrices using boolean operators, and send different outputs,
 The BooleanCompare module will evaluate one or two input matrices and return different results based ont the evaluation.  The module will evaluate either the values, size, or norm of each of the matrices with boolean operations, and can return any one of three inputs, as well as quit SCIRun. The inputs will be compared element by element based on the criteria chosen in the Condition option and perform the actions chosen in the Then option if true and Else option if false.  Module also send the result of the comparison as the seond output matrix.  
 
 **Inputs** 
-MatrixA - (Required) First matrix for comparison.
-MatrixB - (Optional) Second matrix for comparison.  If this port is not used, most of the comparsion options will not be possible.  
+- MatrixA - (Required) First matrix for comparison.
+- MatrixB - (Optional) Second matrix for comparison.  If this port is not used, most of the comparsion options will not be possible.  
 PossibleOutput - (Optional) Possible matrix to send as an output to the module.  
 
 **Outputs**
-OutputMatrix - The output matrix of the module.  This will be identical to one of the three inputs of the module, or will be null depending on the inputs and options of the module. 
-BooleanResult - Matrix of 1x1 containing either 1 or 0 indicating the result of the boolean comparison performed by the module. 
+- OutputMatrix - The output matrix of the module.  This will be identical to one of the three inputs of the module, or will be null depending on the inputs and options of the module. 
+- BooleanResult - Matrix of 1x1 containing either 1 or 0 indicating the result of the boolean comparison performed by the module. 
 
 **Options**
 Any combination of the values (default), size, and norm (except a size and norm) of the first two input matrices can be compared as long as the resulting size of the objects are the same.  The size of one matrix can be compared to the values of the other matrix if it has two entries. Likewise, the norm of one matrix can only be compared to the value of another matrix if it is 1x1.  
