@@ -34,6 +34,7 @@ PossibleOutput - (Optional) Possible matrix to send as an output to the module.
 - BooleanResult - Matrix of 1x1 containing either 1 or 0 indicating the result of the boolean comparison performed by the module. 
 
 **Options**
+
 Any combination of the values (default), size, and norm (except a size and norm) of the first two input matrices can be compared as long as the resulting size of the objects are the same.  The size of one matrix can be compared to the values of the other matrix if it has two entries. Likewise, the norm of one matrix can only be compared to the value of another matrix if it is 1x1.  
 
 The condition option sets the method of comparing the input matrices.  If the operator is true, then the module will result in the action chosen in the Then_Option menu, and if false it will perform the action selected in the Else_Option menu.  Operator options are: 
