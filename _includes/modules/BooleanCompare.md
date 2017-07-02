@@ -46,7 +46,8 @@ The condition option sets the method of comparing the input matrices.  If the op
 - 'A is equal to B (==)' -  true if all the entries of A are the same as B.
 - 'A is less than B (<)' -  true if entries of A are less than B's.
 - 'A is less than or equal to B (<=)' - true if entries of A are less than or equal to B's.
-There can be ambiguous scenarios with the greater or equal, greater, less, less or equal options in the module.  In these cases, ie, if there are a set of entries which are both less than and greater than, the number of entries and the magnitude of the difference will determine which input is greater or less.  Consider comparing the matrix norms to avoid ambiguity of the results.  If there is no second matrix input, the first matrix can only be evaluated by non-zero entries (or size or norm) of the matrix.  
+
+There can be ambiguous scenarios with the greater or equal, greater, less, less or equal options in the module if the input matrices have a size of more than one.  In these cases, ie, if there are a set of entries which are both less than and greater than, the number of entries and the magnitude of the difference will determine which input is greater or less.  Consider comparing the matrix norms to avoid ambiguity of the results.  If there is no second matrix input, the first matrix can only be evaluated by non-zero entries (or size or norm) of the matrix.  
 
 The results options establishes the output of the module based on the result of the comparison.  If the condition returns true, the action indicated in the Then option will be performed,  If false, the Else option will be performed.  Possible actions are:
 - 'Return First Input' - (Then default) returns the first matrix input.
@@ -54,6 +55,7 @@ The results options establishes the output of the module based on the result of 
 - 'Return Third Input' -  returns the third matrix input.
 - 'Return null' - (Else default) returns an emplty matrix handle.
 - 'Quit SCIRun' -  Quit the current instance of SCIRun.  
+
 If the second or third inputs are selected for output and no matrix is input into these ports, the module will return null.  
 
 
