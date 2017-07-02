@@ -31,7 +31,7 @@ PossibleOutput - (Optional) Possible matrix to send as an output to the module.
 
 **Outputs**
 - OutputMatrix - The output matrix of the module.  This will be identical to one of the three inputs of the module, or will be null depending on the inputs and options of the module. 
-- BooleanResult - Matrix of 1x1 containing either 1 or 0 indicating the result of the boolean comparison performed by the module. 
+- BooleanResult - Matrix of 1x1 containing either 1 or 0 indicating the result (true or false respectively) of the boolean comparison performed by the module. 
 
 **Options**
 
