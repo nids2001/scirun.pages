@@ -2,7 +2,7 @@
 title: ChooseInput
 category: moduledocs
 module:
-  category: Flow Control
+  category: FlowControl
   package: SCIRun
 tags: module
 
