@@ -67,7 +67,7 @@
 #### 5.6.2 [Testing](#562-testing)
 
 ## 6 [Converting Modules from SCIRun 4](#converting-modules-from-scirun-4)	
-### 6.1 [Strategy](Strategy)
+### 6.1 [Strategy](#61-strategy)
 #### 6.1.1 [Set up Git Branch](Set-up-Git-Branch)
 #### 6.1.2 [Create a Module Configuration File](Create-a-Module-Configuration-File)
 #### 6.1.3 [Create a Module Header File](Create-a-Module-Header-File)
