@@ -24,7 +24,7 @@
 # Contents
 
 ## 1 [SCIRun Overview](#scirun-overview)
-### 1.1 [Software Reqirements](#11--software-requirements)
+### 1.1 [Software Reqirements](#11-software-requirements)
 #### 1.1.1 [SCIRun 5.0](#111-scirun-50)
 #### 1.1.2 [Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
 #### 1.1.3 [Creating Your SCIRun Fork](#113-creating-your-scirun-fork)
@@ -39,7 +39,7 @@
 #### 2.4.1 [Module Design File](Module-Design-File)
 #### 2.4.2 [Module Dialog Header](Module-Dialog-Header)
 #### 2.4.3 [Module Dialog Code](Module-Dialog-Code)
-### 2.5 [Algorithm Code](Algorithm Code)
+### 2.5 [Algorithm Code](Algorithm-Code)
 #### 2.5.1 [Module Algorithm Header](Module-Algorithm-Header)
 #### 2.5.2 [Module Algorithm Code](Module-Algorithm-Code)
 
@@ -86,7 +86,7 @@
 # SCIRun Overview
 
 **This tutorial demonstrates how to create new modules in SCIRun 5.0.  It will walk through all the files needed and the basic module structure used by modules.  These instructions assume a basic understanding in C++ coding and other basic programming skills**
-#### 1.1  Software requirements
+#### 1.1 Software requirements
 ##### 1.1.1 SCIRun 5.0
 Download SCIRun version 5.0 from the [SCI software portal](http://www.scirun.org).
 Make sure to update to the most up-to-date version of the source code available, which will include the latest bug fixes.
