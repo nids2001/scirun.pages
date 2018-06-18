@@ -63,8 +63,8 @@
 ### 5.4 [Module UI Code](Module-UI-Code)
 ### 5.5 [Module Algorithm Code](Module-Algorithm-Code)
 ### 5.6 [Building and Testing](Building-and-Testing)
-#### 5.6.1.[Building](Building)
-#### 5.6.2 [Testing](Testing)
+#### 5.6.1.[Building](#561-building)
+#### 5.6.2 [Testing](#562-testing)
 
 ## 6 [Converting Modules from SCIRun 4](#converting-modules-from-scirun-4)	
 ### 6.1 [Strategy](Strategy)
