@@ -1268,7 +1268,7 @@ Figure 5.2 Network for running and testing the SortMatrix module.
 Converting a module is very similar to creating a new module, as expected.  
 However, there are additional considerations that will be described in this chapter, including a list of common build errors and a list of common changes in code needed for the conversion.**
 
-**Scope: [Strategy](#61-strategy) - [Common Function Changes](#62-common-function-changes) - [Common Build Errors](#63common-build-errors)**
+**Scope: [Strategy](#61-strategy) - [Common Function Changes](#62-common-function-changes) - [Common Build Errors](#63-common-build-errors)**
 
 #### 6.1 Strategy
 The strategy for converting a module from SCIRun 4 to SCIRun 5 is very similar to the strategy of making a new module, which is to start with the basics, and add all the necessary parts piece by piece. This is demonstrated in our previous examples, especially in Chapters 3 & 4.
