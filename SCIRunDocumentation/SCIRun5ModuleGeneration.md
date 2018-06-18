@@ -29,7 +29,7 @@
 #### 1.1.2 [Compilers, Dependencies Development Tools](#112--compilers-dependencies-development-tools)
 
 ## 2 [File Needed for a New Module](#files-needed-for-a-new-module)
-### 2.1 [Overview of Files Needed for each Module](Overview-of-Files-Needed-for-each-Module)
+### 2.1 [Overview of Files Needed for each Module](#21--overview-of-files-needed-for-each-module)
 ### 2.2 [Module Configuration File](Module-Configuration-File)
 ### 2.3 [Module Source Code](Module-Source-Code)
 #### 2.3.1 [Module Header File](Module-Header-File)
