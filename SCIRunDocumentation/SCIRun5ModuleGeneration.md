@@ -78,7 +78,7 @@
 #### 6.1.8 [Module Testing](Module-Testing)
 #### 6.1.9 [Module Documentation](Module-Documentation)
 #### 6.1.10 [Github Pull Request](Github-Pull-Request)
-### 6.2 [Common Function Changes](Common-Function-Changes)
+### 6.2 [Common Function Changes](#62-common-function-changes)
 ### 6.3 [Common Build Errors](#63-common-build-errors)
 	
 ## Chapter 1
