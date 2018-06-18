@@ -35,7 +35,7 @@
 ### 2.3 [Module Source Code](#23-module-source-code)
 #### 2.3.1 [Module Header File](#231-module-header-file)
 #### 2.3.2 [Module Code File](#232-module-code-file)
-### 2.4 [Module UI File](Module-UI-File)
+### 2.4 [Module UI Code](#24-module-ui-code)
 #### 2.4.1 [Module Design File](Module-Design-File)
 #### 2.4.2 [Module Dialog Header](Module-Dialog-Header)
 #### 2.4.3 [Module Dialog Code](Module-Dialog-Code)
