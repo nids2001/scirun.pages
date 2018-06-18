@@ -54,7 +54,7 @@
 ### 4.2 [Creating a Custom UI](Creating-a-Custom-UI)
 ### 4.3 [Connecting UI to the Module](Connecting-UI-to-the-Module)
 ### 4.4 [Adding an Input Port](Adding-an-Input-Port)
-### 4.5 [Finished Code](Finished-Code)
+### 4.5 [Finished Code](#45-finished-code)
 
 ## 5 [Example: Simple Module With Algorithm](#example-simple-module-with-algorithm)
 ### 5.1 [Module Overview](Module-Overview)
