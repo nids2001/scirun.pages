@@ -24,8 +24,8 @@
 # Contents
 
 ## 1 [SCIRun Overview](#scirun-overview)
-### 1.1 [Software Reqirements](#Software-Requirements)
-#### 1.1.1 [SCIRun 5.0](#SCIRun-50)
+### 1.1 [Software Reqirements](#11--software-requirements)
+#### 1.1.1 [SCIRun 5.0](#111-SCIRun-50)
 #### 1.1.2 [Compilers, Dependencies Development Tools](#Compilers-Dependencies-Development-Tools)
 
 ## 2 [File Needed for a New Module](#files-needed-for-a-new-module)
