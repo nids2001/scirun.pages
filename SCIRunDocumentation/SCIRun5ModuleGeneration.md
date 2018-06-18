@@ -41,7 +41,7 @@
 #### 2.4.3  [Module Dialog Code](#243-module-dialog-code)
 ### 2.5  [Algorithm Code](#25-algorithm-code)
 #### 2.5.1  [Module Algorithm Header](#251-module-algorithm-header)
-#### 2.5.2  [Module Algorithm Code](#252-Module-Algorithm-Code)
+#### 2.5.2  [Module Algorithm Code](#252-module-algorithm-code)
 
 ## 3  [Example: Simple Module Without UI](#example-simple-module-without-ui)
 ### 3.1  [Module Config File](#31-module-config-file)
