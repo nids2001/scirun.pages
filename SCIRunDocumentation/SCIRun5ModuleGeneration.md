@@ -80,6 +80,10 @@
 #### 6.1.10 [Github Pull Request](Github-Pull-Request)
 ### 6.2 [Common Function Changes](#62-common-function-changes)
 ### 6.3 [Common Build Errors](#63-common-build-errors)
+
+## 7 [Creating Unit Tests](#creating-unit-tests)
+
+## 8 [Documenting the New Module](#documenting-the-new-module)
 	
 ## Chapter 1
 
