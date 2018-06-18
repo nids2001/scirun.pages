@@ -62,7 +62,7 @@
 ### 5.3 [Module Code](Module-Code)
 ### 5.4 [Module UI Code](Module-UI-Code)
 ### 5.5 [Module Algorithm Code](Module-Algorithm-Code)
-### 5.6 [Building and Testing](Building-and-Testing)
+### 5.6 [Building and Testing](#56-building-and-testing)
 #### 5.6.1.[Building](#561-building)
 #### 5.6.2 [Testing](#562-testing)
 
