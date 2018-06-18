@@ -23,13 +23,13 @@
 --
 # Contents
 
-## 1  [SCIRun Overview](#scirun-overview)
-### 1.1  [Software Requirements](#11-software-requirements)
-#### 1.1.1  [SCIRun 5.0](#111-scirun-50)
-#### 1.1.2  [Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
-#### 1.1.3  [Creating Your SCIRun Fork](#113-creating-your-scirun-fork)
+*  [1 SCIRun Overview](#scirun-overview)
+	-  [1.1 Software Requirements](#11-software-requirements)
+		+ [1.1.1 SCIRun 5.0](#111-scirun-50)
+		+ [1.1.2 Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
+		+ [1.1.3 Creating Your SCIRun Fork](#113-creating-your-scirun-fork)
 
-## 2  [File Needed for a New Module](#files-needed-for-a-new-module)
+*  [2 File Needed for a New Module](#files-needed-for-a-new-module)
 ### 2.1  [Overview of Files Needed for each Module](#21-overview-of-files-needed-for-each-module)
 ### 2.2  [Module Configuration File](#22-module-configuration-file)
 ### 2.3  [Module Source Code](#23-module-source-code)
@@ -43,20 +43,20 @@
 #### 2.5.1  [Module Algorithm Header](#251-module-algorithm-header)
 #### 2.5.2  [Module Algorithm Code](#252-module-algorithm-code)
 
-## 3  [Example: Simple Module Without UI](#example-simple-module-without-ui)
+*  [3 Example: Simple Module Without UI](#example-simple-module-without-ui)
 ### 3.1  [Module Config File](#31-module-config-file)
 ### 3.2  [Module Header File](#32-module-header-file)
 ### 3.3  [Module Source Code](#33-module-source-code)
 ### 3.4  [Building and Testing](#34-building-and-testing)
 
-## 4  [Example: Simple Module With UI](#example-simple-module-with-ui)
+*  [4 Example: Simple Module With UI](#example-simple-module-with-ui)
 ### 4.1  [Duplicate the Previous Module](#41-duplicate-the-previous-module)
 ### 4.2  [Creating a Custom UI](#42-creating-a-custom-ui)
 ### 4.3  [Connecting UI to the Module](#43-connecting-ui-to-the-module)
 ### 4.4  [Adding an Input Port](#44-adding-an-input-port)
 ### 4.5  [Finished Code](#45-finished-code)
 
-## 5  [Example: Simple Module With Algorithm](#example-simple-module-with-algorithm)
+*  [5 Example: Simple Module With Algorithm](#example-simple-module-with-algorithm)
 ### 5.1  [Module Overview](#51-module-overview)
 ### 5.2  [Module Configuration File](#52-module-configuration-file)
 ### 5.3  [Module Code](#53-module-code)
@@ -66,7 +66,7 @@
 #### 5.6.1  [Building](#561-building)
 #### 5.6.2  [Testing](#562-testing)
 
-## 6  [Converting Modules from SCIRun 4](#converting-modules-from-scirun-4)	
+*  [6 Converting Modules from SCIRun 4](#converting-modules-from-scirun-4)	
 ### 6.1  [Strategy](#61-strategy)
 #### 6.1.1  [Set up Git Branch](#611-set-up-git-branch)
 #### 6.1.2  [Create a Module Configuration File](#612-create-a-module-configuration-file)
@@ -81,9 +81,9 @@
 ### 6.2  [Common Function Changes](#62-common-function-changes)
 ### 6.3  [Common Build Errors](#63-common-build-errors)
 
-## 7 [Creating Unit Tests](#creating-unit-tests)
+*  [7 Creating Unit Tests](#creating-unit-tests)
 
-## 8 [Documenting the New Module](#documenting-the-new-module)
+*  [8 Documenting the New Module](#documenting-the-new-module)
 	
 ## Chapter 1
 
