@@ -28,7 +28,7 @@
 #### 1.1.1 [SCIRun 5.0](SCIRun-5.0)
 #### 1.1.2 [Compilers, Dependencies Development Tools](Compilers,-Dependencies-Development-Tools)
 
-## 2 [File Needed for a New Module](#File-Needed-for-a-New-Module)
+## 2 [File Needed for a New Module](#file-needed-for-a-new-module)
 ### 2.1 [Overview of Files Needed for each Module](Overview-of-Files-Needed-for-each-Module)
 ### 2.2 [Module Configuration File](Module-Configuration-File)
 ### 2.3 [Module Source Code](Module-Source-Code)
