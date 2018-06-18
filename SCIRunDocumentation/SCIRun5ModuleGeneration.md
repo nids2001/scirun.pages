@@ -79,7 +79,7 @@
 #### 6.1.9 [Module Documentation](Module-Documentation)
 #### 6.1.10 [Github Pull Request](Github-Pull-Request)
 ### 6.2 [Common Function Changes](Common-Function-Changes)
-### 6.3 [Common Build Errors](Common-Build-Errors)
+### 6.3 [Common Build Errors](#63-common-build-errors)
 	
 ## Chapter 1
 
