@@ -480,7 +480,7 @@ There are several algorithms already implemented in SCIRun. If there are modules
 
 # Example: Simple Module Without UI
 **This chapter describes how to create a very simple module in SCIRun. We will show how to make a simple module that outputs a simple string. This example will show the basics of the functions and code used by SCIRun to create and run modules.**
-**Scope: [Module Config File](Module-Config-File) - [Module Header File](Module-Header-File) - [Module Source Code](Module-Source-Code) - [Building and Testing](Building-and-Testing) **
+**Scope: [Module Config File](#31-module-config-file) - [Module Header File](#32-module-header-file) - [Module Source Code](#33-module-source-code) - [Building and Testing](#34-building-and-testing) **
 #### 3.1 Module Config File
 If you have created a fork from the SCIRun git repository begin by creating a new branch in your repository. Be sure to commit your changes to your repository often as this can help you and the developers fix and make improvements to the code. It is often easiest to modify existing code to fit your purposes than create new code, so determine a module that has similar functionality or structure to the new module. If desired, there is also the template files described in Chapter 2 to use as a basis. In this example, we will provide the code needed, so it is not necessary to copy another module.  
 Begin with the module config file. Create a new text file in the module factory configuration directory (`src/Modules/Factory/Config/`) for the new module. It should be named *TestModuleSimple.module* or something similar. The text of the file should be:
