@@ -55,7 +55,7 @@
 ### 4.4 [Adding an Input Port](Adding-an-Input-Port)
 ### 4.5 [Finished Code](Finished-Code)
 
-## 5 [Example: Simple Module With Algorithm](#example-simple-module-with-ui)
+## 5 [Example: Simple Module With Algorithm](#example-simple-module-with-algorithm)
 ### 5.1 [Module Overview](Module-Overview)
 ### 5.2 [Module Configuration File](Module-Configuration-File)
 ### 5.3 [Module Code](Module-Code)
@@ -888,7 +888,7 @@ For the sake of comparison, the final version of the code for this module is inc
 
 ## Chapter 5
 
-#Example: Simple Module With Algorithm
+# Example: Simple Module With Algorithm
 
 **In this chapter, we will show how to build a module with a simple algorithm and a simple UI. This chapter will build off the principles established in the previous examples. We will use SCIRun to create a module that will perform a simple sorting algorithm on a matrix. This example will show how to use module algorithm files with a module UI to implement simple algorithms into modules. We will build off some of the principles of the previous examples.**
 
