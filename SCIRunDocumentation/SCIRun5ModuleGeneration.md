@@ -42,7 +42,7 @@
 #### 2.5.1 [Module Algorithm Header](Module-Algorithm-Header)
 #### 2.5.2 [Module Algorithm Code](Module-Algorithm-Code)
 
-## 3 [Example: Simple Module Without UI](Example:-Simple-Module-Without-UI)
+## 3 [Example: Simple Module Without UI](#example-simple-module-without-ui)
 ### 3.1 [Module Config File](Module-Config-File)
 ### 3.2 [Module Header File](Module-Header-File)
 ### 3.3 [Module Source Code](Module-Source-Code)
