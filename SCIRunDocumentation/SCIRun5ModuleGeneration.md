@@ -55,7 +55,7 @@
 ### 4.4 [Adding an Input Port](Adding-an-Input-Port)
 ### 4.5 [Finished Code](Finished-Code)
 
-## 5 [Example Module With Algorithm](Example-Module-With-Algorithm)
+## 5 [Example Module With Algorithm](#example-module-with-algorithm)
 ### 5.1 [Module Overview](Module-Overview)
 ### 5.2 [Module Configuration File](Module-Configuration-File)
 ### 5.3 [Module Code](Module-Code)
@@ -65,7 +65,7 @@
 #### 5.6.1.[Building](Building)
 #### 5.6.2 [Testing](Testing)
 
-## 6 [Converting Modules from SCIRun4](Converting-Modules-from-SCIRun4)	
+## 6 [Converting Modules from SCIRun4](#converting-modules-from-scirun4)	
 ### 6.1 [Strategy](Strategy)
 #### 6.1.1 [Set up Git Branch](Set-up-Git-Branch)
 #### 6.1.2 [Create a Module Configuration File](Create-a-Module-Configuration-File)
