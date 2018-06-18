@@ -39,8 +39,8 @@
 #### 2.4.1 [Module Design File](#241-module-design-file)
 #### 2.4.2 [Module Dialog Header](#242-module-dialog-header)
 #### 2.4.3 [Module Dialog Code](#243-module-dialog-code)
-### 2.5 [Algorithm Code](Algorithm-Code)
-#### 2.5.1 [Module Algorithm Header](Module-Algorithm-Header)
+### 2.5 [Algorithm Code](#25-algorithm-code)
+#### 2.5.1 [Module Algorithm Header](#251-module-algorithm-header)
 #### 2.5.2 [Module Algorithm Code](Module-Algorithm-Code)
 
 ## 3 [Example: Simple Module Without UI](#example-simple-module-without-ui)
