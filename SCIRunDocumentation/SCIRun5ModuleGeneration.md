@@ -897,7 +897,7 @@ For the sake of comparison, the final version of the code for this module is inc
 
 **In this chapter, we will show how to build a module with a simple algorithm and a simple UI. This chapter will build off the principles established in the previous examples. We will use SCIRun to create a module that will perform a simple sorting algorithm on a matrix. This example will show how to use module algorithm files with a module UI to implement simple algorithms into modules. We will build off some of the principles of the previous examples.**
 
-**Scope: [Module Overview](Module-Overview) - [Module Configuration File](Module-Configuration-File) - [Module Code](Module-Code) - [Module UI Code](Module-UI-Code) - [Module Algorithm Code](Module-Algorithm-Code) - [Building and Testing](Building-and-Testing)**
+**Scope: [Module Overview](#51-module-overview) - [Module Configuration File](#52-module-configuration-file) - [Module Code](#53-module-code) - [Module UI Code](#54-module-ui-code) - [Module Algorithm Code](#55-module-algorithm-code) - [Building and Testing](#56-building-and-testing)**
 
 #### 5.1 Module Overview
 As mentioned in the chapter introduction, we are going to create a module that will sort the entries of a matrix in ascending or descending order. We wil call the module SortMatrix. This module will use a simple simple quicksort algorithm with a [Lomuto partition scheme](\href{https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme). There are some implementations for vector sorting in the STL algorithm library, but this implementation works more generally on matrices and will hopefully be helpful in showing how to implement an algorithm from scratch.
