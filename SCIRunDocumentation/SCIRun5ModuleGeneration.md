@@ -23,16 +23,16 @@
 --
 # Contents
 
-## 1 [SCIRun Overview](#scirun-overview)
-### 1.1 [Software Requirements](#11-software-requirements)
-#### 1.1.1 [SCIRun 5.0](#111-scirun-50)
-#### 1.1.2 [Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
-#### 1.1.3 [Creating Your SCIRun Fork](#113-creating-your-scirun-fork)
+## 1  [SCIRun Overview](#scirun-overview)
+### 1.1  [Software Requirements](#11-software-requirements)
+#### 1.1.1  [SCIRun 5.0](#111-scirun-50)
+#### 1.1.2  [Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
+#### 1.1.3  [Creating Your SCIRun Fork](#113-creating-your-scirun-fork)
 
-## 2 [File Needed for a New Module](#files-needed-for-a-new-module)
-### 2.1 [Overview of Files Needed for each Module](#21-overview-of-files-needed-for-each-module)
-### 2.2 [Module Configuration File](#22-module-configuration-file)
-### 2.3 [Module Source Code](#23-module-source-code)
+## 2  [File Needed for a New Module](#files-needed-for-a-new-module)
+### 2.1  [Overview of Files Needed for each Module](#21-overview-of-files-needed-for-each-module)
+### 2.2  [Module Configuration File](#22-module-configuration-file)
+### 2.3  [Module Source Code](#23-module-source-code)
 #### 2.3.1 [Module Header File](#231-module-header-file)
 #### 2.3.2 [Module Code File](#232-module-code-file)
 ### 2.4 [Module UI Code](#24-module-ui-code)
