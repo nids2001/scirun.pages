@@ -25,11 +25,11 @@
 
 ## 1 [SCIRun Overview](#scirun-overview)
 ### 1.1 [Software Reqirements](#11--software-requirements)
-#### 1.1.1 [SCIRun 5.0](#111--scirun-50)
-#### 1.1.2 [Compilers, Dependencies Development Tools](#112--compilers-dependencies-development-tools)
+#### 1.1.1 [SCIRun 5.0](#111-scirun-50)
+#### 1.1.2 [Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
 
 ## 2 [File Needed for a New Module](#files-needed-for-a-new-module)
-### 2.1 [Overview of Files Needed for each Module](#21--overview-of-files-needed-for-each-module)
+### 2.1 [Overview of Files Needed for each Module](#21-overview-of-files-needed-for-each-module)
 ### 2.2 [Module Configuration File](Module-Configuration-File)
 ### 2.3 [Module Source Code](Module-Source-Code)
 #### 2.3.1 [Module Header File](Module-Header-File)
