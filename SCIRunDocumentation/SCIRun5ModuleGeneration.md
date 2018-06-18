@@ -144,7 +144,7 @@ Please see the [github help page] (https://help.github.com) for more information
 
 **This chapter will describe the files need to create a module in SCIRun. Each file will be described and a template example will be provided. These template files are all included in the source code in the template directories.**
 
-**Scope: [Overview of Files Needed for each Module](Overview-of-Files-Needed-for-each-Module) - [Module Configuration File](Module-Configuration-File) - [Module Source Code](Module-Source-Code) - [Module UI Code](Module-UI-Code) - [Algorithm Code](Algorithm-Code)**
+**Scope: [Overview of Files Needed for each Module](#21-overview-of-files-needed-for-each-module) - [Module Configuration File](Module-Configuration-File) - [Module Source Code](Module-Source-Code) - [Module UI Code](Module-UI-Code) - [Algorithm Code](Algorithm-Code)**
 
 #### 2.1 Overview of Files Needed for each Module
 There are only three files required to create a module, though more may be needed depending on the function of the module.
