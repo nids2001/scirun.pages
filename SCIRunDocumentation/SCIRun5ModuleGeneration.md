@@ -55,7 +55,7 @@
 ### 4.4 [Adding an Input Port](Adding-an-Input-Port)
 ### 4.5 [Finished Code](Finished-Code)
 
-## 5 [Example Module With Algorithm](#example-module-with-algorithm)
+## 5 [Example Module With Algorithm](#example-simple-module-with-algorithm)
 ### 5.1 [Module Overview](Module-Overview)
 ### 5.2 [Module Configuration File](Module-Configuration-File)
 ### 5.3 [Module Code](Module-Code)
