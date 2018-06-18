@@ -611,7 +611,7 @@ After SCIRun builds completely, Launch SCIRun and test the module. You can use t
 
 **In this chapter, we will build off the module that we described in the previous chapter to show how to add a UI and an input port. This module will print a message that comes from either the input port or the UI. We will show how to add a UI incrementally to help convey the principles that the software is based upon. This incremental approach allows the user to copy this approach with more complicated module as it provides sanity checks for the user.**
 
-**Scope: [Duplicate the Previous Module](Duplicate-the-Previous-Module) - [Creating a Custom UI](Creating-a-Custom-UI) - [Connecting UI to the Module](Connecting-UI-to-the-Module) - [Adding an Input Port](Adding-an-Input-Port) - [Finished Code](Finished-Code)**
+**Scope: [Duplicate the Previous Module](#41-duplicate-the-previous-module) - [Creating a Custom UI](#42-creating-a-custom-ui) - [Connecting UI to the Module](#43-connecting-ui-to-the-module) - [Adding an Input Port](#44-adding-an-input-port) - [Finished Code](#45-finished-code)**
 #### 4.1 Duplicate the Previous Module
 To begin, copy the *TestModuleSimple.module* in the `src/Modules/Factory/Config/` and name the copy *TestModuleSimpleUI.module*.
 Change the name and header field to reflect the new name of the module, as shown here:
