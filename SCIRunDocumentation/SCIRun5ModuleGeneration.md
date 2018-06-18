@@ -82,7 +82,7 @@
 	
 ## Chapter 1
 
-# SCIRunOverview
+# SCIRun Overview
 
 **This tutorial demonstrates how to create new modules in SCIRun 5.0.  It will walk through all the files needed and the basic module structure used by modules.  These instructions assume a basic understanding in C++ coding and other basic programming skills**
 #### 1.1 Software requirements
