@@ -1375,7 +1375,7 @@ using namespace SCIRun::Core::Algorithms::;
 This is a result of something wrong with the module configuration file.  Check the spelling and syntax of the new file.  Specifically, check the quotation characters used, as they may be different (for instance on mac TextEdit).  This may also be caused if the Algorithm and other files have not been added to the `CMakeList.txt` file. 
 
 3.
->/Users/jess/software/SCIRun_mine/src/Interface/Modules/Base/ModuleDialogGeneric.h:71:5:warning: 'metaObject' overrides a member function but is not marked 'override' 
+>/Users/jess/software/SCIRun_mine/src/Interface/Modules/Base/ModuleDialogGeneric.h:71:5: warning: 'metaObject' overrides a member function but is not marked 'override' 
 >[-Winconsistent-missing-override]
  
  ```
