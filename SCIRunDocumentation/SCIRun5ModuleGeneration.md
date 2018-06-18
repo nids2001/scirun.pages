@@ -48,7 +48,7 @@
 ### 3.3 [Module Source Code](Module-Source-Code)
 ### 3.4 [Building and Testing](Building-and-Testing)
 
-## 4 [Example: Simple Module With UI](Example:-Simple-Module-With-UI)
+## 4 [Example: Simple Module With UI](#example-simple-module-with-ui)
 ### 4.1 [Duplicate the Previous Module](Duplicate-the-Previous-Module)
 ### 4.2 [Creating a Custom UI](Creating-a-Custom-UI)
 ### 4.3 [Connecting UI to the Module](Connecting-UI-to-the-Module)
