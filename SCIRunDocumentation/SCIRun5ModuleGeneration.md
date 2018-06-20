@@ -1344,7 +1344,7 @@ With the module fully completed, we can now submit it to be included in the main
 
 | **SCIRun4** | **SCIRun5** | **Notes**|
 |-------------|-------------|----------|
-|`if (input.get_rep()==0)`| `if (!input)     `|Checks for an empty handle. Works for all major handle types.|
+|`if (input.get_rep()==0)`| `if (!input)              `|Checks for an empty handle. &nbsp; Works for all major handle types.|
 |```output = input;``` ```output.detach();```|`FieldHandle output_field(input_field->clone());`|Copy a field and disconnect the data|
 |```output = input;``` ```output.detach();``` ```output->mesh_detach();```|```FieldHandle output_field(input_field->deep_clone());```|Copy a field and disconnect the mesh and data.|
 
