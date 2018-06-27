@@ -3,7 +3,7 @@
 </script>
 <link rel="stylesheet" href="css/modest.css">
 
-# SCIRun Module Generation
+## SCIRun Module Generation
 --
 ### SCIRun 5.0 Documentation
 #### Center for Integrative Biomedical Computing 
@@ -26,7 +26,7 @@
 #### Author(s):  
 #### Jess Tate
 --
-# Contents
+## Contents
 
 *  [1 SCIRun Overview](#scirun-overview)
 	-  [1.1 Software Requirements](#11-software-requirements)
@@ -90,9 +90,9 @@
 
 *  [8 Documenting the New Module](#documenting-the-new-module)
 	
-## Chapter 1
+### Chapter 1
 
-# SCIRun Overview
+## SCIRun Overview
 
 **This tutorial demonstrates how to create new modules in SCIRun 5.0.  It will walk through all the files needed and the basic module structure used by modules.  These instructions assume a basic understanding in C++ coding and other basic programming skills**
 #### 1.1 Software requirements
@@ -139,13 +139,13 @@ It is a good practice to create a new branch in your fork for every module you w
 $git checkout -b [branch_name]
 ```
 
-Please see the [github help page] (https://help.github.com) for more information.
+Please see the [github help page](https://help.github.com) for more information.
 
 
 
-## Chapter 2
+### Chapter 2
 
-# Files Needed for a New Module
+## Files Needed for a New Module
 
 **This chapter will describe the files need to create a module in SCIRun. Each file will be described and a template example will be provided. These template files are all included in the source code in the template directories.**
 
@@ -321,7 +321,7 @@ We will show the examples located in `src/Interface/Modules/Template` as example
 The module design file is an xml file that describes the UI structure. This file can be created and edited in the Qt editor. Figure 2.1 shows the example template *ModuleDesignerFile.ui* within the Qt editor.
 As shown, the user can interactively modify the placement of the widgets in the window. The Widget Box window allows the user to choose and place new objects within the window. The Property Editor allows for the modification of properties of the various objects and widgets within the UI, including size, type of input, names, etc. With the Object Inspector window, the hierarchy and organization of the UI can be changed.
 
-![Template module interface design file as seen in the Qt editor.](SCIRunImages/QT-editor.png)
+![Template module interface design file as seen in the Qt editor.](SCIRun5ModuleGeneration_figures/QT-editor.png)
              Figure 2.1 Template module interface design file as seen in the Qt editor
              
 When using the editor to make a module UI, there are a few things to consider. First, make sure all the relevant objects, including the name of UI (QDialog) is consistent with module dialog code. You can change the size and placement of objects with the property manager, but make sure that you leave some buffer space as some operating systems will interpret the file slightly differently. The structure of the UI can be changed or destroyed.
@@ -481,9 +481,9 @@ This template shows the algorithm using some of the defined names from`Core/Algo
 This only works if the algorithm files are linked in the module configuration file.   
 There are several algorithms already implemented in SCIRun. If there are modules that have similar functionality you may be able to use some of the functionality already implemented. The module may still need it's own algorithm file.  
 
-## Chapter 3
+### Chapter 3
 
-# Example: Simple Module Without UI
+## Example: Simple Module Without UI
 **This chapter describes how to create a very simple module in SCIRun. We will show how to make a simple module that outputs a simple string. This example will show the basics of the functions and code used by SCIRun to create and run modules.**
 **Scope: [Module Config File](#31-module-config-file) - [Module Header File](#32-module-header-file) - [Module Source Code](#33-module-source-code) - [Building and Testing](#34-building-and-testing) **
 #### 3.1 Module Config File
@@ -610,9 +610,9 @@ Check out the common build errors in Section 6.3.
 
 After SCIRun builds completely, Launch SCIRun and test the module. You can use the PrintDatatype module to view the string that this module outputs. Other modules will require more testing, but due to the very simple nature of the module you can know that if the messages matches what you expect, then it is working properly.  
 
-## Chapter 4
+### Chapter 4
 
-# Example: Simple Module With UI
+## Example: Simple Module With UI
 
 **In this chapter, we will build off the module that we described in the previous chapter to show how to add a UI and an input port. This module will print a message that comes from either the input port or the UI. We will show how to add a UI incrementally to help convey the principles that the software is based upon. This incremental approach allows the user to copy this approach with more complicated module as it provides sanity checks for the user.**
 
@@ -702,7 +702,7 @@ Change the text of the remaining label to `My String:` or something similar.
 Finally, change the name of the of the `line edit widget` to `inputstring_` and the name of the `QDialog| object` to *TestModuleSimpleUIDialog*.  
 This can be done in the *Object Inspector* or in the *Property Editor* when the appropriate object is clicked.  
 Figure 4.1 shows what the module should look like in the Qt editor.
-![simpleUI](SCIRunImages/simpleUI.png)
+![simpleUI](SCIRun5ModuleGeneration_figures/simpleUI.png)
 Figure 4.1 Module interface design file for the TestModuleSimpleUI module as seen in the Qt editor.
 
 Now that the module UI is designed, we need to link it to the module with the module dialog code.
@@ -896,9 +896,9 @@ For a slightly more complicated, yet much more useful module as an example, chec
 #### 4.5 Finished Code
 For the sake of comparison, the final version of the code for this module is included in the source code in the Example files. The module code files are in `src/Modules/Examples/`, *TestModuleSimpleUI.cc* and *TestModuleSimpleUI.h*. The module UI code files are in `src/interface/Modules/Examples/`, *TestModuleSimpleUIDialog.cc*, *TestModuleSimpleUIDialog.h*, and *TestModuleSimpleUIDialog.ui*.  
 
-## Chapter 5
+### Chapter 5
 
-# Example: Simple Module With Algorithm
+## Example: Simple Module With Algorithm
 
 **In this chapter, we will show how to build a module with a simple algorithm and a simple UI. This chapter will build off the principles established in the previous examples. We will use SCIRun to create a module that will perform a simple sorting algorithm on a matrix. This example will show how to use module algorithm files with a module UI to implement simple algorithms into modules. We will build off some of the principles of the previous examples.**
 
@@ -1023,7 +1023,7 @@ We will create a simple module UI for the SortMatrix module. The UI will consist
 The process and code for this example is very similar to the previous example.
 
 We will make the \emph{SortMatrixDialog.ui} in the Qt editor as we did previously (Chapter 2). It may be easier to copy a previously created UI file and modify it rather than to create one from scratch. Copy the `src/Interface/Template/ModuleDesignerFile.ui` file and rename it.Delete the widgets in the UI and add two radial button widgets (drag from the 'Widget Box' window). Change the labels to 'ascending' and 'descending', and the names (in the 'Object Inpector' window) to `ascendButton_` and `descendButton_`. You will also need to make sure to change the name of the \verb|QDialog| to \verb|SortMatrixDialog| (also in the 'Object Inpector'). The placement of the buttons and the size of the window and boxes can be adjusted in the 'Property Editor' window. The UI should look similar to Figure 5.1.
-![Algo_UI](SCIRunImages/algo_ui.png)
+![Algo_UI](SCIRun5ModuleGeneration_figures/algo_ui.png)
 Figure 5.1 Module interface design file for the SortMatrix module as seen in the Qt editor.
 
 The *SortMatrixDialog.h* is virtually identical to the header in the previous example (Chapter 4), except for the names, as shown here:
@@ -1261,13 +1261,13 @@ In the 4x2 matrix that shown in Figure 5.2, the format string was: `%4.2g %4.2g 
 Alternatively, the matrix entries can be printed as a list with `%4.2g` (make sure there is a space at the beginning or end of the string).
 This network can be used to see the input and output of the SortMatrix module.  
 If this or another module is not behaving as expected, change the output of some functions and set the output of the module to be some of the intermediate steps, or use `std::cout<< "message" <<std::endl;` to print values as the code runs. Unit Test can also find some bugs in the module code. 
-![Algo_network.png](SCIRunImages/algo_network.png)
+![Algo_network.png](SCIRun5ModuleGeneration_figures/algo_network.png)
 Figure 5.2 Network for running and testing the SortMatrix module. 
 
 
-## Chapter 6
+### Chapter 6
 
-# Converting Modules from SCIRun 4
+## Converting Modules from SCIRun 4
 
 **This chapter will walk through the steps necessary to convert a module from SCIRun 4 to SCIRun 5.  
 Converting a module is very similar to creating a new module, as expected.  
@@ -1393,12 +1393,12 @@ virtual const QMetaObject *metaObject() const; \
     
  Errors that involve qt and qt objects deal with the gui code.  Make sure that the gui name is spelled correctly.  Also make sure that the Qobject name is set properly.  
  
-## Chapter 7
+### Chapter 7
 
-# Creating Unit Tests
+## Creating Unit Tests
 You will at least need a testing network.  
 
-## Chapter 8
+### Chapter 8
 
-# Documenting the New Module
+## Documenting the New Module
 You should totally document the modules you add.  
