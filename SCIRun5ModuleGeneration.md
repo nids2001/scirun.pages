@@ -3,7 +3,7 @@
 </script>
 <link rel="stylesheet" href="css/modest.css">
 
-# SCIRun Module Generation
+## SCIRun Module Generation
 --
 ### SCIRun 5.0 Documentation
 #### Center for Integrative Biomedical Computing 
@@ -26,14 +26,14 @@
 #### Author(s):  
 #### Jess Tate
 --
-# Contents
+## Contents
 
 *  [1 SCIRun Overview](#scirun-overview)
 	-  [1.1 Software Requirements](#11-software-requirements)
 		+ [1.1.1 SCIRun 5.0](#111-scirun-50)
 		+ [1.1.2 Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
 		+ [1.1.3 Creating Your SCIRun Fork](#113-creating-your-scirun-fork)
-
+&nbsp;
 *  [2 File Needed for a New Module](#files-needed-for-a-new-module)
 	- [2.1 Overview of Files Needed for each Module](#21-overview-of-files-needed-for-each-module)
 	- [2.2 Module Configuration File](#22-module-configuration-file)
@@ -47,20 +47,20 @@
 	- [2.5 Algorithm Code](#25-algorithm-code)
 		+ [2.5.1 Module Algorithm Header](#251-module-algorithm-header)
 		+ [2.5.2 Module Algorithm Code](#252-module-algorithm-code)
-
+&nbsp;
 *  [3 Example: Simple Module Without UI](#example-simple-module-without-ui)
 	- [3.1 Module Config File](#31-module-config-file)
 	- [3.2 Module Header File](#32-module-header-file)
 	- [3.3 Module Source Code](#33-module-source-code)
 	- [3.4 Building and Testing](#34-building-and-testing)
-
+&nbsp;
 *  [4 Example: Simple Module With UI](#example-simple-module-with-ui)
 	- [4.1 Duplicate the Previous Module](#41-duplicate-the-previous-module)
 	- [4.2 Creating a Custom UI](#42-creating-a-custom-ui)
 	- [4.3 Connecting UI to the Module](#43-connecting-ui-to-the-module)
 	- [4.4 Adding an Input Port](#44-adding-an-input-port)
 	- [4.5 Finished Code](#45-finished-code)
-
+&nbsp;
 *  [5 Example: Simple Module With Algorithm](#example-simple-module-with-algorithm)
 	- [5.1 Module Overview](#51-module-overview)
 	- [5.2 Module Configuration File](#52-module-configuration-file)
@@ -70,7 +70,7 @@
 	- [5.6 Building and Testing](#56-building-and-testing)
 		+ [5.6.1 Building](#561-building)
 		+ [5.6.2 Testing](#562-testing)
-
+&nbsp;
 *  [6 Converting Modules from SCIRun 4](#converting-modules-from-scirun-4)	
 	- [6.1 Strategy](#61-strategy)
 		+ [6.1.1 Set up Git Branch](#611-set-up-git-branch)
@@ -85,14 +85,14 @@
 		+ [6.1.10 Github Pull Request](#6110-github-pull-request)
 	- [6.2 Common Function Changes](#62-common-function-changes)
 	- [6.3 Common Build Errors](#63-common-build-errors)
-
+&nbsp;
 *  [7 Creating Unit Tests](#creating-unit-tests)
-
+&nbsp;
 *  [8 Documenting the New Module](#documenting-the-new-module)
 	
-## Chapter 1
+### Chapter 1
 
-# SCIRun Overview
+## SCIRun Overview
 
 **This tutorial demonstrates how to create new modules in SCIRun 5.0.  It will walk through all the files needed and the basic module structure used by modules.  These instructions assume a basic understanding in C++ coding and other basic programming skills**
 #### 1.1 Software requirements
@@ -143,9 +143,9 @@ Please see the [github help page] (https://help.github.com) for more information
 
 
 
-## Chapter 2
+### Chapter 2
 
-# Files Needed for a New Module
+## Files Needed for a New Module
 
 **This chapter will describe the files need to create a module in SCIRun. Each file will be described and a template example will be provided. These template files are all included in the source code in the template directories.**
 
@@ -481,9 +481,9 @@ This template shows the algorithm using some of the defined names from`Core/Algo
 This only works if the algorithm files are linked in the module configuration file.   
 There are several algorithms already implemented in SCIRun. If there are modules that have similar functionality you may be able to use some of the functionality already implemented. The module may still need it's own algorithm file.  
 
-## Chapter 3
+### Chapter 3
 
-# Example: Simple Module Without UI
+## Example: Simple Module Without UI
 **This chapter describes how to create a very simple module in SCIRun. We will show how to make a simple module that outputs a simple string. This example will show the basics of the functions and code used by SCIRun to create and run modules.**
 **Scope: [Module Config File](#31-module-config-file) - [Module Header File](#32-module-header-file) - [Module Source Code](#33-module-source-code) - [Building and Testing](#34-building-and-testing) **
 #### 3.1 Module Config File
@@ -610,9 +610,9 @@ Check out the common build errors in Section 6.3.
 
 After SCIRun builds completely, Launch SCIRun and test the module. You can use the PrintDatatype module to view the string that this module outputs. Other modules will require more testing, but due to the very simple nature of the module you can know that if the messages matches what you expect, then it is working properly.  
 
-## Chapter 4
+### Chapter 4
 
-# Example: Simple Module With UI
+## Example: Simple Module With UI
 
 **In this chapter, we will build off the module that we described in the previous chapter to show how to add a UI and an input port. This module will print a message that comes from either the input port or the UI. We will show how to add a UI incrementally to help convey the principles that the software is based upon. This incremental approach allows the user to copy this approach with more complicated module as it provides sanity checks for the user.**
 
@@ -896,9 +896,9 @@ For a slightly more complicated, yet much more useful module as an example, chec
 #### 4.5 Finished Code
 For the sake of comparison, the final version of the code for this module is included in the source code in the Example files. The module code files are in `src/Modules/Examples/`, *TestModuleSimpleUI.cc* and *TestModuleSimpleUI.h*. The module UI code files are in `src/interface/Modules/Examples/`, *TestModuleSimpleUIDialog.cc*, *TestModuleSimpleUIDialog.h*, and *TestModuleSimpleUIDialog.ui*.  
 
-## Chapter 5
+### Chapter 5
 
-# Example: Simple Module With Algorithm
+## Example: Simple Module With Algorithm
 
 **In this chapter, we will show how to build a module with a simple algorithm and a simple UI. This chapter will build off the principles established in the previous examples. We will use SCIRun to create a module that will perform a simple sorting algorithm on a matrix. This example will show how to use module algorithm files with a module UI to implement simple algorithms into modules. We will build off some of the principles of the previous examples.**
 
@@ -1265,9 +1265,9 @@ If this or another module is not behaving as expected, change the output of some
 Figure 5.2 Network for running and testing the SortMatrix module. 
 
 
-## Chapter 6
+### Chapter 6
 
-# Converting Modules from SCIRun 4
+## Converting Modules from SCIRun 4
 
 **This chapter will walk through the steps necessary to convert a module from SCIRun 4 to SCIRun 5.  
 Converting a module is very similar to creating a new module, as expected.  
@@ -1393,12 +1393,12 @@ virtual const QMetaObject *metaObject() const; \
     
  Errors that involve qt and qt objects deal with the gui code.  Make sure that the gui name is spelled correctly.  Also make sure that the Qobject name is set properly.  
  
-## Chapter 7
+### Chapter 7
 
-# Creating Unit Tests
+## Creating Unit Tests
 You will at least need a testing network.  
 
-## Chapter 8
+### Chapter 8
 
-# Documenting the New Module
+## Documenting the New Module
 You should totally document the modules you add.  
