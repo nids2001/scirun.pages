@@ -596,7 +596,7 @@ SET(Modules_String_HEADERS
 )
 
 ```
-After changing the CMakeList.txt file, build SCIRun using the build script, or if you have already built SCIRun recently, go to the `SCIRun\_root/bin/SCIRun` directory and run make.  
+After changing the CMakeList.txt file, build SCIRun using the build script, or if you have already built SCIRun recently, go to the `SCIRun_root/bin/SCIRun` directory and run make.  
 Take note of any build errors, if there is a problem in the with any module factory files, make sure that there are no mistakes in the the module configuration file and build again.  
 Check out the common build errors in Section 6.3.
 
