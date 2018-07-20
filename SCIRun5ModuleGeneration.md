@@ -1350,13 +1350,12 @@ Make sure your module is documented properly in the git commits and code in addi
 With the module fully completed, we can now submit it to be included in the main release of SCIRun using a pull request. Since there was a branch created for the new module, there should be regular commits as the module is ported. For the the pull request, make sure all the changes have been committed to the branch meant for the new module. Now make sure that the branch is up to date with the latest changes in the main branch of SCIRun. To do this, sync your fork and merge the SCIRun master branch as shown in the Section1.1.3.Make sure the module branch is merge with the master branch and make sure that your local changes are pushed to github. To make a pull request, there is usually a short cut on the main github page of the SCIRun or you can check out the [github help page about it](https://help.github.com/articles/using-pull-requests/). Add some comments to the developers to know what to look for when reviewing the code. If you have changes to make, either that you noticed or requested by the developer, just commit it to the same branch and push it github and the pull request will track the changes until it is merged.  
 
 #### 6.2 Common Function Changes
-<!--
+
 | **SCIRun4** | **SCIRun5** | **Notes**|
 |-------------|-------------|----------|
 |`if (input.get_rep()==0)`| `if (!input)                                             `|Checks for an empty handle. <br/> Works for all major handle types.|
 |```output = input;``` ```output.detach();```|`FieldHandle output_field(input_field->clone());`|Copy a field and disconnect the data|
 |```output = input;``` </br> ```output.detach();``` </br> ```output->mesh_detach();```|```FieldHandle output_field(input_field->deep_clone());```|Copy a field and disconnect the mesh and data.|
--->
 #### 6.3 Common Build Errors
 1.
 > ConvertMeshToPointCloudDialog.h:32:10: fatal error:
