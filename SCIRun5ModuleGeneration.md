@@ -913,7 +913,6 @@ For the sake of comparison, the final version of the code for this module is inc
 #### 5.1 Module Overview
 As mentioned in the chapter introduction, we are going to create a module that will sort the entries of a matrix in ascending or descending order. We wil call the module SortMatrix. This module will use a simple simple quicksort algorithm with a [Lomuto partition scheme](https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme). There are some implementations for vector sorting in the STL algorithm library, but this implementation works more generally on matrices and will hopefully be helpful in showing how to implement an algorithm from scratch.
 There are eight files needed in total for this module: a module configuration file, module code and header file, a UI design file with UI code and header files, and algorithm code and header files. The first six were used in the previous example, but this chapter will show how to incorporate the algorithm code and how it interacts with the module and UI code. Each file is also described in the general in Chapter 2 with templates.
->>>>>>> 1c801de6c03ced054739b9d6d3e14a6d95be2ebf
 
 #### 5.2 Module Configuration File
 As with the other examples, we need a module configuration file for this module. This file will need every field filled. Create a *SortMatrix.module* file in the `src/Modules/Factory/Config/` directory containing the following:
