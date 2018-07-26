@@ -1,21 +1,14 @@
----
-layout: default
-title: "SCIRun 5 Documentation"
----
+### Welcome to GitHub Pages.
+This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new `gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.
 
-![SCIRun Logo](http://www.sci.utah.edu/images/software/SCIRun/scirun.png)
+### Designer Templates
+We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.
 
-### SCIRun 5.0
+### Creating pages manually
+If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
 
-[SCIRun](https://github.com/SCIInstitute/SCIRun) is a problem solving environment developed by the NIH Center for Integrative Biomedical Computing at the University of Utah Scientific Computing and Imaging (SCI) Institute.
+### Authors and Contributors
+You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
 
-SCIRun 5 is a complete rewrite of the GUI front end and graphical components of SCIRun 4, including a more stable and efficient middle layer, with support for Python scripting.
-
-*Warning! SCIRun 5 is beta software, you may use for real science but beware of instability.*
-
- - [Build](build.html)
- - [Module Reference](modules.html)
- - [Python API 0.2](python.html)
- - [Basic Tutorial](BasicTutorial.html)
-
- Doc v1.0c
+### Support or Contact
+Having trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.
