@@ -4,21 +4,8 @@ category: developer documentation
 tags: tutorial
 ---
 
-
 <link rel="stylesheet" href="css/modest.css">
 
-### SCIRun 5.0 Documentation
-#### Center for Integrative Biomedical Computing 
-#### Scientific Computing & Imaging Institute 
-#### University of Utah
-
-&nbsp;
-
-### SCIRun software download: 
-#### [http://software.sci.utah.edu](http://software.sci.utah.edu)
-### Center for Integrative Biomedical Computing:
-#### [http://www.sci.utah.edu/cibc](http://www.sci.utah.edu/cibc)
-&nbsp;
 ###### This project was supported by grants from the National Center for Research Resources 
 ###### (5P41RR012553-14) and the National Institute of General Medical Sciences 
 ###### (8 P41 GM103545-14) from the National Institutes of Health.
@@ -27,7 +14,7 @@ tags: tutorial
 
 ##### Authors:  
 ##### Jess Tate and Garima Chhabra
---
+
 ### Contents
 
 *  [1 SCIRun Overview](#scirun-overview)
