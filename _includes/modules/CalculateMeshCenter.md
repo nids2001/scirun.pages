@@ -22,7 +22,8 @@ The module computes the center of a mesh based on a predefined method, chosen by
 
 **Detailed Description**
 
-The module computes the center of a mesh and outputs it as a single node. The user can chose the method with which the center is determined. The user can choose the method to determine the center from the following options-
+The module computes the center of a mesh and outputs it as a single node. The user can chose the method with which the center is determined from the following options-
+
 **Average of Node Locations**
 Node locations within the defined mesh are averaged. The output center will favor areas of high node density.
 
