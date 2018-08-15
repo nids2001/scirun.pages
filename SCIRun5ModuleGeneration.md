@@ -1,39 +1,27 @@
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-</script>
+---
+title: SCIRun Module Generation 
+category: developer documentation
+tags: tutorial
+---
+
 <link rel="stylesheet" href="css/modest.css">
 
-# SCIRun Module Generation
---
-### SCIRun 5.0 Documentation
-#### Center for Integrative Biomedical Computing 
-#### Scientific Computing & Imaging Institute 
-#### University of Utah
-
-&nbsp;
-
-### SCIRun software download: 
-#### [http://software.sci.utah.edu](http://software.sci.utah.edu)
-### Center for Integrative Biomedical Computing:
-#### [http://www.sci.utah.edu/cibc](http://www.sci.utah.edu/cibc)
-&nbsp;
 ###### This project was supported by grants from the National Center for Research Resources 
 ###### (5P41RR012553-14) and the National Institute of General Medical Sciences 
 ###### (8 P41 GM103545-14) from the National Institutes of Health.
 
 &nbsp;
 
-#### Author(s):  
-#### Jess Tate
---
-# Contents
+##### Authors:  
+##### Jess Tate and Garima Chhabra
+
+### Contents
 
 *  [1 SCIRun Overview](#scirun-overview)
 	-  [1.1 Software Requirements](#11-software-requirements)
 		+ [1.1.1 SCIRun 5.0](#111-scirun-50)
 		+ [1.1.2 Compilers, Dependencies Development Tools](#112-compilers-dependencies-development-tools)
 		+ [1.1.3 Creating Your SCIRun Fork](#113-creating-your-scirun-fork)
-
 *  [2 File Needed for a New Module](#files-needed-for-a-new-module)
 	- [2.1 Overview of Files Needed for each Module](#21-overview-of-files-needed-for-each-module)
 	- [2.2 Module Configuration File](#22-module-configuration-file)
@@ -47,20 +35,17 @@
 	- [2.5 Algorithm Code](#25-algorithm-code)
 		+ [2.5.1 Module Algorithm Header](#251-module-algorithm-header)
 		+ [2.5.2 Module Algorithm Code](#252-module-algorithm-code)
-
 *  [3 Example: Simple Module Without UI](#example-simple-module-without-ui)
 	- [3.1 Module Config File](#31-module-config-file)
 	- [3.2 Module Header File](#32-module-header-file)
 	- [3.3 Module Source Code](#33-module-source-code)
 	- [3.4 Building and Testing](#34-building-and-testing)
-
 *  [4 Example: Simple Module With UI](#example-simple-module-with-ui)
 	- [4.1 Duplicate the Previous Module](#41-duplicate-the-previous-module)
 	- [4.2 Creating a Custom UI](#42-creating-a-custom-ui)
 	- [4.3 Connecting UI to the Module](#43-connecting-ui-to-the-module)
 	- [4.4 Adding an Input Port](#44-adding-an-input-port)
 	- [4.5 Finished Code](#45-finished-code)
-
 *  [5 Example: Simple Module With Algorithm](#example-simple-module-with-algorithm)
 	- [5.1 Module Overview](#51-module-overview)
 	- [5.2 Module Configuration File](#52-module-configuration-file)
@@ -69,9 +54,8 @@
 	- [5.5 Module Algorithm Code](#55-module-algorithm-code)
 	- [5.6 Building and Testing](#56-building-and-testing)
 		+ [5.6.1 Building](#561-building)
-		+ [5.6.2 Testing](#562-testing)
-
-*  [6 Converting Modules from SCIRun 4](#converting-modules-from-scirun-4)	
+		+ [5.6.2 Testing](#562-testing)	
+*  [6 Converting Modules from SCIRun 4](#converting-modules-from-scirun-4)
 	- [6.1 Strategy](#61-strategy)
 		+ [6.1.1 Set up Git Branch](#611-set-up-git-branch)
 		+ [6.1.2 Create a Module Configuration File](#612-create-a-module-configuration-file)
@@ -87,19 +71,18 @@
 	- [6.3 Common Build Errors](#63-common-build-errors)
 
 *  [7 Creating Unit Tests](#creating-unit-tests)
-
 *  [8 Documenting the New Module](#documenting-the-new-module)
 	
-## Chapter 1
+### Chapter 1
 
-# SCIRun Overview
+## SCIRun Overview
 
 **This tutorial demonstrates how to create new modules in SCIRun 5.0.  It will walk through all the files needed and the basic module structure used by modules.  These instructions assume a basic understanding in C++ coding and other basic programming skills**
 #### 1.1 Software requirements
 ##### 1.1.1 SCIRun 5.0
 Download SCIRun version 5.0 from the [SCI software portal](http://www.scirun.org).
 Make sure to update to the most up-to-date version of the source code available, which will include the latest bug fixes.
-Alternatively, use git to clone the SCIRun repository (https://github.com/SCIInstitute/SCIRun.git). We suggest creating a fork of the repository so that you can track your changes and create pull requests to the SCIRun repository (Section 1.1.3).
+Alternatively, use git to clone the SCIRun repository (https://github.com/SCIInstitute/SCIRun.git). We suggest creating a fork of the repository so that you can track your changes and create pull requests to the SCIRun repository [Section 1.1.3](#113-creating-your-scirun-fork).
 
 ##### 1.1.2 Compilers, Dependencies Development Tools
 SCIRun will need to be built from the source code in order to test and use any modules written. Make sure that qt 4.8, git, cmake, and the latest c++ compilers for the operating system are installed.
@@ -139,13 +122,13 @@ It is a good practice to create a new branch in your fork for every module you w
 $git checkout -b [branch_name]
 ```
 
-Please see the [github help page] (https://help.github.com) for more information.
+Please see the [github help page](https://help.github.com) for more information.
 
 
 
-## Chapter 2
+### Chapter 2
 
-# Files Needed for a New Module
+## Files Needed for a New Module
 
 **This chapter will describe the files need to create a module in SCIRun. Each file will be described and a template example will be provided. These template files are all included in the source code in the template directories.**
 
@@ -185,8 +168,8 @@ There are three fields: "module", "algorithm", and "UI" and within each field ar
   }
 }
 ```
-This config file example would not build. We will include specific examples that will build and work in following chapters of this tutorial (Chapters 3, 4, 5).  
-As mentioned before, the UI and algorithm files are not required to generate a module, therefore the subfields for the "algorithm" or "UI" fields can changed to "N/A" to indicate that these files do not exist.  Please refer to Section 3.1 for an example. 
+This config file example would not build. We will include specific examples that will build and work in following chapters of this tutorial (Chapters [3](#example-simple-module-without-ui), [4](#example-simple-module-with-ui), [5](#example-simple-module-with-algorithm)).  
+As mentioned before, the UI and algorithm files are not required to generate a module, therefore the subfields for the "algorithm" or "UI" fields can changed to "N/A" to indicate that these files do not exist.  Please refer to [Section 3.1](#31-module-config-file) for an example. 
 #### 2.3 Module Source Code
 The Module source code consist of a .cc and .h file that code the actual function of the module. However, since most modules use an algorithm file, these files can also be considered as the code that pulls all the relevant information from the algorithm, the UI, and other modules in order to achieve its proper function. These files should be located in the proper directory with the `src/Modules/` directory. For example purposes, we will show and discuss the template files included in the `src/Modules/Template/` directory.
 ##### 2.3.1 Module Header File
@@ -266,7 +249,7 @@ Here is a list of port tags that can be used in SCIRun:
 
 The header is also where the ports are named and the datatype is declared. It is important for the name of each port to be unique, including all the inputs and outputs. The datatype of each port is specific when the port is declared and named.
 This declares the datatype expected by the port and can be a subset of the port tag type, e.g., DenseMatrix instead of Matrix. However, it can be better to do this within the module to control the exception.  
-If there is a UI with the module in question, the state variables may be needed to pass data between the module and the UI. State variables will need to be declared here as public (see Section 4.3 for an example). The `setStateDefault` function is how the default state variables are set. If there is no UI and therefore no state variables, this function can be set to empty in this file (`virtual void setStateDefaults() {};`)  and omitted from the .cc file.
+If there is a UI with the module in question, the state variables may be needed to pass data between the module and the UI. State variables will need to be declared here as public (see Section [4.3](#43-connecting-ui-to-the-module) for an example). The `setStateDefault` function is how the default state variables are set. If there is no UI and therefore no state variables, this function can be set to empty in this file (`virtual void setStateDefaults() {};`)  and omitted from the .cc file.
 ##### 2.3.2 Module Code File
 The module header file functions as a typical C++ file, containing the functions for the module. The *ModuleTemplate.cc* file found in `src/Modules/Template/` provides an example of the kind of coding needed for a module .cc file. The relevant functions are included here, with annotated comments:
 
@@ -318,12 +301,16 @@ As shown in this template example, the module.cc file contains mostly constructo
 There are three files needed to set up a UI for a module, a design file, a header file, and a .cc file. These files should all be located in the same directory within the `src/Interface/Modules/`. 
 We will show the examples located in `src/Interface/Modules/Template` as examples of the core functions needed.
 ##### 2.4.1 Module Design File
-The module design file is an xml file that describes the UI structure. This file can be created and edited in the Qt editor. Figure 2.1 shows the example template *ModuleDesignerFile.ui* within the Qt editor.
+The module design file is an xml file that describes the UI structure. This file can be created and edited in the Qt editor. <a href="#QT-Editor">Figure 2.1</a> shows the example template *ModuleDesignerFile.ui* within the Qt editor.
 As shown, the user can interactively modify the placement of the widgets in the window. The Widget Box window allows the user to choose and place new objects within the window. The Property Editor allows for the modification of properties of the various objects and widgets within the UI, including size, type of input, names, etc. With the Object Inspector window, the hierarchy and organization of the UI can be changed.
 
-![Template module interface design file as seen in the Qt editor.](SCIRunImages/QT-editor.png)
-             Figure 2.1 Template module interface design file as seen in the Qt editor
-             
+<figure id="QT-Editor">
+<img src="SCIRun5ModuleGeneration_figures/QT-editor.png" alt="Template module interface design file as seen in the Qt editor">
+<figcaption>Figure 2.1 Template module interface design file as seen in the Qt editor</figcaption>
+</figure>
+     
+  
+  
 When using the editor to make a module UI, there are a few things to consider. First, make sure all the relevant objects, including the name of UI (QDialog) is consistent with module dialog code. You can change the size and placement of objects with the property manager, but make sure that you leave some buffer space as some operating systems will interpret the file slightly differently. The structure of the UI can be changed or destroyed.
 Look at some of the existing modules for examples.
 ##### 2.4.2 Module Dialog Header
@@ -481,13 +468,13 @@ This template shows the algorithm using some of the defined names from`Core/Algo
 This only works if the algorithm files are linked in the module configuration file.   
 There are several algorithms already implemented in SCIRun. If there are modules that have similar functionality you may be able to use some of the functionality already implemented. The module may still need it's own algorithm file.  
 
-## Chapter 3
+### Chapter 3
 
-# Example: Simple Module Without UI
+## Example: Simple Module Without UI
 **This chapter describes how to create a very simple module in SCIRun. We will show how to make a simple module that outputs a simple string. This example will show the basics of the functions and code used by SCIRun to create and run modules.**
 **Scope: [Module Config File](#31-module-config-file) - [Module Header File](#32-module-header-file) - [Module Source Code](#33-module-source-code) - [Building and Testing](#34-building-and-testing) **
 #### 3.1 Module Config File
-If you have created a fork from the SCIRun git repository begin by creating a new branch in your repository. Be sure to commit your changes to your repository often as this can help you and the developers fix and make improvements to the code. It is often easiest to modify existing code to fit your purposes than create new code, so determine a module that has similar functionality or structure to the new module. If desired, there is also the template files described in Chapter 2 to use as a basis. In this example, we will provide the code needed, so it is not necessary to copy another module.  
+If you have created a fork from the SCIRun git repository begin by creating a new branch in your repository. Be sure to commit your changes to your repository often as this can help you and the developers fix and make improvements to the code. It is often easiest to modify existing code to fit your purposes than create new code, so determine a module that has similar functionality or structure to the new module. If desired, there is also the template files described in [Chapter 2](#files-needed-for-a-new-module) to use as a basis. In this example, we will provide the code needed, so it is not necessary to copy another module.  
 Begin with the module config file. Create a new text file in the module factory configuration directory (`src/Modules/Factory/Config/`) for the new module. It should be named *TestModuleSimple.module* or something similar. The text of the file should be:
 
 ```
@@ -544,7 +531,7 @@ public:
 #endif
 
 ```
-As mentioned in Section 2.2, the header files for most modules do not vary significantly. This example in particular contains only elements common to most other modules. The key to creating the header files is to ensure that the module name is correct in every place it occurs, that the namespace (StringManip) matches the module config file and that the ports are numbered and labeled correctly.  
+As mentioned in Section [2.2](#22-module-configuration-file), the header files for most modules do not vary significantly. This example in particular contains only elements common to most other modules. The key to creating the header files is to ensure that the module name is correct in every place it occurs, that the namespace (StringManip) matches the module config file and that the ports are numbered and labeled correctly.  
 If desired, the final version of the header file is in the source code: `src/Modules/Examples/TestModuleSimple.h`.
 
 #### 3.3 Module Source Code
@@ -604,15 +591,15 @@ SET(Modules_String_HEADERS
 )
 
 ```
-After changing the CMakeList.txt file, build SCIRun using the build script, or if you have already built SCIRun recently, go to the `SCIRun\_root/bin/SCIRun` directory and run make.  
+After changing the CMakeList.txt file, build SCIRun using the build script, or if you have already built SCIRun recently, go to the `SCIRun_root/bin/SCIRun` directory and run make.  
 Take note of any build errors, if there is a problem in the with any module factory files, make sure that there are no mistakes in the the module configuration file and build again.  
-Check out the common build errors in Section 6.3.
+Check out the common build errors in [Section 6.3](#63-common-build-errors).
 
 After SCIRun builds completely, Launch SCIRun and test the module. You can use the PrintDatatype module to view the string that this module outputs. Other modules will require more testing, but due to the very simple nature of the module you can know that if the messages matches what you expect, then it is working properly.  
 
-## Chapter 4
+### Chapter 4
 
-# Example: Simple Module With UI
+## Example: Simple Module With UI
 
 **In this chapter, we will build off the module that we described in the previous chapter to show how to add a UI and an input port. This module will print a message that comes from either the input port or the UI. We will show how to add a UI incrementally to help convey the principles that the software is based upon. This incremental approach allows the user to copy this approach with more complicated module as it provides sanity checks for the user.**
 
@@ -681,7 +668,7 @@ The *'false'* options means that there is no module.
 Removing the options changes the input to 'true', which allows for a module UI.  
 If no UI file is found, a default UI will be used.  
 With these changes we should try to build. Make sure the files are added to the CMakeList.txt file in `src/Modules/String/` as we showed in the previous chapter. If there are build errors, check for spelling mismatches.
-Also, check out the common build errors in Section 6.3. Once SCIRun is built, you can try to add the new module to the workspace. SCIRun will give you a warning dialogue about not finding a UI file, so it will create a default one.
+Also, check out the common build errors in [Section 6.3](#63-common-build-errors). Once SCIRun is built, you can try to add the new module to the workspace. SCIRun will give you a warning dialogue about not finding a UI file, so it will create a default one.
 This UI is not connected to anything, so it won't affect the module at all, but you should be able to open the UI and see it (a slider and two buttons).
 Check to make sure that the output is still the string that you expected. 
 If everything is working properly, we can move onto the next step of adding our own module. 
@@ -701,9 +688,15 @@ Open the *TestModuleSimpleUIDialog.ui* file in the Qt editor, which provides a g
 Change the text of the remaining label to `My String:` or something similar.
 Finally, change the name of the of the `line edit widget` to `inputstring_` and the name of the `QDialog| object` to *TestModuleSimpleUIDialog*.  
 This can be done in the *Object Inspector* or in the *Property Editor* when the appropriate object is clicked.  
-Figure 4.1 shows what the module should look like in the Qt editor.
-![simpleUI](SCIRunImages/simpleUI.png)
-Figure 4.1 Module interface design file for the TestModuleSimpleUI module as seen in the Qt editor.
+<a href="#simpleUI">Figure 4.1</a> shows what the module should look like in the Qt editor.
+
+
+<figure id="simpleUI">
+<img src="SCIRun5ModuleGeneration_figures/simpleUI.png" alt="Module interface design file for the TestModuleSimpleUI module as seen in the Qt editor">
+<figcaption>Figure 4.1 Module interface design file for the TestModuleSimpleUI module as seen in the Qt editor.
+</figcaption>
+</figure>
+
 
 Now that the module UI is designed, we need to link it to the module with the module dialog code.
 Copy the *ModuleDialog.cc* and the *ModuleDialog.h* from the `src/Interface/Modules/Template/` directory to the \emph{\seqsplit{src/Interface/Modules/String/}} directory, with the appropriate names (*TestModuleSimpleUIDialog.cc* and *TestModuleSimpleUIDialog.h*). For the *TestModuleSimpleUIDialog.h*, change the module name reference to the correct module name and delete the 'virtual void pull()' function.  The code should be very similar to the following:
@@ -896,16 +889,16 @@ For a slightly more complicated, yet much more useful module as an example, chec
 #### 4.5 Finished Code
 For the sake of comparison, the final version of the code for this module is included in the source code in the Example files. The module code files are in `src/Modules/Examples/`, *TestModuleSimpleUI.cc* and *TestModuleSimpleUI.h*. The module UI code files are in `src/interface/Modules/Examples/`, *TestModuleSimpleUIDialog.cc*, *TestModuleSimpleUIDialog.h*, and *TestModuleSimpleUIDialog.ui*.  
 
-## Chapter 5
+### Chapter 5
 
-# Example: Simple Module With Algorithm
+## Example: Simple Module With Algorithm
 
 **In this chapter, we will show how to build a module with a simple algorithm and a simple UI. This chapter will build off the principles established in the previous examples. We will use SCIRun to create a module that will perform a simple sorting algorithm on a matrix. This example will show how to use module algorithm files with a module UI to implement simple algorithms into modules. We will build off some of the principles of the previous examples.**
 
 **Scope: [Module Overview](#51-module-overview) - [Module Configuration File](#52-module-configuration-file) - [Module Code](#53-module-code) - [Module UI Code](#54-module-ui-code) - [Module Algorithm Code](#55-module-algorithm-code) - [Building and Testing](#56-building-and-testing)**
 
 #### 5.1 Module Overview
-As mentioned in the chapter introduction, we are going to create a module that will sort the entries of a matrix in ascending or descending order. We wil call the module SortMatrix. This module will use a simple simple quicksort algorithm with a [Lomuto partition scheme](\href{https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme). There are some implementations for vector sorting in the STL algorithm library, but this implementation works more generally on matrices and will hopefully be helpful in showing how to implement an algorithm from scratch.
+As mentioned in the chapter introduction, we are going to create a module that will sort the entries of a matrix in ascending or descending order. We wil call the module SortMatrix. This module will use a simple simple quicksort algorithm with a [Lomuto partition scheme](https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme). There are some implementations for vector sorting in the STL algorithm library, but this implementation works more generally on matrices and will hopefully be helpful in showing how to implement an algorithm from scratch.
 There are eight files needed in total for this module: a module configuration file, module code and header file, a UI design file with UI code and header files, and algorithm code and header files. The first six were used in the previous example, but this chapter will show how to incorporate the algorithm code and how it interacts with the module and UI code. Each file is also described in the general in Chapter 2 with templates.
 
 #### 5.2 Module Configuration File
@@ -1022,11 +1015,16 @@ The final module header and .cc files are included in the source code in `src/Mo
 We will create a simple module UI for the SortMatrix module. The UI will consist of a toggle switch to choose between ascending and descending sorting. As before, we will need three files: *SortMatrixDialog.ui*, *SortMatrixDialog.h*, and *SortMatrixDialog.cc*, all need to be in `src/Interfac/Modules/Math/`.
 The process and code for this example is very similar to the previous example.
 
-We will make the \emph{SortMatrixDialog.ui} in the Qt editor as we did previously (Chapter 2). It may be easier to copy a previously created UI file and modify it rather than to create one from scratch. Copy the `src/Interface/Template/ModuleDesignerFile.ui` file and rename it.Delete the widgets in the UI and add two radial button widgets (drag from the 'Widget Box' window). Change the labels to 'ascending' and 'descending', and the names (in the 'Object Inpector' window) to `ascendButton_` and `descendButton_`. You will also need to make sure to change the name of the \verb|QDialog| to \verb|SortMatrixDialog| (also in the 'Object Inpector'). The placement of the buttons and the size of the window and boxes can be adjusted in the 'Property Editor' window. The UI should look similar to Figure 5.1.
-![Algo_UI](SCIRunImages/algo_ui.png)
-Figure 5.1 Module interface design file for the SortMatrix module as seen in the Qt editor.
+We will make the \emph{SortMatrixDialog.ui} in the Qt editor as we did previously ([Chapter 2](#files-needed-for-a-new-module)). It may be easier to copy a previously created UI file and modify it rather than to create one from scratch. Copy the `src/Interface/Template/ModuleDesignerFile.ui` file and rename it.Delete the widgets in the UI and add two radial button widgets (drag from the 'Widget Box' window). Change the labels to 'ascending' and 'descending', and the names (in the 'Object Inpector' window) to `ascendButton_` and `descendButton_`. You will also need to make sure to change the name of the \verb|QDialog| to \verb|SortMatrixDialog| (also in the 'Object Inpector'). The placement of the buttons and the size of the window and boxes can be adjusted in the 'Property Editor' window. The UI should look similar to <a href="#algoUI">Figure 5.1</a>.
 
-The *SortMatrixDialog.h* is virtually identical to the header in the previous example (Chapter 4), except for the names, as shown here:
+
+<figure id="algoUI">
+<img src="SCIRun5ModuleGeneration_figures/algo_ui.png" alt="Module interface design file for the SortMatrix module as seen in the Qt editor">
+<figcaption>Figure 5.1 Module interface design file for the SortMatrix module as seen in the Qt editor.</figcaption>
+</figure>
+
+
+The *SortMatrixDialog.h* is virtually identical to the header in the previous example ( [Chapter 4](#example-simple-module-with-ui)), except for the names, as shown here:
 
 ```
 #ifndef INTERFACE_MODULES_MATH_SortMatrixDIALOG_H
@@ -1052,7 +1050,7 @@ namespace SCIRun {
 #endif
 
 ```
-*SortMatrixDialog.cc* is also very similar to the dialog .cc file in the previous example (Chapter 4):
+*SortMatrixDialog.cc* is also very similar to the dialog .cc file in the previous example ( [Chapter 4](#example-simple-module-with-ui)):
 
 ```
 #include <Interface/Modules/Math/SortMatrixDialog.h>
@@ -1250,24 +1248,27 @@ The final module algorithm header and .cc files are included in the source code 
 
 ##### 5.6.1 Building
 Once all the files have been created, SCIRun can be built with the new module. Be sure to added all eight files to the appropriate *CMakeList.txt* files in the `src/Modules/Math/`, `src/Interface/Modules/Math/`, and `src/Core/Algorithms/Math/`.  
-Just add each of the filenames to the appropriate lists within the *CMakeList.txt* file, as shown in the previous examples (Sections 3.4,4.1,4.2).  
+Just add each of the filenames to the appropriate lists within the *CMakeList.txt* file, as shown in the previous examples (Sections [3.4](#34-building-and-testing),[4.1](#41-duplicate-the-previous-module),[4.2](#42-creating-a-custom-ui)).  
 When creating new modules, it can be easier to added the code in a piecemeal fashion.
-This would entail geting SCIRun to build with just the bare minimum of the algorithm code (only `run` with no calls other functions) then to add the other functions in a step by step manner. This allows for easier debugging and a more systematic process to get the module working. Check Section 6.3 for common build problems.
+This would entail geting SCIRun to build with just the bare minimum of the algorithm code (only `run` with no calls other functions) then to add the other functions in a step by step manner. This allows for easier debugging and a more systematic process to get the module working. Check Section [6.3](#63-common-build-errors) for common build problems.
 
 ##### 5.6.2 Testing
-To make sure that the new SortMatrix module works, create a network with CreateMatrix, SortMatrix, PrintMatrixIntoString, and PrintDatatype as shown in Figure 5.2. Create any matrix in CreateMatrix.
+To make sure that the new SortMatrix module works, create a network with CreateMatrix, SortMatrix, PrintMatrixIntoString, and PrintDatatype as shown in <a href="#algoNetwork">Figure 5.2</a>. Create any matrix in CreateMatrix.
 In PrintMatrixIntoString, change the input to have the number of columns in your input matrix.
 In the 4x2 matrix that shown in Figure 5.2, the format string was: `%4.2g %4.2g %4.2g %4.2g \n`.
 Alternatively, the matrix entries can be printed as a list with `%4.2g` (make sure there is a space at the beginning or end of the string).
 This network can be used to see the input and output of the SortMatrix module.  
 If this or another module is not behaving as expected, change the output of some functions and set the output of the module to be some of the intermediate steps, or use `std::cout<< "message" <<std::endl;` to print values as the code runs. Unit Test can also find some bugs in the module code. 
-![Algo_network.png](SCIRunImages/algo_network.png)
-Figure 5.2 Network for running and testing the SortMatrix module. 
+
+<figure id="algoNetwork">
+<img src="SCIRun5ModuleGeneration_figures/algo_network.png" alt="Network for running and testing the SortMatrix module">
+<figcaption>Figure 5.2 Network for running and testing the SortMatrix module. </figcaption>
+</figure>
 
 
-## Chapter 6
+### Chapter 6
 
-# Converting Modules from SCIRun 4
+## Converting Modules from SCIRun 4
 
 **This chapter will walk through the steps necessary to convert a module from SCIRun 4 to SCIRun 5.  
 Converting a module is very similar to creating a new module, as expected.  
@@ -1276,18 +1277,18 @@ However, there are additional considerations that will be described in this chap
 **Scope: [Strategy](#61-strategy) - [Common Function Changes](#62-common-function-changes) - [Common Build Errors](#63-common-build-errors)**
 
 #### 6.1 Strategy
-The strategy for converting a module from SCIRun 4 to SCIRun 5 is very similar to the strategy of making a new module, which is to start with the basics, and add all the necessary parts piece by piece. This is demonstrated in our previous examples, especially in Chapters 3 & 4.
+The strategy for converting a module from SCIRun 4 to SCIRun 5 is very similar to the strategy of making a new module, which is to start with the basics, and add all the necessary parts piece by piece. This is demonstrated in our previous examples, especially in Chapters [3](#example-simple-module-without-ui) & [4](#example-simple-module-with-ui).
 
 Another document outlining the steps to convert a module which may be helpful is in the source code: `src/Documentation/Manuals/ModuleConversionSteps.md`. It can also be found on [github](https://github.com/SCIInstitute/SCIRun/blob/master/src/Documentation/Manuals/ModuleConversionSteps.md).
 
 ##### 6.1.1 Set up Git Branch
-In order for all the hard work of converting a module to be useful for all the users of SCIRun, be sure to use git and github for version control.  Make sure that you have your own fork, sync to the SCIRun repository (Section 1.1.3). Create a new branch in your fork for each module conversion (Section 1.1.3) and be sure to commit your changes frequently.
+In order for all the hard work of converting a module to be useful for all the users of SCIRun, be sure to use git and github for version control.  Make sure that you have your own fork, sync to the SCIRun repository [Section 1.1.3](#113-creating-your-scirun-fork). Create a new branch in your fork for each module conversion [Section 1.1.3](#113-creating-your-scirun-fork) and be sure to commit your changes frequently.
 
 ##### 6.1.2 Create a Module Configuration file
-Create a module configuration file (Section 2.2) for the module in the `src/Modules/Factory/Config/` directory. It may be easiest to copy an existing file and change it. Be sure that all the names match the appropriate names of other files and fields in other files. It will be easier if the naming convention shown in Section 2.2 (name, nameDialog, nameAlgo, etc.) Leave fields blank with `"N/A"`. For now, it can help to only fill in the first section `"module"`, as we will be adding the UI and the algorithm piece by piece. Commit the changes to the local branch for the module.
+Create a module configuration file  [Section 2.2](#22-module-configuration-file) for the module in the `src/Modules/Factory/Config/` directory. It may be easiest to copy an existing file and change it. Be sure that all the names match the appropriate names of other files and fields in other files. It will be easier if the naming convention shown in  [Section 2.2](#22-module-configuration-file) (name, nameDialog, nameAlgo, etc.) Leave fields blank with `"N/A"`. For now, it can help to only fill in the first section `"module"`, as we will be adding the UI and the algorithm piece by piece. Commit the changes to the local branch for the module.
 
 ##### 6.1.3 Create a Module Header file
-Most of the modules in SCIRun 4 did not have header files for the module code, so one will need to be created for them. Copy the template header file (Section 2.3.1) or another module header file. The header file needs to be in the same location as the module .cc file (next Section). Change all the references to match the name of the module. Change the port names, number, and type. Make sure all functions used in the module code are declared in the header. Commit the changes to the local branch for the module.
+Most of the modules in SCIRun 4 did not have header files for the module code, so one will need to be created for them. Copy the template header file [Section 2.3.1](#231-module-header-file) or another module header file. The header file needs to be in the same location as the module .cc file (next Section). Change all the references to match the name of the module. Change the port names, number, and type. Make sure all functions used in the module code are declared in the header. Commit the changes to the local branch for the module.
 
 ##### 6.1.4 Get Module to Build Without Functionality
 Getting the module code from SCIRun 4 working in SCIRun 5 can be challenging because there are a number of infrastructure and function changes. For this reason, it can beneficial to start with the basic code and build from there. Most of the SCIRun 4 module code is in the  `src/Modules/Legacy/` directory, and can remain there. Make sure the header file is also in this directory.
@@ -1295,7 +1296,7 @@ Getting the module code from SCIRun 4 working in SCIRun 5 can be challenging bec
 Once the files are in the correct place, begin by removing all the SCIRun 4 specific code. 
 If desired, the SCIRun 4 code can be commented out for now instead of deleted, but should be cleaned up before submitting a pull request. Remove any port header file includes, such as: `#include <Dataflow/Network/Ports/FieldPort.h>`, and The `DECLARE_MAKER` function. Remove the class declaration, as the header should already contain the essential declarations. We will add more as needed.  
 
-Make sure that the namespaces used are correct (at least two, `Fields/Math/etc` and Networks, are needed as seen in Section 2.3.2). Make sure that the module header is included and the other headers included have the correct path. Change the module constructor (`@modulename@::@modulename@()` in the template example) to match the format shown in Section 2.3.2 with the correct port names. Add the `verb|staticInfo_` variable as in Section 2.3.2. Add a blank `setStateDefaults()` function:
+Make sure that the namespaces used are correct (at least two, `Fields/Math/etc` and Networks, are needed as seen in [Section 2.3.2](#232-module-code-file)). Make sure that the module header is included and the other headers included have the correct path. Change the module constructor (`@modulename@::@modulename@()` in the template example) to match the format shown in [Section 2.3.2](#232-module-code-file) with the correct port names. Add the `verb|staticInfo_` variable as in [Section 2.3.2](#232-module-code-file). Add a blank `setStateDefaults()` function:
 
 ```
 void @ModuleName@::setStateDefaults()
@@ -1303,18 +1304,18 @@ void @ModuleName@::setStateDefaults()
  
 }
 ```
-or, if there is no module UI planned, add empty curly brackets to the header file declaration as discussed in Section 2.3.1.  
+or, if there is no module UI planned, add empty curly brackets to the header file declaration as discussed in [Section 2.3.1](#231-module-header-file) .  
 The only code that will carry over is probably the `execute()` and other functions coded in the module, so everything else can be removed. Any helper functions should be moved to an algorithm file later, but for now comment them out. Also comment out the content of the executable for now.  
-In this state, the three module files (config, header, and .cc file) should be similar to the simplest example (Chapter 3), but the execute function will empty for now. Add the header and .cc files the *CMakeList.txt* file in the directory they are in and try to build SCIRun. If there are build errors, check Section 6.3 for some ideas for how to correct them. The goal of building the code at this point it to make sure that the code which interacts with SCIRun is working properly before there are other mistakes in the code.  
+In this state, the three module files (config, header, and .cc file) should be similar to the simplest example ([Chapter 3](#example-simple-module-without-ui)), but the execute function will empty for now. Add the header and .cc files the *CMakeList.txt* file in the directory they are in and try to build SCIRun. If there are build errors, check [Section 6.3](#63-common-build-errors) for some ideas for how to correct them. The goal of building the code at this point it to make sure that the code which interacts with SCIRun is working properly before there are other mistakes in the code.  
 Once SCIRun builds, open it and find the new module. There will probably be a warning about creating a UI because the code is expecting one and there isn't. Make sure all the ports are there and are correctly named (hover the mouse over the port). Commit all changes to the local branch.  
-If there is no UI planned for this module, add a \verb|'false'| input to the module constructor (Sections 2.3.2 & 3.3). Otherwise, continue with the next step.
+If there is no UI planned for this module, add a \verb|'false'| input to the module constructor (Sections [2.3.2](#232-module-code-file) & [3.3](#33-module-source-code)). Otherwise, continue with the next step.
 
 ##### 6.1.5 Add Module UI
-Once the module is building without functionality, a module UI can be added. Begin by copying the UI files from another module with a similar interface, or the template files in `src/Interface/Modules/Template/`. Rename the three UI files (Section 2.4) and place them in the appropriate file in `src/Interface/Modules/`. The file names and subsequent function and item names in the UI code should be the same as the module with `Dialog` appended to it.  
-In the module design file, use the Qt editor to create the UI that is needed by adding and removing widgets as needed (see Sections 4.2 & 5.4). Make sure that the name of the module and the name of the inputs are correctly named.  
+Once the module is building without functionality, a module UI can be added. Begin by copying the UI files from another module with a similar interface, or the template files in `src/Interface/Modules/Template/`. Rename the three UI files [Section 2.4](#24-module-ui-code) and place them in the appropriate file in `src/Interface/Modules/`. The file names and subsequent function and item names in the UI code should be the same as the module with `Dialog` appended to it.  
+In the module design file, use the Qt editor to create the UI that is needed by adding and removing widgets as needed (see Sections [4.2](#42-creating-a-custom-ui) & [5.4](#54-module-ui-code)). Make sure that the name of the module and the name of the inputs are correctly named.  
 Next, modify the dialog header file so that the names of the module and dialog are corrected. There usually isn't anything extra needed with the dialog header. Similarly modify the module dialog cc file. 
-Now add code to interpret the inputs from the widgets placed in the UI (Section 2.4). It may be helpful to look at other modules with similar UIs to determine which functions are needed (see Sections 4.2 & 5.4 for simple examples).  
-Now that the interface files are created, fill out the Interface section of the module configuration file. Make sure the names are consistent across files. Add all three files to *CMakeList.txt* in the directory that the files are in. Try to build SCIRun. If there are any errors, see Section 6.3 for ideas to resolve them. Once SCIRun is built, pull up the module and check the module UI. There will not be any functionality or defaults set, but the look should be correct. If the UI is correct, the UI code should be complete. Commit all changes to the local branch.
+Now add code to interpret the inputs from the widgets placed in the UI ([Section 2.4](#24-module-ui-code)). It may be helpful to look at other modules with similar UIs to determine which functions are needed (see Sections [4.2](#42-creating-a-custom-ui) & [5.4](#54-module-ui-code) for simple examples).  
+Now that the interface files are created, fill out the Interface section of the module configuration file. Make sure the names are consistent across files. Add all three files to *CMakeList.txt* in the directory that the files are in. Try to build SCIRun. If there are any errors, see [Section 6.3](#63-common-build-errors) for ideas to resolve them. Once SCIRun is built, pull up the module and check the module UI. There will not be any functionality or defaults set, but the look should be correct. If the UI is correct, the UI code should be complete. Commit all changes to the local branch.
 
 ##### 6.1.6 Add Module Algorithm Files
 Module algorithm code isn't necessary if the module is simple. However using the algorithm class can be an easy way to work with the UI. Therefore, if the module that is being ported does not have algorithm code, consider adding it. If no algorithm code will be added to the module, skip this step.  
@@ -1325,28 +1326,27 @@ If there are no build errors, start adding the commented out code as described i
 Commit all changes to the local branch.
 
 ##### 6.1.7 Add Module and Algorithm Functionality
-If all the previous steps are completed, all the files needed for the module have been created and the infrastructure code is working. Next, the functional code of the module will need some work to get working. This step of converting the modules is the most specific to the module and could require the most experience to know the various functions that may have been changed in SCIRun5.However, there may be some modules that require very little code changes in this step. Section 6.2 provides some examples of commonly used functions in SCIRun4 and the replacement in SCIRun5. The key to making the module code functional is similar to the other steps, i.e., expose one small piece at a time.  
-If there is a UI for the module, the state variables defaults need to be set. These need to be set in the `setStateDefaults` function. If there is algorithm code, these default definitions can be passed to the algorithm code, such as the example in Chapter 5. If there is no algorithm code, the state variables may need to be declared in the module code, as in UI example (Chapter 4). After setting the state defaults (and building the code), the module UI should display the defaults.  
-When converting the module code, it may be easier to start on the more standardized code, then work toward the more specific code, as we have been doing through this tutorial. For example, it may be easier to get the input and output calls working (as in Chapter 3), and then work on making the output what it needs to. Then, if there is algorithm code for the module, start by getting the algorithm call in the module code working with the algorithm code commented out, then work on the algorithm code. See Sections 6.2 & 6.3 for ideas to convert and fix specific functions and pieces of code. Commit all changes to the local branch.
+If all the previous steps are completed, all the files needed for the module have been created and the infrastructure code is working. Next, the functional code of the module will need some work to get working. This step of converting the modules is the most specific to the module and could require the most experience to know the various functions that may have been changed in SCIRun5.However, there may be some modules that require very little code changes in this step. [Section 6.2](#62-common-function-changes) provides some examples of commonly used functions in SCIRun4 and the replacement in SCIRun5. The key to making the module code functional is similar to the other steps, i.e., expose one small piece at a time.  
+If there is a UI for the module, the state variables defaults need to be set. These need to be set in the `setStateDefaults` function. If there is algorithm code, these default definitions can be passed to the algorithm code, such as the example in [Chapter 5](#example-simple-module-with-algorithm). If there is no algorithm code, the state variables may need to be declared in the module code, as in UI example ( [Chapter 4](#example-simple-module-with-ui)). After setting the state defaults (and building the code), the module UI should display the defaults.  
+When converting the module code, it may be easier to start on the more standardized code, then work toward the more specific code, as we have been doing through this tutorial. For example, it may be easier to get the input and output calls working (as in [Chapter 3](#example-simple-module-without-ui)), and then work on making the output what it needs to. Then, if there is algorithm code for the module, start by getting the algorithm call in the module code working with the algorithm code commented out, then work on the algorithm code. See Sections [6.2](#62-common-function-changes) & [6.3](#63-common-build-errors) for ideas to convert and fix specific functions and pieces of code. Commit all changes to the local branch.
 
 ##### 6.1.8 Module Testing
 Testing for a new module should occur intermittently while converting the code to make debugging easier, as we described in earlier steps. As you are trying to convert the module, test the module regularly to make sure that the output of module is as expected. Before finishing and submitting the module, test several types of inputs to make sure that the module behaves as intended. Since the module is converted from SCIRun 4, compare the outputs of the different  versions.  
-In addition to making sure that the module works as expected, the module will need to be tested regularly for regression testing. A regression testing network and unit test code is needed for the module. The testing network should show different uses of the module if there are different function. For unit testing see Chapter 7 for information on creating unit test for the converted module. Commit all test, including the test networks, to the local branch.
+In addition to making sure that the module works as expected, the module will need to be tested regularly for regression testing. A regression testing network and unit test code is needed for the module. The testing network should show different uses of the module if there are different function. For unit testing see [Chapter 7](#creating-unit-tests) for information on creating unit test for the converted module. Commit all test, including the test networks, to the local branch.
 
 ##### 6.1.9 Module Documentation 
-Make sure your module is documented properly in the git commits and code in addition to the module documentation as described in Chapter 8.
+Make sure your module is documented properly in the git commits and code in addition to the module documentation as described in  [Chapter 8](#documenting-the-new-module).
 
 ##### 6.1.10 Github Pull Request
-With the module fully completed, we can now submit it to be included in the main release of SCIRun using a pull request. Since there was a branch created for the new module, there should be regular commits as the module is ported. For the the pull request, make sure all the changes have been committed to the branch meant for the new module. Now make sure that the branch is up to date with the latest changes in the main branch of SCIRun. To do this, sync your fork and merge the SCIRun master branch as shown in the Section1.1.3.Make sure the module branch is merge with the master branch and make sure that your local changes are pushed to github. To make a pull request, there is usually a short cut on the main github page of the SCIRun or you can check out the [github help page about it](https://help.github.com/articles/using-pull-requests/). Add some comments to the developers to know what to look for when reviewing the code. If you have changes to make, either that you noticed or requested by the developer, just commit it to the same branch and push it github and the pull request will track the changes until it is merged.  
+With the module fully completed, we can now submit it to be included in the main release of SCIRun using a pull request. Since there was a branch created for the new module, there should be regular commits as the module is ported. For the the pull request, make sure all the changes have been committed to the branch meant for the new module. Now make sure that the branch is up to date with the latest changes in the main branch of SCIRun. To do this, sync your fork and merge the SCIRun master branch as shown in the [Section 1.1.3](#113-creating-your-scirun-fork).Make sure the module branch is merge with the master branch and make sure that your local changes are pushed to github. To make a pull request, there is usually a short cut on the main github page of the SCIRun or you can check out the [github help page about it](https://help.github.com/articles/using-pull-requests/). Add some comments to the developers to know what to look for when reviewing the code. If you have changes to make, either that you noticed or requested by the developer, just commit it to the same branch and push it github and the pull request will track the changes until it is merged.  
 
 #### 6.2 Common Function Changes
-<!--
+
 | **SCIRun4** | **SCIRun5** | **Notes**|
 |-------------|-------------|----------|
 |`if (input.get_rep()==0)`| `if (!input)                                             `|Checks for an empty handle. <br/> Works for all major handle types.|
 |```output = input;``` ```output.detach();```|`FieldHandle output_field(input_field->clone());`|Copy a field and disconnect the data|
 |```output = input;``` </br> ```output.detach();``` </br> ```output->mesh_detach();```|```FieldHandle output_field(input_field->deep_clone());```|Copy a field and disconnect the mesh and data.|
--->
 #### 6.3 Common Build Errors
 1.
 > ConvertMeshToPointCloudDialog.h:32:10: fatal error:
@@ -1393,12 +1393,12 @@ virtual const QMetaObject *metaObject() const; \
     
  Errors that involve qt and qt objects deal with the gui code.  Make sure that the gui name is spelled correctly.  Also make sure that the Qobject name is set properly.  
  
-## Chapter 7
+### Chapter 7
 
-# Creating Unit Tests
+## Creating Unit Tests
 You will at least need a testing network.  
 
-## Chapter 8
+### Chapter 8
 
-# Documenting the New Module
+## Documenting the New Module
 You should totally document the modules you add.  
