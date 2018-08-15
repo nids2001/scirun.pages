@@ -28,7 +28,7 @@ Makes an ImageField that fits the source field. The value type of the ImageField
 
 The **Pad Percentage** parameter is an optional parameter that describes how much larger than the input field the resulting lattice volume should be. For example, a value of 100 would make the image field be three times as far across and contain nine times the area of a image with the default 0 padding. A value of 50 would cause the image to be twice as far across (50% bigger on each side).
 
-No interpolation is done onto the new field. It is recommended that the {% include moduleLink.md moduleName='MapFieldDataOntoElements' %} or {% include moduleLink.md moduleName='MapFieldDataOntoNodes' %} module be used if those values are needed.
+No data is generated. In order to map the data mapping modules from SCIRun{% include moduleLink.md moduleName='MapFieldDataOntoElements' %} or {% include moduleLink.md moduleName='MapFieldDataOntoNodes' %} can be used if those values are needed.
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

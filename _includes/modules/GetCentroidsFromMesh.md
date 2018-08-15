@@ -18,12 +18,12 @@ tags: module
 
 ### Summary
 
-Computes a PointCloudField containing all of the elements for a field.
+Computes a point cloud field containing all of the elements for a field.
 **Detailed Description**
 
-The Centroids module computes a PointCloudField containing all the element /node/face/edge/cell/delement centers for a field. For instance, if the input field is a TetVolField then the output field would contain the center of each tetrahedra. An input PointCloudField would return the same data locations.
+The Centroids module computes a point cloud field containing all the element /node/face/edge/cell/delement centers for a field. For instance, if the input field is a TetVolField then the output field would contain the center of each tetrahedra. An input point cloud field would return the same data locations.
 
-The output field is always a PointCloudField of doubles, and contains no data. If data is needed at the points then an interpolation module should be used to recover them.
+The output field is always a point cloud field of doubles, and contains no data. If data is needed at those points then a mapping module (MapFieldData module) could be used to recover them.
 
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}
