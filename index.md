@@ -24,6 +24,7 @@ Doc v1.0c
  - [Module Reference](modules.html)
  - [Python API 0.2](python.html)
  - [Basic Tutorial](BasicTutorial.html)
+ - [Ischemia Tutorial](IschemiaTutorial.html)
  - [SCIRun5 Module Generation](SCIRun5ModuleGeneration.html)
 
 
