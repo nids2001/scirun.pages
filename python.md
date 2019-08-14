@@ -68,20 +68,25 @@ Some functions are not available for execution within the `InterfaceWithPython` 
      * `outputString1 = "string concat " + inputString1` Input/Output can be combined on the same line.
   * Note: for output variable assignment, make sure to include spaces around the `=`.
   
-  ####  InterfaceWithPython Top-Level Script
+  ###  InterfaceWithPython Top-Level Script
   
-  In the InterfaceWithPython there is a "Top-Level Script" tab which allows users to run matlab code in a broader scope on execution of the InterfaceWithPython Module.  This is helpful if
-  
-  
+In the InterfaceWithPython there is a "Top-Level Script" tab which allows users to run matlab code in a broader scope on execution of the InterfaceWithPython Module.  This is helpful if there are variables or modules that are costly to compute or load, yet are used in more than one InterfaceWithPython Module.  The [Matlab engine](#matlab-engine-in-scirun-5-through-python) is one such example.  To launch the matlab engine once per session, use the following code in the top-level script:
+```
+import matlab.engine
+print('matlab imported')
+eng =  matlab.engine.start_matlab() if (not 'eng' in vars()) else eng
+```
+This will allow the same matlab engine instance to be called with `eng`.  *Note: using the [Matlab code block](#matlab-code-block) does not require this code in the top-level tab.*
 
 ## Installing packages
-* If there is an installation of the packages with other python builds on the machine, the system path can be used to use those packages.  This is likely the easiest way to use python packages in SCIRun, and will also likely to be easiest to maintain.  However, to use packages from another Python build, the Python versions will need to match.  Once the packages are installed, use the SCIRun triggered events to modify the python path to include these packages.
+* If there is an installation of the packages with other python builds on the machine, the system path can be used to use those packages.  This is likely the easiest way to use python packages in SCIRun, and will also likely to be easiest to maintain.  However, to use packages from another Python build, the Python versions will need to match.  Once the packages are installed, use the SCIRun triggered events to modify the python path to include these packages.*
 
 ### Installing Python to maintain Python packages.
 
 The main advantage of doing this step is that a seperate Python will likely have pip or multiple packages already installed, unlike the SCIRun Python distribution (we are working on it).  Most distributions will likely work; some operating systems come with a python distribution that may work, yet it may be an outdated version. [Anaconda](https://www.anaconda.com/distribution/#download-section) is a good choice because most of the commonly used packages will be installed when it is installed.  However, the cleanest option will likely be installing [Python's own distribution](https://www.python.org/downloads/), then to install the packages that you want to use.  The both these distributions should come with pip installed, which makes it easy to install most common packages.
 
-*Make sure the python versions of the seperate Python installation matches the version that SCIRun is using*
+**Make sure the python versions of the seperate Python installation matches the version that SCIRun is using.**
+
 To check the Python version in SCIRun, simply open the Python Console, it show print the version in the initialization method.  You can also get the version when running on the command line by using the `-v` flag.
 
 
@@ -121,7 +126,7 @@ sys.path.append('/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5
 
 There can be many directories or many `sys.path.append(...)` calls as needed.  This script is saved and will run everytime SCIRun starts, and therefore it will update the path.
 
-If there are module or package paths that need to be set on a network basis (rather than for every network), the InterfaceWithPython module can acheive this with the "Top-Level Script" Tab.  This tab will execute the code in this tab on a global scale (until SCIRun is closed), so a script similar to the triggered events example will be saved and executed only for the network.
+If there are module or package paths that need to be set on a network basis (rather than for every network), the InterfaceWithPython module can acheive this with the ["Top-Level Script" Tab](#top-level-script-tab).  This tab will execute the code in this tab on a global scale (until SCIRun is closed), so a script similar to the triggered events example will be saved and executed only for the network.
 
   
 ## Matlab engine in SCIRun 5 (through python)
@@ -148,7 +153,8 @@ The Matlab Code Block is experimental code, so it will likely not work with comp
 
 ## Triggered Events
 
-Triggered events in SCIRun execute a python script upon certain SCIRun events.  Possible events include: application start,  network load, and adding a module.  The scripts and settings can be modified in the triggered events window.  The triggered event scripts allow for increased customization such as: modifying the Python path, changing the module default settings, and others.  Instructions on how to use triggered events to modify the Python path are [describe previously](#adding-packages-to-the-python-path-in-scirun)
+Triggered events in SCIRun execute a python script upon certain SCIRun events.  Possible events include: application start,  network load, and adding a module.  The scripts and settings can be modified in the triggered events window.  The triggered event scripts allow for increased customization such as: modifying the Python path, changing the module default settings, and others.  Instructions on how to use triggered events to modify the Python path are [describe previously](#adding-packages-to-the-python-path-in-scirun).
+
 
 
 
