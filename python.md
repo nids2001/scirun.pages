@@ -108,7 +108,7 @@ To install the Matlab engine in Python run in the terminal:
 cd "matlab_root"/extern/engines/python
 "Python_installation"/bin/python3.5 setup.py build install
 ```
-### [Adding packages to the Python Path in SCIRun](#python-path)
+### Adding packages to the Python Path in SCIRun
 
 In order to use the installed packages, SCIRun's Python has to be able to find them.  If the package files are located in the Python Path, the can be used with the `import` function.  The python path can be modified in many ways, but the most practical for general purpose is to use the triggered events in SCIRun.  Triggered events are explained in [another section](#triggered-events), but we will explain how to use it to modify the Python Path.
 
@@ -146,9 +146,9 @@ Users can insert a Matlab code block with the button in the InterfaceWithPython 
 
 The Matlab Code Block is experimental code, so it will likely not work with complex Matlab functionality. However, if there is a code block detected, SCIRun will start Matlab and it will remain open until SCIRun is closed.   The python variable names should match the variable names in the assignment.
 
-## [Triggered Events](#triggered-events)
+## Triggered Events
 
-Triggered events in SCIRun execute a python script upon certain SCIRun events.  Possible events include: application start,  network load, and adding a module.  The scripts and settings can be modified in the triggered events window.  The triggered event scripts allow for increased customization such as: modifying the Python path, changing the module default settings, and others.  Instructions on how to use triggered events to modify the Python path are [describe previously](#python-path)
+Triggered events in SCIRun execute a python script upon certain SCIRun events.  Possible events include: application start,  network load, and adding a module.  The scripts and settings can be modified in the triggered events window.  The triggered event scripts allow for increased customization such as: modifying the Python path, changing the module default settings, and others.  Instructions on how to use triggered events to modify the Python path are [describe previously](#adding-packages-to-the-python-path-in-scirun)
 
 
 
