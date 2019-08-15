@@ -13,17 +13,20 @@ tags: build
 ### Build requirements
 
 #### OS X
-  - Tested on 10.8 - 10.11
-  - Apple clang 5.1 or newer
+  - Tested on 10.10 - 10.13
+  - Apple clang 7.2 or newer
   - Qt 4.8
     + Download [Qt 4.8 DMG](http://releases.qt-project.org/qt4/source/qt-mac-opensource-4.8.4.dmg).
     + The above dmg will not work if using OS X 10.11. In this case Qt 4.8 can be acquired through macports using the command 'sudo port install qt4-mac' - more on macports here: https://www.macports.org/install.php
+    + Qt 4.8 can also be installed with homebrew.  The instructions are found [here](https://github.com/cartr/homebrew-qt4).
 
 #### Windows
   - Tested on Windows 7-10
-  - Visual Studio 2013
-  - Qt 4.8
+  - Visual Studio 2013 & 2017
+  - Qt 4.8 or Qt 5.12
     + Build from source, but be sure to download the [Qt 4.8 source archive](http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz) and build in ***64-bit mode***.
+    + [Download](https://www.qt.io) and run the Qt 5 installer.  Only 5.12 needs to be installed.  Make sure to turn off other system versions to save space and build time.
+
 
 #### Linux
   - Tested on Ubuntu 14.04 LTS, OpenSUSE Leap 42.1
@@ -40,7 +43,7 @@ tags: build
 
 ### CMake Build Generators
 * Windows
-  - Visual Studio 2013
+  - Visual Studio 2013 & 2017
 * OS X
   - Unix Makefiles
   - Xcode
