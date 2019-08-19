@@ -15,24 +15,24 @@ tags: build
 #### OS X
   - Tested on 10.10 - 10.13
   - Apple clang 7.2 or newer
-  - Qt 4.8
+  - Qt 4.8 or 5.12
     + Download [Qt 4.8 DMG](http://releases.qt-project.org/qt4/source/qt-mac-opensource-4.8.4.dmg).
     + The above dmg will not work if using OS X 10.11. In this case Qt 4.8 can be acquired through macports using the command 'sudo port install qt4-mac' - more on macports here: https://www.macports.org/install.php
     + Qt 4.8 can also be installed with homebrew.  The instructions are found [here](https://github.com/cartr/homebrew-qt4).
+    + [Download](https://download.qt.io/archive/qt/) and run the Qt 5.12 installer.  Make sure to turn off other versions and system configurations to save space and build time.  Configure CMake for Qt 5.
 
 #### Windows
   - Tested on Windows 7-10
   - Visual Studio 2013 & 2017
-  - Qt 4.8 or Qt 5.12
-    + Build from source, but be sure to download the [Qt 4.8 source archive](http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz) and build in ***64-bit mode***.
-    + [Download](https://www.qt.io) and run the Qt 5 installer.  Only 5.12 needs to be installed.  Make sure to turn off other system versions to save space and build time.
+  - Qt 5.12 or later
+    + [Download](https://download.qt.io/archive/qt/) and run the Qt 5.12 installer.  Make sure to turn off other versions and system configurations to save space and build time.
 
 
 #### Linux
   - Tested on Ubuntu 14.04 LTS, OpenSUSE Leap 42.1
   - gcc 4.8
-  - Qt 4.8
-    + Build from the [Qt 4.8 source archive](http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz) , or use system libraries if available.
+  - Qt 5.12 or later
+    + [Download](https://download.qt.io/archive/qt/) and run the Qt 5.12 installer.  Make sure to turn off other versions and system configurations to save space and build time.  Add the Qt 5 path to CMake configuration.
 
 #### All Platforms
   - [CMake](https://cmake.org/) (platform independent configuring system that is used for generating Makefiles, Visual Studio project files, or Xcode project files)
@@ -73,6 +73,26 @@ Usage information is available using the ***--help*** flag:
 
 ```
 ./build.sh --help
+```
+
+### Building SCIRun with Qt 5
+
+Building SCIRun with Qt 5 requires additional input. Use the `Qt5_PATH` CMake variable to point to the Qt 5 build location.  This can be done through the command line with a command similar to:
+```
+cmake -DQt5_PATH=path_to_Qt5_build/ ../Superbuild/
+```
+Or they can be set in the CMake GUI or with the `ccmake` function.
+
+In OS X builds, the `QT5_BUILD` CMake flag will also need to be on.  The command will be similar to the following:
+```
+cmake -DQT5_BUILD=True -DQt5_PATH=path_to_Qt5/5.12.1/clang_64/ ../Superbuild/
+```
+
+### Building with Tetgen
+
+To use the InterfaceWithTetgen module, SCIRun needs to be built with Tetgen, which is off by default.  Turn on the `WITH_TETGEN` flag to enable tegen.  This will download and install Tetgen with SCIRun. In the command line, it would look like:
+```
+cmake -DWITH_TETGEN=True ../Superbuild/
 ```
 
 ## Tagging Releases
