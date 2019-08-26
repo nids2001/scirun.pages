@@ -16,7 +16,7 @@ tags: build
   - Tested on 10.10 - 10.13
   - Apple clang 7.2 or newer
   - Qt 4.8 or 5.12
-    + Download [Qt 4.8 DMG](http://releases.qt-project.org/qt4/source/qt-mac-opensource-4.8.4.dmg).
+    + Download [Qt 4.8 DMG](https://download.qt.io/archive/qt/4.8/4.8.4/qt-mac-opensource-4.8.4.dmg).
     + The above dmg will not work if using OS X 10.11. In this case Qt 4.8 can be acquired through macports using the command 'sudo port install qt4-mac' - more on macports here: https://www.macports.org/install.php
     + Qt 4.8 can also be installed with homebrew.  The instructions are found [here](https://github.com/cartr/homebrew-qt4).
     + [Download](https://download.qt.io/archive/qt/) and run the Qt 5.12 installer.  Make sure to turn off other versions and system configurations to save space and build time.  Configure CMake for Qt 5.
