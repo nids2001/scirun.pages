@@ -22,7 +22,7 @@ tags: build
     + [Download](https://download.qt.io/archive/qt/) and run the Qt 5.12 installer.  Make sure to turn off other versions and system configurations to save space and build time.  Configure CMake for Qt 5.
 
 #### Windows
-  - Tested on Windows 7-10
+  - Tested on Windows 10
   - Visual Studio 2013 & 2017
   - Qt 5.12 or later
     + [Download](https://download.qt.io/archive/qt/) and run the Qt 5.12 installer.  Make sure to turn off other versions and system configurations to save space and build time.
