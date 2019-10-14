@@ -86,7 +86,7 @@ To visualize the field geometry, instantiate module **ShowField** in the **Visua
   <figcaption>Figure 2.5 SCIRun can be used to visualize the structured mesh.</figcaption>
 </figure>
 
-Apply a colored scale to the data values on the geometry using **CreateStandardColorMaps** and **RescaleColorMaps** modules in **Visualization** (<a href="#rescale">Figure 2.6</a>). Colors can be manipulated using the CreateStandardColorMap UI and RescaleColorMap UI (<a href="#viewscene">Figure 2.7</a>). Change the coloring scheme to Blackbody using the drop-down menu in the CreatSrandardColorMap UI.
+Apply a colored scale to the data values on the geometry using **CreateStandardColorMaps** and **RescaleColorMaps** modules in **Visualization** (<a href="#rescale">Figure 2.6</a>). Colors can be manipulated using the CreateStandardColorMap UI and RescaleColorMap UI (<a href="#viewscene">Figure 2.7</a>). Change the coloring scheme to Blackbody using the drop-down menu in the CreateStandardColorMap UI.
 
 <figure id="rescale">
   <img src="BasicTutorial_figures/colorscale.png" alt="Apply and rescale a colormap to data values on the geometry."/>
@@ -100,7 +100,7 @@ Apply a colored scale to the data values on the geometry using **CreateStandardC
 
 Return to the default color scale. Use the sliders in the GetSlicesFromStructuredFieldByIndices UI to change slice position within the geometry. Compare with <a href="#rescale">Figure 2.6.</a>
 
-<figure id="getsclice">
+<figure id="getslice">
   <img src="BasicTutorial_figures/sliceselect.png" alt="Different cross sections can be visualized within the geometry using GetSlicesFromStructuredFieldbyIndices. "/>
   <figcaption>Figure 2.8 Different cross sections can be visualized within the geometry using GetSlicesFromStructuredFieldbyIndices.</figcaption>
 </figure>
