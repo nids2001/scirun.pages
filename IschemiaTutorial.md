@@ -148,7 +148,7 @@ contain the same datasets and only one of them has to be downloaded.
 
 #### Chapter 2
 
-# Reading and Visualization of Image
+# 2 Reading and Visualization of Image
 
 # Data
 
@@ -302,7 +302,7 @@ _Figure 2.7. Viewing multiple slices_
 
 #### Chapter 3
 
-# Visualization of Image Data
+# 3 Visualization of Image Data
 
 **Scope: Volume Renderer - ViewScene Module - Resampling - Rendering Glyphs - Calculator Module**
 
@@ -545,7 +545,7 @@ Figure 3.10. Visualizing the Fiber Orientation of the Data
 
 #### Chapter 4
 
-# Building a Tetrahedral Mesh
+# 4 Building a Tetrahedral Mesh
 
 
 Scope: Isosurface - FairMesh - ResampleMesh - InterfaceWithTetGen - Visualizing Meshes
@@ -614,7 +614,7 @@ the mesh. Use the slicing planes to examine the mesh (see *Figure 4.2*).
 
 #### Chapter 5
 
-# Tensors and Conductivities
+# 5 Tensors and Conductivities
 
 **Scope: SignedDistanceField - CalculateFieldData - Bundles - Mapping FieldData**
 
@@ -764,7 +764,7 @@ Figure 5.5. Visualization of assumed transmembrane potentials
 
 #### Chapter 6
 
-# Finite Element Modeling
+# 6 Finite Element Modeling
 
 
 Scope: BuildFEMatrix - ExtractIsosurfaceByFunction - Bundles - SolveLinearSystem - ApplyMapping-
