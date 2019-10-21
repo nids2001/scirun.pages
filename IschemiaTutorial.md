@@ -20,30 +20,30 @@ Jeroen Stinstra, Darrell Swenson
 
 ## Contents
 
-   - 1 Overview
-      - 1.1 Ischemia Model
-      - 1.2 Software requirements
-         - 1.2.1 SCIRun module compatibility
-         - 1.2.2 Required Datasets
-   - 2 Reading and Visualization of Image Data
-      - 2.1 Loading The Dataset
-      - 2.2 Visualization of Dataset
-   - 3 Visualization of Image Data //ended here
-      - 3.1 Volume Renderer and Clipping Planes
-      - 3.2 Isosurfacing and Mesh Fairing
-      - 3.3 Resampling and Viewing Glyphs
-   - 4 Building a Tetrahedral Mesh
-      - 4.1 Building a Tetrahedral Mesh
-   - 5 Tensors and Conductivities
-      - 5.1 Creation of Model Parameters
-   - 6 Finite Element Modeling
-      - 6.1 Creating The Simulation
-      - 6.2 Visualization of Simulation Results
--
+   - [1 Overview](#1-overview)
+      - [1.1 Ischemia Model](#11-ischemia-model)
+      - [1.2 Software requirements](#12-software-requirements)
+         - [1.2.1 SCIRun module compatibility](#121-scirun-module-compatibility)
+         - [1.2.2 Required Datasets](#122-required-datasets)
+   - [2 Reading and Visualization of Image Data](#2-reading-and-visualization-of-image-data)
+      - [2.1 Loading The Dataset](#21-loading-the-dataset)
+      - [2.2 Visualization of Dataset](#22-visualization-of-dataset)
+   - [3 Visualization of Image Data](#3-visualization-of-image-data)
+      - [3.1 Volume Renderer and Clipping Planes](#31-volume-renderer-and-clipping-planes)
+      - [3.2 Isosurfacing and Mesh Fairing](#32-isosurfacing-and-mesh-fairing)
+      - [3.3 Resampling and Viewing Glyphs](#33-resampling-and-viewing-glyphs)
+   - [4 Building a Tetrahedral Mesh](#4-building-a-tetrahedral-mesh)
+      - [4.1 Building a Tetrahedral Mesh](#41-building-a-tetrahedral-mesh)
+   - [5 Tensors and Conductivities](#5-tensors-and-conductivities)
+      - [5.1 Creation of Model Parameters](#51-creation-of-model-parameters)
+   - [6 Finite Element Modeling](#6-finite-element-modeling)
+      - [6.1 Creating The Simulation](#61-creating-the-simulation)
+      - [6.2 Visualization of Simulation Results](#62-visualization-of-simulation-results)
+
 
 #### Chapter 1
 
-# Overview
+# 1 Overview
 
 **This tutorial demonstrates several tools within SCIRun for building models out of imaging data. It
 describes the pipeline starting from preprocessed images to generate a computational mesh and adapt
