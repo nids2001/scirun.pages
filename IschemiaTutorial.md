@@ -554,7 +554,7 @@ Scope: Isosurface - FairMesh - ResampleMesh - InterfaceWithTetGen - Visualizing 
 
 
 In order to build a physical model out of the imaging data, we need to generate a computational mesh. In this example we describe an easy way of generating a tetrahedral mesh using
-isosurfaces. To build an elementary tetrahedral mesh, generate the network that is depicted
+isosurfaces. Another way to generate a mesh is with a [InterfaceWithCleaver](https://github.com/nids2001/scirun.pages/blob/defibrillation-tutorial/InterfaceWithCleaver.md) module. To build an elementary tetrahedral mesh, generate the network that is depicted
 in figure 4.1. This network introduces two new modules called **InterfaceWithTetGen** and
 **WriteField**.
 
