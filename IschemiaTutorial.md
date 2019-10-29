@@ -1,54 +1,62 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿# Ischemia Model tutorial
+
+# Ischemia Model tutorial
 
 #### SCIRun 5.0 Documentation
 
 Center for Integrative Biomedical Computing
+
 Scientific Computing & Imaging Institute
+
 University of Utah
 
 
 SCIRun software download:
 http://software.sci.utah.edu
+
 Center for Integrative Biomedical Computing:
 http://www.sci.utah.edu/cibc
 
+
 This project was supported by the National Institute of General Medical Sciences of the National Institutes of Health under grant number **P41 GM103545-18**.
 
-Author(s):
+Author:
 Jeroen Stinstra, Darrell Swenson
 
 
 ## Contents
 
-   - [1 Overview](#1-overview)
-      - [1.1 Ischemia Model](#11-ischemia-model)
-      - [1.2 Software requirements](#12-software-requirements)
-         - [1.2.1 SCIRun module compatibility](#121-scirun-module-compatibility)
-         - [1.2.2 Required Datasets](#122-required-datasets)
-   - [2 Reading and Visualization of Image Data](#2-reading-and-visualization-of-image-data)
-      - [2.1 Loading The Dataset](#21-loading-the-dataset)
-      - [2.2 Visualization of Dataset](#22-visualization-of-dataset)
-   - [3 Visualization of Image Data](#3-visualization-of-image-data)
-      - [3.1 Volume Renderer and Clipping Planes](#31-volume-renderer-and-clipping-planes)
-      - [3.2 Isosurfacing and Mesh Fairing](#32-isosurfacing-and-mesh-fairing)
-      - [3.3 Resampling and Viewing Glyphs](#33-resampling-and-viewing-glyphs)
-   - [4 Building a Tetrahedral Mesh](#4-building-a-tetrahedral-mesh)
-      - [4.1 Building a Tetrahedral Mesh](#41-building-a-tetrahedral-mesh)
-   - [5 Tensors and Conductivities](#5-tensors-and-conductivities)
-      - [5.1 Creation of Model Parameters](#51-creation-of-model-parameters)
-   - [6 Finite Element Modeling](#6-finite-element-modeling)
-      - [6.1 Creating The Simulation](#61-creating-the-simulation)
-      - [6.2 Visualization of Simulation Results](#62-visualization-of-simulation-results)
+   - [1  Overview](#overview)
+      - [1.1  Ischemia Model](#11-ischemia-model)
+      - [1.2  Software requirements](#12-software-requirements)
+         - [1.2.1  SCIRun module compatibility](#121-scirun-module-compatibility)
+         - [1.2.2  Required Datasets](#122-required-datasets)
+   - [2  Reading and Visualization of Image Data](#reading-and-visualization-of-image-data)
+      - [2.1  Loading The Dataset](#21-loading-the-dataset)
+      - [2.2  Visualization of Dataset](#22-visualization-of-dataset)
+   - [3  Visualization of Image Data](#visualization-of-image-data)
+      - [3.1  Volume Renderer and Clipping Planes](#31-volume-renderer-and-clipping-planes)
+      - [3.2  Isosurfacing and Mesh Fairing](#32-isosurfacing-and-mesh-fairing)
+      - [3.3  Resampling and Viewing Glyphs](#33-resampling-and-viewing-glyphs)
+   - [4  Building a Tetrahedral Mesh](#building-a-tetrahedral-mesh)
+      - [4.1  Building a Tetrahedral Mesh](#41-building-a-tetrahedral-mesh)
+   - [5  Tensors and Conductivities](#tensors-and-conductivities)
+      - [5.1  Creation of Model Parameters](#51-creation-of-model-parameters)
+   - [6  Finite Element Modeling](#finite-element-modeling)
+      - [6.1  Creating The Simulation](#61-creating-the-simulation)
+      - [6.2  Visualization of Simulation Results](#62-visualization-of-simulation-results)
+
+
 
 ---
 #### Chapter 1
 
-# 1 Overview
+# Overview
 
 **This tutorial demonstrates several tools within SCIRun for building models out of imaging data. It
 describes the pipeline starting from preprocessed images to generate a computational mesh and adapt
 this mesh to meet the computational requirements. It then continues to set up a finite element bidomain
 simulation, and demonstrates how results can be visualized.**
+
 
 #### 1.1 Ischemia Model
 
@@ -134,7 +142,6 @@ SCIRun from scratch. The supplied build script (build.sh) will build SCIRun with
 tools enabled by default.
 
 
-
 ##### 1.2.2 Required Datasets
 
 This tutorial relies on several datasets that are part of the SCIRunData bundle. To obtain
@@ -148,15 +155,13 @@ contain the same datasets and only one of them has to be downloaded.
 ---
 #### Chapter 2
 
-# 2 Reading and Visualization of Image
 
-# Data
+# Reading and Visualization of Image Data
 
+**Scope: [Finding Modules](#21-loading-the-dataset) - [Building Networks](#building-networks) - [Loading Data](#loading-data) - [Visualization of 3D Datasets](#22-visualization-of-dataset)**
 
-Scope: Finding Modules - Building Networks - Loading Data - Visualization of 3D Datasets
 
 #### 2.1 Loading The Dataset
-
 
 We start by opening the main SCIRun window by launching SCIRun by either double
 clicking on the binary icon or by launching SCIRun from the command line. A detailed
@@ -165,8 +170,7 @@ launched the main Window with the Network editor is shown. *Figure 2.1* shows th
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.1.PNG" alt="The main SCIRun window">
-
-_Figure 2.1 - The Main SCIRun Window_
+*Figure 2.1 - The Main SCIRun Window*
 
 
 SCIRun network editor. For this tutorial we will be selecting modules from the
@@ -182,18 +186,17 @@ through every submenu, a module can simply be found by typing the name of the mo
 into Show Module entry box located in the top menu bar. This will highlight the location
 of a specific module within the Modules menu as is demonstrated in *Figure 2.2*.
 
-Enter “**ReadField**” in the upper menu bar and follow the highlighted menus in the
+<a name="building-networks"></a> Enter “**ReadField**” in the upper menu bar and follow the highlighted menus in the
 Modules menu and select the **ReadField** module form the menu. This will insert the
 **ReadField** module in the upper left corner of the network editor. This module will now
 be used to read in the first dataset.
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.2.PNG" alt="Adding and opening module">
+*Figure 2.2 - Finding the ReadField module and opening its GUI*
 
-_Figure 2.2 - Finding the ReadField module and opening its GUI_
 
-
-The Dataset that is used in this example is called **heart-ischemia** and it can be found
+ <a name="loading-data"></a> The dataset that is used in this example is called **heart-ischemia** and it can be found
 in the SCIRunData bundle that can be downloaded as well from the SCI software portal
 (http://software.sci.utah.edu). After downloading the SCIRunData zip file, unzip the file
 inside a directory and inside you will find a sub directory with the **heart-ischemia** datasets.
@@ -202,32 +205,30 @@ latest version from the website to obtain a copy.
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.3.PNG" alt="Selecting file name and type">
-
-_Figure 2.3. Select a file name and a file type_
+*Figure 2.3. Select a file name and a file type*
 
 
 By pressing on the **UI** button of the **ReadField** module a browser window is opened
 where one can enter the name of the file that needs to be loaded. The files that are used
-in this example were generated by the **Seg3D** software and are in the *.nnrdfile* format.
+in this example were generated by the **Seg3D** software and are in the `.nnrdfile` format.
 This file format is used to represent regular spaced image data, such as MRI images or
 segmentations. It consists of a simple text header specifying the dimensions of the data and
 its location in space, followed by binary data representing the actual data. This file format
-allows for either a header be appended to the start of the file (*.nrrd* format) with header
+allows for either a header be appended to the start of the file (`.nrrd` format) with header
 and data being in one file or having a separate header file that wraps the data found in a
-general binary data file (*.nhdr* format). More information on the .nrrd format can be found
+general binary data file (*.nhdr* format). More information on the `.nrrd` format can be found
 at http://teem.sourceforge.net/nrrd/format.html.
 
 Once the UI Window of the **ReadField** module opens, select the **NrrdFile** file type
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.4.png" alt="Network for checking contents of file and information displayed when executed ">
-
-_Figure 2.4. Network for checking contents of the file_
+*Figure 2.4. Network for checking contents of the file*
 
 
 and use the upper part of the UI to locate the dataset by browsing the directories to the
-location where the SCIRunData has been saved. Open the **heart-ischemia** directory and
-select **HeartMRI.nrrd** file. Then press **Set** at the bottom of the UI to store the file name
+location where the SCIRunData has been saved. Open the `heart-ischemia` directory and
+select `HeartMRI.nrrd` file. Then press **Set** at the bottom of the UI to store the file name
 and type in the module. This process is illustrated in *Figure 2.3*.
 
 Now use the Show Module menu again and find the **ReportFieldInfo**. Insert this
@@ -243,6 +244,7 @@ inside the pipeline, the module also shows the dimensions of the grid and the lo
 space derived from the original imaging data. An example of all the information displayed
 is shown in *Figure 2.4*.
 
+
 #### 2.2 Visualization of Dataset
 
 Now we have the data loaded into SCIRun, we can actually visualize the 3D image dataset.
@@ -255,8 +257,7 @@ To visualize the 3D dataset we convert the module into a 3D texture object, whic
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.5.png" alt="Building visualization network">
-
-_Figure 2.5  Building the visualization network_
+*Figure 2.5  Building the visualization network*
 
 
 will allow us to quickly browse through the dataset. Use the Show Module feature in the
@@ -282,9 +283,9 @@ the top the color is opaque and when the color is at the bottom the color is tra
 to make the background transparent. The slider just below that controls where the largest
 gradient in color should occur by sliding it to the left a higher contrast is generated. In
 
-<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.6.png" alt="Network for checking contents of the file">
 
-_Figure 2.6. Network for checking contents of the file_
+<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.6.png" alt="Network for checking contents of the file">
+*Figure 2.6. Network for checking contents of the file*
 
 
 the lower part of the menu one can now select from a series of predefined colormap lookup
@@ -295,103 +296,103 @@ Open the UI of the new **GetSliceFromStructuredFieldByIndices** module, and sele
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.7.png" alt="Viewing multiple slices">
+*Figure 2.7. Viewing multiple slices*
 
-_Figure 2.7. Viewing multiple slices_
 
 
 ---
 #### Chapter 3
 
-# 3 Visualization of Image Data
+# Visualization of Image Data
 
-**Scope: Volume Renderer - ViewScene Module - Resampling - Rendering Glyphs - Calculator Module**
-
-
-<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.1.png" alt="Reading in two datasets">
-
-_Figure 3.1. Reading in two datasets_
+**Scope: [Volume Renderer](#31-volume-renderer-and-clipping-planes) - [ViewScene Module](#32-isosurfacing-and-mesh-fairing) - [Resampling](#33-resampling-and-viewing-glyphs) - [Rendering Glyphs](#rendering-glyphs) - [Calculator Module](#calculator-module)**
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.1.png" alt="Reading in two datasets">
-_Figure 3.2. Reading in two datasets_
+*Figure 3.1. Reading in two datasets*
+
+
+<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.1.png" alt="Reading in two datasets">
+*Figure 3.2. Reading in two datasets*
+
 
 
 #### 3.1 Volume Renderer and Clipping Planes
-
 
 In the previous chapter one dataset was explored, however the SCIRun viewer is capable
 of rendering many datasets in the same viewer, so one can explore the correlation between
 the data or combine them to build a model. In the next example we will be loading two
 datasets into the viewer. To do this we start with a similar network as depicted in the
-previous example. However instead of viewing slices we will use the ShowTextureVolume
+previous example. However instead of viewing slices we will use the **ShowTextureVolume**
 module to volume render multiple datasets into the viewer. This module requires the same
-inputs as the ShowTextureSlices module, but now renders the full volume transparent.
-Create the network shown in Figures 3.1 - 3.2 , and use the HeartMRI.nrrd and
-HeartMRI-Perfusionbed.nrrd as the two datasets for the two ReadField modules.
+inputs as the **ShowTextureSlices** module, but now renders the full volume transparent.
+
+Create the network shown in *Figures 3.1 - 3.2* , and use the `HeartMRI.nrrd` and
+`HeartMRI-Perfusionbed.nrrd` as the two datasets for the two **ReadField** modules.
 Once the network executes the data of the two datasets is combined into one visualization
 of the data. Try to alter the transparency of the colormaps to highlight the needle markers
 that were inserted into the heart and the perfusion bed of one of Left Anterior Descending
-Artery. An example of such a visualization is given in figure 3.1.
+Artery. An example of such a visualization is given in *Figure 3.1*.
+
 The datasets in this example originate from an isolated dog heart in which the Left
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.1.png" alt="Opening the configuration tray">]
-
-_Figure 3.3. Opening the configuration tray_
+*Figure 3.3. Opening the configuration tray*
 
 
 Anterior Descending Artery was perfused with Gadolinium preparation so it shows up in an
 MR scan. The heart was subsequently scanned to generate an anatomical image of the heart
-HeartMRI.nrrd and a diffusion tensor image (DTI) HeartMRI-FiberOrientation.nrrd.
-Using the Seg3D program the ventricular myocardium and the perfusion bed were seg-
-mented out of the anatomical image (HeartMRI-Segmentation.nrrd and HeartMRI-
-PerfusionBed.nrrd).
+`HeartMRI.nrrd` and a diffusion tensor image (DTI) `HeartMRI-FiberOrientation.nrrd`.
+Using the **Seg3D** program the ventricular myocardium and the perfusion bed were segmented
+out of the anatomical image (`HeartMRI-Segmentation.nrrd` and `HeartMRIPerfusionBed.nrrd`).
+
 Although displaying the two datasets into one image is useful, one does not always want
 to see each component of the data. To edit what is actually displayed in the image, open up
-the ViewScene module and press Configure. This will add a tray below the current win-
-dow, with different tabs to edit different aspects of the image. Select the Objects tab. This
+the **ViewScene** module and press **Configure**. This will add a tray below the current window,
+with different tabs to edit different aspects of the image. Select the **Objects** tab. This
 tab shows the current components displayed in the view window. Pressing selection buttons
-as highlighted in figure 3.3 will switch on and off the displaying of a certain component.
-Also try the Clipping tab, which will allow to clip the visualization. Open up the
-Clipping tab and switch on the Clipping Plane Visible button, next drag the X slider
-to 1.0. Now use the D slider to slide the clipping plane along the X-axis. The clipping
-widget has been configured, so that D corresponds to the full range of X that is spanned
+as highlighted in *Figure 3.3* will switch on and off the displaying of a certain component.
+
+Also try the **Clipping** tab, which will allow to clip the visualization. Open up the
+**Clipping** tab and switch on the **Clipping Plane Visible** button, next drag the **X** slider
+to `1.0`. Now use the **D** slider to slide the clipping plane along the X-axis. The clipping
+widget has been configured, so that **D** corresponds to the full range of **X** that is spanned
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.4.png" alt="Slicing the dataset">
+*Figure 3.4. Slicing the dataset*
 
-_Figure 3.4. Slicing the dataset_
 
-
-by the two images that are displayed in the viewer window. By dragging D from -1 to +
-one can slice the full rendering. An example of such a visualization is depicted in figure 3.4.
+by the two images that are displayed in the viewer window. By dragging **D** from `-1` to `+1`
+one can slice the full rendering. An example of such a visualization is depicted in *Figure 3.4*.
 The figure on the left shows the result of one slicing plane, the result on the right shows two
-slicing planes. To activate the second slicing plane, press Plane 2 and then activate this
-plane by selecting the Clipping Plane Visible once more. To make it easier to generate a
-thin slice, select the the Reverse Clipping Plane Normal option for the second clipping
+slicing planes. To activate the second slicing plane, press **Plane 2** and then activate this
+plane by selecting the **Clipping Plane Visible** once more. To make it easier to generate a
+thin slice, select the the **Reverse Clipping Plane Normal** option for the second clipping
 plane as this reverse the visible part of the image. By lining up the two clipping planes one
 can generate a small thin slice.
-If the slice becomes too transparent, open up the UI of the ShowTextureVolume
+
+If the slice becomes too transparent, open up the **UI** of the **ShowTextureVolume**
 module. One of the main options is the Global Opacity. Changing this slider the volume
 rendered object can be made more or less transparent.
 
 
 #### 3.2 Isosurfacing and Mesh Fairing
 
+In order to build a model out of the datasets we need to translate the volumes into
+parametric surfaces. One way to do this is to generate an isosurface. Modify the network by
+adding the **ExtractIsosurface**, **FairMesh** and **ShowField** modules to the network, as
+depicted in *Figure 3.5*. The *ExtractIsosurface* should get its input from the module that
+reads the perfusion bed field. Make sure to select the **Quantity** tab in the **UI** of the
+**ExtractIsosurface** module as depicted in *Figure 3.5*.
 
-In order to build a model out of the datasets we need to translate the volumes into para-
-metric surfaces. One way to do this is to generate an isosurface. Modify the network by
-adding the ExtractIsosurface, FairMesh and ShowField modules to the network, as
-depicted in figure 3.5. The ExtractIsosurface should get its input from the module that
-reads the perfusion bed field. Make sure to select the Quantity tab in the UI of the
-ExtractIsosurface module as depicted in figure 3.5.
-TheExtractIsosurface module extracts an isosurface out of any field. In this case
+The **ExtractIsosurface** module extracts an isosurface out of any field. In this case
 we are extracting it out of the segmented perfusion bed by selecting a value between the
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.5.png" alt="Extracting an Isosurface">
-
-_Figure 3.5. Extracting an Isosurface_
+*Figure 3.5. Extracting an Isosurface*
 
 
 maximum and minimum value in the field. In this case the background and the segmen-
@@ -399,61 +400,58 @@ tation have a different but constant value and hence the boundary between them w
 selected. The isosurface is extracted using the Marching Cubes method which will insert an
 approximation of the isosurface for each element in the mesh.
 
-The FairMesh module takes the output from the ExtractIsosurface module and
-smooth out the surface. Because the data is discretized the isosurface will be stair-stepped.
-The FairMesh module takes the surfaces and uses information about the neighborhood
+The **FairMesh** module takes the output from the **ExtractIsosurface** module and
+smooth out the surface. Because the data is discretized the isosurface will be *stair-stepped*.
+The **FairMesh** module takes the surfaces and uses information about the neighborhood
 of the surface to generate a smoother looking surface. The resulting surface is a surface
-that is tessalated by triangles. Because this field is no longer structured like a regular
-grid, one cannot use the ShowTextureVolume to display the surface. Instead we use
+that is tessellated by triangles. Because this field is no longer structured like a regular
+grid, one cannot use the **ShowTextureVolume** to display the surface. Instead we use
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.6.png" alt="Coupling two ViewScene windows">
+*Figure 3.6. Coupling two ViewScene windows*
 
-_Figure 3.6. Coupling two ViewScene windows_
 
-
-the ShowFieldmodule that is a general module for visualizing any field. The output
-of this module can again be displayed into the ViewScene module, which now combines
+the **ShowField** module that is a general module for visualizing any field. The output
+of this module can again be displayed into the **ViewScene** module, which now combines
 visualizations of all three modules.
-To compare the volume rendering against the smoothed surface model, the ViewScene
+
+To compare the volume rendering against the smoothed surface model, the **ViewScene**
 module has the option to display two coupled Viewer windows. Open up the Viewer win-
-dow from the ViewScene module. Press the New Window button to generate a similar
-ViewScene window with the same dimensions. Now open up the configuration tab on both
+dow from the **ViewScene** module. Press the **NewWindow** button to generate a similar
+**ViewScene** window with the same dimensions. Now open up the configuration tab on both
 windows. By selecting different objects in both windows, the windows can be customized
 to display a different aspect of the Scene. Display the Faces of the Isosurface in one window
 and the volume rendering of the Volume Rendering in the other window to examine the
-difference between the two visualizations, as depicted by figure 3.6.
+difference between the two visualizations, as depicted by *Figure 3.6*.
+
 By zooming in into the model of the surface one can see the difference between the
 two renderings. Note that by default the two windows are locked together. Meaning that
 rotations in one window are automatically applied to the other window. This option allows
 to highlight the same spot in space in both windows without the need to actually align both
-images manually. This option can however be switched off. Press the Lock View button
-to unlock the window. When pressing the button the Lock View button changes color to
+images manually. This option can however be switched off. Press the **Lock View** button
+to unlock the window. When pressing the button the **Lock View** button changes color to
 indicate that it is switched off. One can now independently orient the windows. Locking the
 windows together again will not align the windows but keep the relative change between the
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.7.png" alt="Network for visualizing the fiber orientation of the data">
-
-_Figure 3.7. Network for Visualizing the Fiber Orientation of the Data_
+*Figure 3.7. Network for Visualizing the Fiber Orientation of the Data*
 
 
 windows. The changes are however applied to both windows. To align the windows again
-select the Views menu at the top of the window and select the Other Viewer Windows
+select the **Views** menu at the top of the window and select the **Other Viewer Windows**
 menu and select the option to get the view from the other window. This will align the view
 to the view of the other window.
 
-Locking can also be activated by pressing on the keyboard when the window is selected.
-Likewise a view from an other window can be copied by pressing ctrl 1 to copy the view
-from the first window, ctrl 2 for the second window and so on. The viewer also as predefined
-views along the axis that can be accessed by pressing1 - 8on the keyboard. Auto view also
-has a keyboard shortcut and is activated by pressing 0.
-
-
+Locking can also be activated by pressing `L` on the keyboard when the window is selected.
+Likewise a view from an other window can be copied by pressing `ctrl+1` to copy the view
+from the first window, `ctrl+2` for the second window and so on. The viewer also as predefined
+views along the axis that can be accessed by pressing `1 - 8` on the keyboard. Auto view also
+has a keyboard shortcut and is activated by pressing `0`.
 
 
 #### 3.3 Resampling and Viewing Glyphs
-
 
 After viewing perfusion bed, the other data to explore is the fiber orientation. Fibers cannot
 easily be volume rendered as the data are not scalar, but are in fact vectors. This data was
@@ -471,7 +469,7 @@ that the network executes relatively fast and that the visualization is not clob
 amount of vectors. The default settings in the UI of this module should do for demonstrating
 displaying vectors.
 
-Because the Diffusion Tensor Image was recorded at a different resolution as the anatomical
+<a name="rendering-glyphs"></a>Because the Diffusion Tensor Image was recorded at a different resolution as the anatomical
 MR image, the data in the segmentation which was derived from the anatomical scan
 is not in the same grid as the vector data. We apply the **MapFieldDataOntoNodes** to
 map the data from the segmentation onto the mesh of the Diffusion Tensor Imaging data.
@@ -479,7 +477,7 @@ The module operates by looking up the value of the data in the segmentation for 
 the mesh of the Diffusion Tensor Image. The result is a field that has the segmentation
 projected onto the same grid as the vector data.
 
-The mapped segmentation can now be used to mask out any data that is located outside
+<a name="calculator-module"></a>The mapped segmentation can now be used to mask out any data that is located outside
 of the heart. In order to mask the data we use the general purpose calculator module,
 called **CalculateFieldData**.
 
@@ -504,9 +502,8 @@ type, even though the output type is set to Scalar it will in fact render a Vect
 output type would be preferred. In most cases the user should not need to set an output
 
 
-<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.8.png" alt="The UI of the CalculateFieldData module">
-
-_Figure 3.8. The UI of The **CalculateFieldData** Module_
+<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial*images/3.8.png" alt="The UI of the CalculateFieldData module">
+*Figure 3.8. The UI of The **CalculateFieldData** Module*
 
 
 type, only when for memory reasons the data should be different from a double precision
@@ -533,8 +530,7 @@ is arbitrary as they could just as well point in the opposite direction. It is t
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.9.png" alt="The UI of the ShowFieldGlyphs module">
-
-_Figure 3.9. The UI of the **ShowFieldGlyphs** Module_
+*Figure 3.9. The UI of the **ShowFieldGlyphs** Module*
 
 
 vectors are pointing along that matters in this case. To make the vectors point in both
@@ -547,31 +543,33 @@ the different aspects of the data.
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/3.10.png" alt="Visualizing the Fiber Orientation of the Data">
+*Figure 3.10. Visualizing the Fiber Orientation of the Data*
 
-_Figure 3.10. Visualizing the Fiber Orientation of the Data_
 
 
 ---
 #### Chapter 4
 
-# 4 Building a Tetrahedral Mesh
+# Building a Tetrahedral Mesh
 
+**Scope: [Isosurface](#41-building-a-tetrahedral-mesh) - [FairMesh](#fairmesh) - [ResampleMesh] - [InterfaceWithTetGen](#interfacewithtetgen) - [Visualizing Meshes](#visualizing-meshes)**
 
-Scope: Isosurface - FairMesh - ResampleMesh - InterfaceWithTetGen - Visualizing Meshes
 
 #### 4.1 Building a Tetrahedral Mesh
 
-
-In order to build a physical model out of the imaging data, we need to generate a computational mesh. In this example we describe an easy way of generating a tetrahedral mesh using
-isosurfaces. Another way to generate a mesh is with a [InterfaceWithCleaver](https://github.com/nids2001/scirun.pages/blob/defibrillation-tutorial/InterfaceWithCleaver.md) module. To build an elementary tetrahedral mesh, generate the network that is depicted
+In order to build a physical model out of the imaging data, we need to generate a computational
+mesh. In this example we describe an easy way of generating a tetrahedral mesh using
+isosurfaces. Another way to generate a mesh is with a
+[InterfaceWithCleaver](https://github.com/nids2001/scirun.pages/blob/defibrillation-tutorial/InterfaceWithCleaver.md)
+module. To build an elementary tetrahedral mesh, generate the network that is depicted
 in *Figure 4.1.* This network introduces two new modules called **InterfaceWithTetGen** and
 **WriteField**.
 
-The **InterfaceWithTetGen** module lets SCIRun communicate with TetGen for generating a tetrahedral mesh. This module takes a triangular mesh as input and performs a
+<a name="fairmesh"></a>The **InterfaceWithTetGen** module lets SCIRun communicate with TetGen for generating a tetrahedral mesh. This module takes a triangular mesh as input and performs a
 constrained Delaunay Tetrahedralization and output a full volumetric mesh that consists of
 tetrahedral elements. In order to for tetrahedralization to succeed the isosurface generated by **ExtractIsosurface** needs to be smoothed. We use the **FairMesh** module for this again.
 
-When opening the **UI** of the **InterfaceWithTetGen** module, one can select out of a
+<a name="interfacewithtetgen"></a>When opening the **UI** of the **InterfaceWithTetGen** module, one can select out of a
 range of options to generate a mesh. The three options that are of interest in generating
 a computational tetrahedral mesh for this problem are the *-Y*, *-q*, and the *-a* option in
 the **UI**. The *-Y* option lets the user decide whether additional vertices are to be inserted
@@ -594,14 +592,15 @@ so that the example can be computed within a time frame of minutes instead of ho
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/4.1.png" alt="Network for building a Tetrahedral Mesh">
-_Figure 4.1. Network for building a Tetrahedral Mesh_
+*Figure 4.1. Network for building a Tetrahedral Mesh*
+
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/4.2.png" alt="Image of the Tetrahedral Mesh">
-_Figure 4.2. Image of the Tetrahedral Mesh_
+*Figure 4.2. Image of the Tetrahedral Mesh*
 
 
-The **ExtractIsosurface** module should be set to the **Quantity** tab and we should be
+<a name="visualizing-meshes"></a>The **ExtractIsosurface** module should be set to the **Quantity** tab and we should be
 computing only one isosurface. The **InterfaceWithTetGen** module options should be set as
 indicated in *Figure 4.1*. Finally, the **WriteField** module should contain a name of a file that
 will be used to save the mesh, so we do not need to recompute for in the rest of the chapters.
@@ -620,9 +619,10 @@ the mesh. Use the slicing planes to examine the mesh (see *Figure 4.2*).
 ---
 #### Chapter 5
 
-# 5 Tensors and Conductivities
+# Tensors and Conductivities
 
-**Scope: SignedDistanceField - CalculateFieldData - Bundles - Mapping FieldData**
+**Scope: [SignedDistanceField](#51-creation-of-model-parameters) - [CalculateFieldData](#calculatefielddata) - [Bundles](#bundles1) - [Mapping FieldData](#mapping-fielddata)**
+
 
 #### 5.1 Creation of Model Parameters
 
@@ -660,16 +660,15 @@ this distance field with a timeframe of less than a minute. However note that wh
 objects get more complex this operation can be relatively slow.
 
 
-<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/5.1.png" alt="Full network for building extracellular, intracellular conductivity fields and the
+<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial*images/5.1.png" alt="Full network for building extracellular, intracellular conductivity fields and the
 transmembrane potential fields">
+*Figure 5.1. Full network for building extracellular, intracellular conductivity fields and the
+transmembrane potential fields*
 
-_Figure 5.1. Full network for building extracellular, intracellular conductivity fields and the
-transmembrane potential fields_
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/5.2.png" alt="UI Settings of modules">
-
-_Figure 5.2. UI settings of modules_
+*Figure 5.2. UI settings of modules*
 
 
 Below the **CalculateSignedDistanceToField** module, the distance field is inserted
@@ -693,7 +692,7 @@ one can define an arbitrary amount of additional parameters. The grammar of the 
 requires that you separate each expression by a semi colon. Currently only expression as
 supported by the parser and no functions, loops, or conditional statements are supported.
 
-The **CalculateFieldData** module, which is based on the same mathematical expression
+<a name="calculatefielddata"></a>The **CalculateFieldData** module, which is based on the same mathematical expression
 parser, is used to generate the conductivity tensors as well. In *Figure 5.3* the example
 functions for these conductivities are given. Note that we use two input fields here and
 hence the function now is function of two spatial varying parameters. In this case we as a
@@ -701,7 +700,7 @@ special function called **select** which treads the first argument as a boolean 
 based on the outcome decides to evaluate the first or the second argument. This in a sense
 adds a conditional statement to the math parser.
 
-One difference with the function for the transmembrane potential is that the data now
+<a name="mapping-fielddata"></a>One difference with the function for the transmembrane potential is that the data now
 has to be located at the centers of the elements, as the Finite Element computations are
 currently restricted to conductivities defined for an element. In order to translate the
 distance field from a representation on nodes to a representation onto elements, we use
@@ -729,25 +728,24 @@ defining two input vectors and three conductivity scalars. However for cardiac t
 the conductivity ratio across versus along the myocardial fiber is known. It is assumed that
 across the fiber in both directions one has the same conductivity.
 
-The last part of the network introduces a new concept called the **Bundle**. A bundle
+<a name="bundles1"></a>The last part of the network introduces a new concept called the **Bundle**. A bundle
 is no more than a collection of Fields and other objects that are stored by name. The
 advantage of bundling data is that one can store all the fields into one file. Which makes it
 easier to maintain the simulation data, as well as that it saves diskspace when components
 use common structures like an underlying mesh. (see *Figure 5.4*)
 
-To generate a bundle the *InsertFieldsIntoBundle* module assigns each of the input
+To generate a bundle the **InsertFieldsIntoBundle** module assigns each of the input
 ports to a new name in the bundle. In this case we choose the names enquoteVM,
 enquoteIC and enquoteEC for the transmembrane potential, the intracellular conductivity,
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/5.3.png" alt="UI settings of modules">
+*Figure 5.3. UI settings of modules*
 
-_Figure 5.3. UI settings of modules_
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/5.4.png" alt="UI settings of modules">
-
-_Figure 5.4. UI settings of modules_
+*Figure 5.4. UI settings of modules*
 
 
 and the extracellular conductivity respectively. The bundle subsequently saved on disk for
@@ -761,24 +759,21 @@ the blurring. An example of the output is given in *Figure 5.5*.
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/5.5.png" alt="Visualization of assumed transmembrane potentials">
-
-_Figure 5.5. Visualization of assumed transmembrane potentials_
+*Figure 5.5. Visualization of assumed transmembrane potentials*
 
 
 
 ---
 #### Chapter 6
 
-# 6 Finite Element Modeling
+# Finite Element Modeling
 
+**Scope: [BuildFEMatrix](#buildfematrix) - [ExtractIsosurfaceByFunction](#extractisosurfacebyfunction) - [Bundles](#bundles2) - [SolveLinearSystem](#solvelinearsystem) - [ApplyMappingMatrix](#applymappingmatrix) -[GetFieldData](#getfielddata) - [SetFieldData](#setfielddata)**
 
-**Scope: BuildFEMatrix - ExtractIsosurfaceByFunction - Bundles - SolveLinearSystem - ApplyMapping-
-Matrix -GetFieldData - SetFieldData**
 
 #### 6.1 Creating The Simulation
 
-
-We start with the bundle generated in the previous chapter. This bundle contains all the
+<a name="bundles2"></a>We start with the bundle generated in the previous chapter. This bundle contains all the
 fields for running the simulation. To run the simulation build the network as depicted in
 *Figure 6.1*. *Figure 6.2 - 6.5* display the settings required in each of the module **UI** menus. The
 modules that are not highlighted in these figures use the default settings of these modules.
@@ -795,7 +790,7 @@ computes the extracellular potentials φe that are actually measured in experime
 based on a proposed transmembrane potential, this network now computes the extracellular
 potentials.
 
-At the top of the network the bundle is split in two, one part is used to create the
+<a name="buildfematrix"></a>At the top of the network the bundle is split in two, one part is used to create the
 right-hand-side of *Equation 6.1* and the other part is used to compute the left-hand-side.
 As seen in *Equation 6.1* the left-hand-side depends on the summation of the intracellular
 and extracellular tensors. The module **CalculateFieldData** is used to sum the values
@@ -805,7 +800,7 @@ for the Poisson equation. This stiffness matrix can be viewed as the discretizat
 anisotropic Poisson equation and hence it is the numeric equivalent of the ∇·(Σi+ Σe)∇
 operator.
 
-The modules to the left of the creation of the stiffness matrix actually compute the
+<a name="getfielddata"></a>The modules to the left of the creation of the stiffness matrix actually compute the
 right-hand-side vector. This is done again by using the **BuildFEMatrix** module to generate the
 numerical operator ∇·(Σi)∇ and multiplying this with the values from the transmembrane
 potential field. As the output of the **BuildFEMatrix** module is matrix (blue pipe), the
@@ -813,12 +808,12 @@ data inside the field needs to be represented as a vector. This is accomplished 
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/6.1.png" alt="Full network for running simulation">
+*Figure 6.1. Full network for running simulation*
 
-_Figure 6.1. Full network for running simulation_
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/6.2.png" alt="UI settings of modules">
-_Figure 6.2. UI settings of modules_
+*Figure 6.2. UI settings of modules*
 
 
 **GetFieldData** module that strips the data from the nodes in the field and inserts it into a
@@ -826,23 +821,23 @@ column matrix. In order to now obtain the right-hand-side vector we need to mult
 column vector with the matrix. The latter is accomplished by the **EvaluateLinAlgBinary**
 module.
 
-Both the stiffness matrix and the right-hand-side vector now form a linear system that
+<a name="solvelinearsystem"></a>Both the stiffness matrix and the right-hand-side vector now form a linear system that
 needs to be solved to obtain the extracellular potentials. The **SolveLinearSystem** module
 solves the linear system using in iterative solver. The details of the solver can be entered
-in the **UI** of this module. Once the linear system is solved the solution contained in a
+in the **UI** of this module. <a name="setfielddata"></a>Once the linear system is solved the solution contained in a
 column vector is reinserted into the field using the **SetFieldData** module. An example of
 a reasonable number of iterations is given in *Figure 6.3*. Everything below this module in
 the network is used for visualizing the data which is described in the next section.
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/6.3.png" alt="UI settings of modules">
+*Figure 6.3. UI settings of modules*
 
-_Figure 6.3. UI settings of modules_
 
 
 #### 6.2 Visualization of Simulation Results
 
-In order to study the effect of anisotropy on the extracellular potentials we look at a certain
+<a name="extractisosurfacebyfunction"></a>In order to study the effect of anisotropy on the extracellular potentials we look at a certain
 cross section of the model. In order extract a cross section we use the **ExtractIsosurfaceByFunction**
 module. This module lets the user specify a function and subsequently
 extracts an isosurface of this function and projects the data back onto this surface. In this
@@ -852,13 +847,11 @@ can reconstruct the fiber orientation from the tensor data sending it through th
 module again and extracting the first eigenvector using the *eigvec1()* function. The data is
 subsequently moved to the elements of the mesh.
 
-
-To efficiently project the data onto the same mesh as the data, we use the **ApplyMap-**
+<a name="applymappingmatrix"></a>To efficiently project the data onto the same mesh as the data, we use the **ApplyMap-**
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/6.4.png" alt="UI settings of modules">
-
-_Figure 6.4. UI settings of modules_
+*Figure 6.4. UI settings of modules*
 
 
 **pingMatrixmodule**, this allows to quickly copy the data from one mesh to another mesh
@@ -876,17 +869,16 @@ boundary. Disable the display of nodes and edges and alter the **Default Color**
 by *Figure 6.5*. By altering the Alpha value the mesh can be made far more transparent, so
 to highlight the cross section more clearly. Also increase the scale of the vectors so they
 become clearly visible.
+
 Finally the **ViewScene** module displays a result that show that the potentials tend to
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/6.5.png" alt="UI settings of modules">
-
-_Figure 6.5. UI settings of modules_
+*Figure 6.5. UI settings of modules*
 
 
 stretch along the fiber orientation, as can be viewed by the results indicated in *Figure 6.6*.
 
 
 <img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/6.6.png" alt="Visualizing Results">
-
-_Figure 6.6. Visualizing Results_
+*Figure 6.6. Visualizing Results*
