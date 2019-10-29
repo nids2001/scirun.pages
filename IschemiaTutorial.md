@@ -164,7 +164,7 @@ description of how to run SCIRun is given in the Basic Tutorial. Once SCIRun has
 launched the main Window with the Network editor is shown. *Figure 2.1* shows the main
 
 
-<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.1.png" alt="The main SCIRun window">
+<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.1.PNG" alt="The main SCIRun window">
 
 _Figure 2.1 - The Main SCIRun Window_
 
@@ -188,7 +188,7 @@ Modules menu and select the **ReadField** module form the menu. This will insert
 be used to read in the first dataset.
 
 
-<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.2.png" alt="Adding and opening module">
+<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.2.PNG" alt="Adding and opening module">
 
 _Figure 2.2 - Finding the ReadField module and opening its GUI_
 
@@ -201,7 +201,7 @@ If this dataset is not available in your copy of the SCIRunData bundle, please d
 latest version from the website to obtain a copy.
 
 
-<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.3.png" alt="Selecting file name and type">
+<img src="https://github.com/nids2001/scirun.pages/blob/ischemia-tutorial/IschemiaTutorial_images/2.3.PNG" alt="Selecting file name and type">
 
 _Figure 2.3. Select a file name and a file type_
 
