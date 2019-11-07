@@ -38,7 +38,7 @@ Some functions are not available for execution within the `InterfaceWithPython` 
 
 ### Module state editing
 * `scirun_get_module_state("ModuleID", "StateVariableName")`
-  * Returns the value of a the specified module state variable.
+  * Returns the value of the specified module state variable.
 * `scirun_set_module_state("ModuleID", "StateVariableName", value)`
   * Sets the specified module state variable's value.
 * `scirun_dump_module_state("ModuleID")`
