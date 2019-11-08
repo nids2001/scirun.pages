@@ -178,7 +178,7 @@ The Macro toolbar will need to be visible to access this feature.
 
 ## Running Python Scripts
 
-Python scripts can be used for many things in SCIRun, from building networks to batch executing data.  To run a script saved to disk within SCIRun, there are a couple options.  There is a run script option (looks like a magic wand), which is part of the advanced toolbar. This option will clear any network when a script is run, so it is great for runing scripts that build and execute networks.  Scripts can also be called as a command line input with the `-s` or `-S` flags.  This option is similar to the run script tool, but it allows for passing script arguments after the script filename.  For example, in OS X:
+Python scripts can be used for many things in SCIRun, from building networks to batch executing data.  To run a script saved to disk within SCIRun, there are a couple options.  There is a run script option (looks like a magic wand), which is part of the advanced toolbar. This option will clear any network when a script is run, so it is great for running scripts that build and execute networks.  Scripts can also be called as a command line input with the `-s` or `-S` flags.  This option is similar to the run script tool, but it allows for passing script arguments after the script filename.  For example, in OS X:
 `/Applications/SCIRun.app/Contents/MacOS/SCIRun -s *script_filename.py* *arg1*`.
 
 To run a script within SCIRun without clearing the network, open and execute the script in the SCIRun python console:
