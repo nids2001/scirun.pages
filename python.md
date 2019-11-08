@@ -44,7 +44,7 @@ Some functions are not available for execution within the `InterfaceWithPython` 
 * `scirun_dump_module_state("ModuleID")`
   * Returns a dictionary with the entire state of the specified module.
 * `scirun_get_module_transient_state("ModuleID", "StateVariableName")`
-  * Returns the value of a the specified module transient state variable.
+  * Returns the value of the specified module transient state variable.
 * `scirun_set_module_transient_state("ModuleID", "StateVariableName", value)`
   * Sets the specified module transient state variable's value. Used to pass data values (strings, matrices, fields [coming soon]) back to modules.
 
