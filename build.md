@@ -2,9 +2,10 @@
 title: Build
 category: info
 tags: build
+layout: default
 ---
 
-<link rel="stylesheet" href="css/modest.css">
+<link rel="stylesheet" href="css/main.css">
 
 ## Platform Notes
 

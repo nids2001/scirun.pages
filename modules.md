@@ -2,14 +2,14 @@
 title: SCIRun Module Documentation
 category: info
 tags: module
-layout: null
+layout: default
 ---
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
 
-<link rel="stylesheet" href="css/modest.css">
+<link rel="stylesheet" href="css/main.css">
 
 <script type="text/javascript">
 <!--

@@ -2,7 +2,9 @@
 title: Python API 0.2
 category: info
 tags: python
+layout: default
 ---
+<link rel="stylesheet" href="css/main.css">
 
 The API contains global functions for network editing, file management, module state modification, and data object extraction and insertion.
 
@@ -67,9 +69,9 @@ Some functions are not available for execution within the `InterfaceWithPython` 
      * `field = inputField1` will extract a field object from the input port associated with `inputField1`
      * `outputString1 = "string concat " + inputString1` Input/Output can be combined on the same line.
   * Note: for output variable assignment, make sure to include spaces around the `=`.
-  
+
   ###  InterfaceWithPython Top-Level Script
-  
+
 In the InterfaceWithPython there is a "Top-Level Script" tab which allows users to run matlab code in a broader scope on execution of the InterfaceWithPython Module.  This is helpful if there are variables or modules that are costly to compute or load, yet are used in more than one InterfaceWithPython Module.  The [Matlab engine](#matlab-engine-in-scirun-5-through-python) is one such example.  To launch the matlab engine once per session, use the following code in the top-level script:
 ```
 import matlab.engine
@@ -126,7 +128,7 @@ There can be many directories or many `sys.path.append(...)` calls as needed.  T
 
 If there are module or package paths that need to be set on a network basis (rather than for every network), the InterfaceWithPython module can acheive this with the ["Top-Level Script" Tab](#interfacewithpython-top-level-script).  This tab will execute the code in this tab on a global scale (until SCIRun is closed), so a script similar to the triggered events example will be saved and executed only for the network.
 
-  
+
 ## Matlab engine in SCIRun 5 (through python)
 
 In SCIRun 5, Matlab code and functions can be run using the matlab engine for python in the python console or python interface.  To do so, make sure that the matlab engine is installed (previous section).
@@ -184,4 +186,3 @@ Python scripts can be used for many things in SCIRun, from building networks to 
 To run a script within SCIRun without clearing the network, open and execute the script in the SCIRun python console:
 `exec(open('*path_to_script/filename.py*').read())`.
 This syntax can also be used in SCIRun's interactive mode (`-i` flag from the command line).
-
