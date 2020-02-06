@@ -1,4 +1,22 @@
-<ul class="nav nav-list">
+<ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+    </li>
+    {% for section in site.sections %}
+        {% assign attr = section[0] %}
+        {% assign label = section[1] %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/{{ attr }}">{{ label }}</a>
+        </li>
+    {% endfor %}
+    <li class="nav-item">
+        <a class="nav-link disabled">Other Links</a>
+    </li>
+</ul>
+
+
+
+<!-- <ul class="nav nav-list">
     <li><a href="{{ site.baseurl }}/">Home</a></li>
     {% for section in site.sections %}
         {% assign attr = section[0] %}
@@ -11,9 +29,9 @@
             {% endif %}
             <li data-order="{{ page.order }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %} -->
-    {% endfor %}
+    <!-- {% endfor %} -->
 <!-- List additional links. It is recommended to add a divider
     e.g. <li class="divider"></li> first to break up the content. -->
-    <li class="divider"></li>
+    <!-- <li class="divider"></li>
     <li>Other Links</li>
-</ul>
+</ul> -->
