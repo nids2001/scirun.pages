@@ -5,7 +5,6 @@ tags: python
 layout: default
 ---
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/modest.css">
 
 The API contains global functions for network editing, file management, module state modification, and data object extraction and insertion.
 
