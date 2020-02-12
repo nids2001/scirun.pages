@@ -31,6 +31,30 @@ title: "SCIRun 5 Documentation"
         <div class="carousel-item">
           <img class="d-block w-100" src="assets/images/carousel-3.png" alt="Carousel-3">
         </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carousel-4.png" alt="Carousel-4">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carousel-5.png" alt="Carousel-5">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carousel-6.png" alt="Carousel-6">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carousel-7.png" alt="Carousel-7">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carousel-8.png" alt="Carousel-8">
+        </div>
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carousel-9.png" alt="Carousel-9">
+        </div>
       </div>
 
       <!-- Left and right controls -->
