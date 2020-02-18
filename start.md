@@ -5,4 +5,6 @@ layout: default
 ---
 
 
-### Getting Started content...
+### Getting Started
+
+- [Building SCIRun](build.html)

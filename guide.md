@@ -5,4 +5,6 @@ layout: default
 ---
 
 
-### User Guide content...
+### User Guide
+
+- [Python API 0.2](python.html)
