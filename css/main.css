@@ -55,8 +55,9 @@ code {
 
 #content {
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 50px;
     margin: auto;
+    float: right;
 }
 
 .sticky + #content {
