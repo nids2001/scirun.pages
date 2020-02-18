@@ -4,13 +4,24 @@
   top:40px;
   background-color: #FFF;
   height: 100%;
-  width:auto;
+  width: auto;
 }
 
+#toc {
+  width: 100%;
+}
+
+#table-of-contents .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#content {
+  padding-left: 10px !important;
+}
 
 .sticky {
   position: fixed;
-  top: 40px;
   z-index: 10;
 }
 .nav-link a:hover {
