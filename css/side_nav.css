@@ -1,0 +1,19 @@
+#table-of-contents {
+  position: -webkit-sticky;
+  position: sticky;
+  top:40px;
+  background-color: #FFF;
+  height: 100%;
+  width:auto;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 40px;
+  z-index: 10;
+}
+.nav-link a:hover {
+    text-decoration: none;
+
+}

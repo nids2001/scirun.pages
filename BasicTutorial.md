@@ -2,7 +2,7 @@
 title: Basic Tutorial
 category: info
 tags: tutorial
-layout: default
+layout: default_toc
 ---
 
 <script type="text/javascript" async
@@ -10,7 +10,8 @@ layout: default
 </script>
 <link rel="stylesheet" href="css/main.css">
 
-### Contents
+
+<!-- ### Contents
   - [1 SCIRun Overview](#1--scirun-overview)  
     + [1.1 Software requirements](#11--software-requirements)   
   - [2 Simple Dataflow Network](#2--simple-dataflow-network)  
@@ -25,7 +26,7 @@ layout: default
     + [3.2 Isosurface](#32--isosurface)  
     + [3.3 Slice Field](#33--slice-field)  
     + [3.4 Clip Field](#34--clip-field)  
-      - [3.4.1 Extract Boundary](#341--extract-boundary)  
+      - [3.4.1 Extract Boundary](#341--extract-boundary)   -->
 
 ## 1  SCIRun Overview
 
