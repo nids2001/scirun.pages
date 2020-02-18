@@ -19,46 +19,32 @@ title: "SCIRun 5 Documentation"
         <li data-target="#myCarousel" data-slide-to="4"></li>
         <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
-        <li data-target="#myCarousel" data-slide-to="7"></li>
-        <li data-target="#myCarousel" data-slide-to="8"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/images/scirun.png" alt="SCIRun">
+          <img class="d-block w-100" src="assets/images/carousel-images/scirun.png" alt="SCIRun Logo">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-2.png" alt="Carousel-2">
+          <img class="d-block w-100" src="assets/images/carousel-images/004.png" alt="Carousel-2">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-3.png" alt="Carousel-3">
+          <img class="d-block w-100" src="assets/images/carousel-images/EEGfig2.png" alt="Carousel-3">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-4.png" alt="Carousel-4">
+          <img class="d-block w-100" src="assets/images/carousel-images/fusion2.png" alt="Carousel-4">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-5.png" alt="Carousel-5">
+          <img class="d-block w-100" src="assets/images/carousel-images/mixing_cross_sections.png" alt="Carousel-5">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-6.png" alt="Carousel-6">
-        </div>
-
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-7.png" alt="Carousel-7">
-        </div>
-
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-8.png" alt="Carousel-8">
-        </div>
-
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-9.png" alt="Carousel-9">
+          <img class="d-block w-100" src="assets/images/carousel-images/SCIRun_mixing.png" alt="Carousel-6">
         </div>
       </div>
 
