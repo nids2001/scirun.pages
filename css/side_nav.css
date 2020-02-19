@@ -2,13 +2,14 @@
   position: -webkit-sticky;
   position: sticky;
   top:40px;
-  background-color: #FFF;
-  height: 100%;
-  width: auto;
-}
+  height: 100vh;
+  overflow-y: scroll;
+  direction: ltr;
+  z-index: 1;
 
-#toc {
-  width: 100%;
+
+  background-color: #FFF;
+  width: 20vw;
 }
 
 #table-of-contents .nav-link {
@@ -18,11 +19,6 @@
 
 #content {
   padding-left: 10px !important;
-}
-
-.sticky {
-  position: fixed;
-  z-index: 10;
 }
 .nav-link a:hover {
     text-decoration: none;
