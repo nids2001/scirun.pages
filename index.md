@@ -24,27 +24,27 @@ title: "SCIRun 5 Documentation"
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/images/carousel-images/scirun.png" alt="SCIRun Logo">
+          <img class="d-block w-100" src="assets/images/carousel_images/scirun.png" alt="SCIRun Logo">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-images/004.png" alt="Carousel-2">
+          <img class="d-block w-100" src="assets/images/carousel_images/004.png" alt="Carousel-2">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-images/EEGfig2.png" alt="Carousel-3">
+          <img class="d-block w-100" src="assets/images/carousel_images/EEGfig2.png" alt="Carousel-3">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-images/fusion2.png" alt="Carousel-4">
+          <img class="d-block w-100" src="assets/images/carousel_images/fusion2.png" alt="Carousel-4">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-images/mixing_cross_sections.png" alt="Carousel-5">
+          <img class="d-block w-100" src="assets/images/carousel_images/mixing_cross_sections.png" alt="Carousel-5">
         </div>
 
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/carousel-images/SCIRun_mixing.png" alt="Carousel-6">
+          <img class="d-block w-100" src="assets/images/carousel_images/SCIRun_mixing.png" alt="Carousel-6">
         </div>
       </div>
 
