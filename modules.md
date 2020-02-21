@@ -11,6 +11,7 @@ layout: default
 
 
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/modules.css">
 
 <script type="text/javascript">
 <!--
@@ -69,20 +70,27 @@ div.hidden {
 
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
+  <div class="content" markdown="1">
   {% if pageitems[0] %}
-### <a id="{{ pageitems[0] | strip }}"></a>{{ pageitems[0] }}
+  <header class="title" markdown="1" id="{{ pageitems[0] | strip }}"><h2>{{ pageitems[0] }}</h2></header>
     {% for item in pageitems %}
+
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
       {% assign contentId = linkitem[0] | prepend: 'id_' %}
-
-<h4><a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a></h4>
+<div class="more-content" markdown="1">
+<div class="sub-heading" markdown="1"><h5><a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a></h5></div>
       {% capture mdpath %}modules/{{linkitem[0]}}.md{% endcapture %}
       {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
       {% assign importantPart2 = importantPart1[1] %}
 <div class="hidden" markdown="1" name="{{contentId}}">{{ importantPart2  }} </div>
+</div>
+
     {% endfor %}
   {% endif %}
+  </div>
+  ---
+
 {% endfor %}
