@@ -80,7 +80,12 @@ div.hidden {
       {% assign linkitem = item | split: '#' %}
       {% assign contentId = linkitem[0] | prepend: 'id_' %}
 <div class="more-content" markdown="1">
-<div class="sub-heading" markdown="1"><h5><a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a></h5></div>
+<div class="sub-heading" markdown="1">
+  <h5>
+    <a name="{{linkitem[0]}}" data-proofer-ignore></a>
+    <a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a>
+  </h5>
+</div>
       {% capture mdpath %}modules/{{linkitem[0]}}.md{% endcapture %}
       {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
