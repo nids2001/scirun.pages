@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-weight: 400;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
