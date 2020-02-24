@@ -20,7 +20,15 @@
 #content {
   padding-left: 10px !important;
 }
+
 .nav-link a:hover {
     text-decoration: none;
 
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
 }
