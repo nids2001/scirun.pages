@@ -4,7 +4,6 @@
   margin: 10px;
 }
 .content .title {
-  position: -webkit-sticky;
   position: sticky;
   padding-top:20px;
   top: 40px;
@@ -27,4 +26,9 @@
   z-index: 2;
   margin-top: 40px;
   margin-botom: 40px;
+}
+
+hr {
+  background-color:#F92672;
+  height: 3px;
 }

@@ -69,8 +69,9 @@ code {
     padding-top: 20px;
     /* padding-left: 50px; */
     margin: auto;
-    padding: 30px;
+    padding: 60px;
     float: right;
+    allign: center;
 }
 
 .sticky + #content {
@@ -137,11 +138,6 @@ table {
   margin-bottom: 1rem;
   border: 1px solid #F8F8F2;
   border-collapse: collapse;
-}
-
-hr {
-  background-color:#F92672;
-  height: 3px;
 }
 
 td, th {
