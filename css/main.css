@@ -85,7 +85,10 @@ code {
 }
 
 #navigation {
-    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     background-color: #FFF;
     height: auto;
 }
