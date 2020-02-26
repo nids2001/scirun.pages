@@ -6,7 +6,7 @@
   overflow-y: scroll;
   direction: ltr;
   z-index: 1;
-  background-color: #FFF;
+  background-color: inherit;
   -ms-overflow-style: none;
   width: 20vw;
 }
@@ -27,6 +27,9 @@
   padding-left: 10px !important;
 }
 
+.nav-link a {
+    color: #6A7EC8;
+}
 .nav-link a:hover {
     text-decoration: none;
 

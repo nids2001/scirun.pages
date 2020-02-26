@@ -2,25 +2,28 @@
 
 html {
   scroll-behavior: smooth;
+
 }
+
 body {
     font-weight: 400;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
     font-family: 'PT Sans Narrow';
     font-size: 20px;
-    /* width: 60%; */
+    color: #F8F8F2;
+    background-color: #5B5A61;
   }
 
 
 pre, code, pre code {
     border: none;
     border-radius: 0;
-    background-color: #f9f9f9;
+    background-color: #545359;
     font-size: 0.85em;
+    color: #DBDBD7;
 }
 
 .highlight {
-    background-color: #f9f9f9;
+    background-color: #545359;
 }
 
 .sticky {
@@ -42,12 +45,14 @@ code {
 #header {
     padding-top: 20px;
     padding-left: 20px;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
-    background-color: #FFF;
+    border-bottom: 1px solid #D3D1E0;
+    background-color: #37373B;
     height: auto;
 }
 
+#header a {
+    color: #FFF;
+}
 #header a:hover {
     text-decoration: none;
 
@@ -62,8 +67,9 @@ code {
 
 #content {
     padding-top: 20px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     margin: auto;
+    padding: 30px;
     float: right;
 }
 
@@ -89,13 +95,15 @@ code {
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
-    background-color: #FFF;
+    background-color: #4E4D53;
     height: auto;
+    z-index: 10;
 }
 
 #navigation li a {
     padding-left: 20px;
     padding-right: 20px;
+    color: #819aff;
 
 }
 
@@ -127,16 +135,29 @@ body.rtl ul, body.rtl ol {
 
 table {
   margin-bottom: 1rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #F8F8F2;
   border-collapse: collapse;
+}
+
+hr {
+  background-color:#F92672;
+  height: 3px;
 }
 
 td, th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #F8F8F2;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  color: #A6E22E;
+}
+
+a:hover{
+  color: #E6DB74;
 }
