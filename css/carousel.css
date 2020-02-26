@@ -6,6 +6,7 @@
 }
 
 #myCarousel img {
+  object-fit: contain;
   max-height: 90vh;
 }
 
