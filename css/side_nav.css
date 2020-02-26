@@ -1,5 +1,4 @@
 #table-of-contents {
-  position: -webkit-sticky;
   position: sticky;
   top:40px;
   height: 98vh;
