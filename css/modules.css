@@ -16,7 +16,6 @@
 }
 
 .more-content .sub-heading{
-  position: -webkit-sticky;
   position: sticky;
   padding-top: 20px;
   top: 90px;
