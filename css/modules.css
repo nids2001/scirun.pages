@@ -32,3 +32,8 @@ hr {
   background-color:#F92672;
   height: 3px;
 }
+
+:target:before {
+    height: 120px;
+    margin: -120px 0 0;
+}
