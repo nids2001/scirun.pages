@@ -14,7 +14,6 @@ layout: default
 <link rel="stylesheet" href="css/modules.css">
 
 <script type="text/javascript">
-<!--
     function toggle_visibility(id) {
        var e = document.getElementsByName(id)[0];
        if(e.style.display == 'block')
@@ -22,7 +21,13 @@ layout: default
        else
           e.style.display = 'block';
     }
-//-->
+
+     window.onload = function() {
+        if(window.location.href.indexOf("#") > -1) {
+          toggle_visibility("id_" + window.location.hash.substring(1))[0];
+          window.location.reload(false);
+         }
+    }
 </script>
 
 <style>
@@ -97,5 +102,4 @@ div.hidden {
   {% endif %}
   </div>
   ---
-
 {% endfor %}
