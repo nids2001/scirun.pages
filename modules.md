@@ -2,7 +2,7 @@
 title: SCIRun Module Documentation
 category: info
 tags: module
-layout: default
+layout: modules_toc
 ---
 
 <script async
@@ -76,7 +76,7 @@ div.hidden {
   {% assign pageitems = pagestring | split: '$' %}
   <div class="content" markdown="1">
   {% if pageitems[0] %}
-  <header class="title" markdown="1" id="{{ pageitems[0] | strip }}"><h2>{{ pageitems[0] }}</h2></header>
+  <header class="title" markdown="1"><h2 id="{{ pageitems[0] | strip }}">{{ pageitems[0] }}</h2></header>
     {% for item in pageitems %}
 
       {% comment %}skip category list item (index 0){% endcomment %}
