@@ -5,7 +5,7 @@ tags: module
 layout: default
 ---
 
-<script type="text/javascript" async
+<script async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
 
@@ -13,7 +13,7 @@ layout: default
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/modules.css">
 
-<script type="text/javascript">
+<script>
     function toggle_visibility(id) {
        var e = document.getElementsByName(id)[0];
        if(e.style.display == 'block')
@@ -25,7 +25,6 @@ layout: default
      window.onload = function() {
         if(window.location.href.indexOf("#") > -1) {
           toggle_visibility("id_" + window.location.hash.substring(1))[0];
-          window.location.reload(false);
          }
     }
 </script>
@@ -89,6 +88,14 @@ div.hidden {
   <h5>
     <a name="{{linkitem[0]}}" data-proofer-ignore></a>
     <a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a>
+    <!-- <script>
+        if(window.location.href.indexOf("#") > -1) {
+          if('{{ contentId }}'.localeCompare("id_"+ window.location.hash.substring(1)) == 0) {
+              toggle_visibility('{{ contentId }}');
+          }
+        }
+    </script> -->
+
   </h5>
 </div>
       {% capture mdpath %}modules/{{linkitem[0]}}.md{% endcapture %}
