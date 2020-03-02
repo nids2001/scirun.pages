@@ -1,8 +1,8 @@
 ---
-title: "Posts"
+title: "FAQs"
 category: null
 layout: default
 ---
 
 
-### Posts content...
+### FAQs content...

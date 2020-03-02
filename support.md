@@ -1,8 +1,8 @@
 ---
-title: "Help"
+title: "Support"
 category: null
 layout: default
 ---
 
 
-### Help content...
+### Support content...

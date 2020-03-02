@@ -1,7 +1,4 @@
 <ul class="nav nav-pills nav-fill">
-    <li class="nav-item">
-      <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
-    </li>
     {% for section in site.sections %}
         {% assign attr = section[0] %}
         {% assign label = section[1] %}
@@ -9,9 +6,6 @@
           <a class="nav-link" href="{{ site.baseurl }}/{{ attr }}">{{ label }}</a>
         </li>
     {% endfor %}
-    <li class="nav-item">
-        <a class="nav-link disabled">Other Links</a>
-    </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Version</a>
       <div class="dropdown-menu">
