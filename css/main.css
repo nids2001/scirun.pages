@@ -9,7 +9,7 @@ body {
     font-weight: 400;
     font-family: 'PT Sans Narrow';
     font-size: 20px;
-    color: #F8F8F2;
+    color: #D3D1E0;
     background-color: #5B5A61;
   }
 
@@ -46,6 +46,7 @@ code {
     padding-top: 20px;
     padding-left: 20px;
     border-bottom: 4px solid #D3D1E0;
+    opacity: 0.5;
     background-color: #36333A;
     height: auto;
 }
@@ -59,8 +60,9 @@ code {
 }
 
 #footer {
-    margin: 20px 0;
+    padding: 20px 0;
     font-size: 0.85em;
+    background-color: #D3D1E0;
     color: #999;
     text-align: center;
 }
