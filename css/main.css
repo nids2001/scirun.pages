@@ -45,8 +45,8 @@ code {
 #header {
     padding-top: 20px;
     padding-left: 20px;
-    border-bottom: 1px solid #D3D1E0;
-    background-color: #37373B;
+    border-bottom: 4px solid #D3D1E0;
+    background-color: #36333A;
     height: auto;
 }
 
@@ -96,7 +96,8 @@ code {
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
-    background-color: #4E4D53;
+    background-color: #424146;
+    border-bottom: 2px solid #D3D1E0;
     height: auto;
     z-index: 10;
 }
@@ -104,7 +105,7 @@ code {
 #navigation li a {
     padding-left: 20px;
     padding-right: 20px;
-    color: #819aff;
+    color: #A6E22E;
 
 }
 
@@ -151,7 +152,7 @@ img {
 }
 
 a {
-  color: #A6E22E;
+  color: #819aff;
 }
 
 a:hover{

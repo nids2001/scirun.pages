@@ -1,14 +1,14 @@
 #table-of-contents {
   position: sticky;
-  top:60px;
-  margin-top: 20px;
-  height: 89vh;
+  top:40px;
+  height: 98vh;
   overflow-y: scroll;
   direction: ltr;
   z-index: 1;
-  background-color: inherit;
+  background-color: #424146;
   -ms-overflow-style: none;
   width: 20vw;
+  padding-top: 20px;
 }
 
 #table-of-contents::-webkit-scrollbar {
@@ -21,8 +21,9 @@
   padding-right: 0;
 }
 
+
 .nav-link a {
-    color: #6A7EC8;
+    color: #A6E22E;
 }
 .nav-link a:hover {
     text-decoration: none;
