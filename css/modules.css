@@ -5,6 +5,7 @@
 }
 
 .content .title {
+  position: -webkit-sticky;
   position: sticky;
   padding-top: 20px;
   top: 40px;

@@ -46,7 +46,6 @@ code {
     padding-top: 20px;
     padding-left: 20px;
     border-bottom: 4px solid #D3D1E0;
-    opacity: 0.5;
     background-color: #36333A;
     height: auto;
 }
@@ -63,8 +62,13 @@ code {
     padding: 20px 0;
     font-size: 0.85em;
     background-color: #D3D1E0;
-    color: #999;
+    opacity: 0.5;
+    color: #36333A;
     text-align: center;
+}
+
+#footer a {
+  color: #F44747;
 }
 
 #content {
@@ -76,9 +80,6 @@ code {
     allign: center;
 }
 
-.sticky + #content {
-    margin-top: 60px;
-}
 
 #content > .page-header:first-child {
     margin-top: 0;
@@ -94,14 +95,21 @@ code {
 }
 
 #navigation {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
     background-color: #424146;
     border-bottom: 2px solid #D3D1E0;
     height: auto;
     z-index: 10;
+
+    & @supports (position: sticky) {
+    position: sticky;
+    }
+
+    & :not(supports (position: sticky)) {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    }
 }
 
 #navigation li a {
