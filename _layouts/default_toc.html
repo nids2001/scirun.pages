@@ -121,15 +121,18 @@
 
             // Get the navbar
             var navbar = document.getElementById("navigation");
+            var content = document.getElementById("content");
 
             // Get the offset position of the navbar
             var sticky = navbar.offsetTop;
 
             // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
             function stickyNav() {
-              if (window.pageYOffset >= sticky) {
+              if (window.scrollY >= sticky) {
+                content.style.paddingTop = (navbar.offsetHeight + 20) + 'px';
                 navbar.classList.add("sticky")
               } else {
+                content.style.paddingTop = '20 px';
                 navbar.classList.remove("sticky");
               }
             }
